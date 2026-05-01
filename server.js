@@ -49,6 +49,7 @@ initDefaults();
 const sessions = {};
 app.use(express.json({ limit: '20mb' }));
 app.use(express.static('public'));
+app.use(express.static('.'));
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, 'uploads/'),
