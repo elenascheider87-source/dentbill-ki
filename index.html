@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentBill KI</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0f1117;--bg2:#161920;--bg3:#1e2229;--bg4:#252b34;
+  --border:#2a3040;--border2:#333d50;
+  --teal:#00c9a7;--teal2:#00a98a;--teal-dim:rgba(0,201,167,0.12);--teal-glow:rgba(0,201,167,0.06);
+  --amber:#f59e0b;--amber-dim:rgba(245,158,11,0.12);
+  --red:#ef4444;--red-dim:rgba(239,68,68,0.12);
+  --purple:#6366f1;--purple-dim:rgba(99,102,241,0.12);
+  --text:#e8eaf0;--text2:#8892a4;--text3:#4a5568;
+  --font:'DM Sans',sans-serif;--mono:'DM Mono',monospace;
+}
+html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px}
+
+/* LOGIN */
+#login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:1rem}
+.login-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:2rem;width:100%;max-width:380px}
+.login-logo .lname{font-size:22px;font-weight:600;color:var(--teal);margin-bottom:4px}
+.login-logo .lsub{font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:1.6rem}
+.tabs-row{display:flex;background:var(--bg3);border-radius:8px;padding:3px;margin-bottom:1.4rem}
+.tab-pill{flex:1;padding:7px;text-align:center;font-size:12px;border-radius:6px;cursor:pointer;color:var(--text2);border:none;background:none;font-family:var(--font);transition:all .15s}
+.tab-pill.active{background:var(--teal);color:#0f1117;font-weight:500}
+.field{margin-bottom:.9rem}
+.field label{font-size:12px;color:var(--text2);display:block;margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;padding:9px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--font);font-size:13px;outline:none;transition:border .15s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal)}
+.field textarea{resize:vertical;min-height:80px}
+.code-hint{font-size:10px;color:var(--text3);margin-top:3px}
+.btn-primary{width:100%;padding:10px;background:var(--teal);border:none;border-radius:8px;color:#0f1117;font-size:14px;font-weight:500;cursor:pointer;font-family:var(--font);transition:background .15s}
+.btn-primary:hover{background:var(--teal2)}
+.alert{border-radius:8px;padding:8px 12px;font-size:12px;margin-top:10px;display:none}
+.alert.error{background:var(--red-dim);border:1px solid rgba(239,68,68,.3);color:var(--red)}
+.alert.success{background:var(--teal-glow);border:1px solid rgba(0,201,167,.3);color:var(--teal)}
+
+/* APP */
+#app-screen{display:none;height:100vh;flex-direction:row}
+.sidebar{width:215px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;height:100vh;flex-shrink:0}
+.s-logo{padding:16px 14px 12px;border-bottom:1px solid var(--border)}
+.s-logo .lname{font-size:14px;font-weight:600;color:var(--teal)}
+.s-logo .lsub{font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:2px}
+.nav{flex:1;padding:8px;display:flex;flex-direction:column;gap:1px;overflow-y:auto}
+.nav-sep{height:1px;background:var(--border);margin:5px 2px}
+.nb{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;border:none;background:none;color:var(--text2);font-family:var(--font);font-size:13px;cursor:pointer;text-align:left;width:100%;transition:all .15s}
+.nb:hover{background:var(--bg3);color:var(--text)}
+.nb.active{background:var(--teal-dim);color:var(--teal)}
+.nb svg{width:15px;height:15px;flex-shrink:0;opacity:.7}
+.nb.active svg{opacity:1}
+.nb.admin-nav{color:var(--text3)}
+.nb.admin-nav:hover{color:var(--amber)}
+.nb.admin-nav.active{background:var(--amber-dim);color:var(--amber)}
+.s-bottom{padding:10px;border-top:1px solid var(--border)}
+.u-row{display:flex;align-items:center;gap:8px}
+.av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#005f7a);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff;flex-shrink:0}
+.uname{font-size:12px;font-weight:500;color:var(--text)}
+.urole{font-size:10px;color:var(--text3)}
+.btn-logout{margin-top:8px;width:100%;padding:5px;background:none;border:1px solid var(--border);border-radius:6px;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font);transition:all .15s}
+.btn-logout:hover{border-color:var(--red);color:var(--red)}
+
+.main{flex:1;display:flex;flex-direction:column;min-width:0;height:100vh;overflow:hidden}
+.panel{display:none;flex:1;flex-direction:column;overflow:hidden}
+.panel.active{display:flex}
+
+/* CHAT */
+.chat-bar{padding:12px 18px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.chat-bar h2{font-size:14px;font-weight:500}
+.chat-bar p{font-size:11px;color:var(--text3);margin-top:1px}
+.badge{background:var(--teal-dim);border:1px solid rgba(0,201,167,.2);color:var(--teal);font-size:10px;font-family:var(--mono);padding:3px 8px;border-radius:20px}
+.msgs{flex:1;overflow-y:auto;padding:14px 18px;display:flex;flex-direction:column;gap:10px}
+.msgs::-webkit-scrollbar{width:3px}.msgs::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.msg{display:flex;gap:8px;animation:fu .2s ease}
+@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+.msg.user{flex-direction:row-reverse}
+.mav{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;flex-shrink:0;margin-top:2px}
+.mav.ai{background:linear-gradient(135deg,var(--teal),#005f7a);color:#fff}
+.mav.us{background:linear-gradient(135deg,#6366f1,#4338ca);color:#fff}
+.bub{max-width:84%;padding:9px 13px;border-radius:10px;font-size:13px;line-height:1.7}
+.msg.ai .bub{background:var(--bg3);border:1px solid var(--border);border-top-left-radius:3px}
+.msg.user .bub{background:linear-gradient(135deg,var(--teal2),#007a60);color:#fff;border-top-right-radius:3px}
+.bub strong{color:var(--teal);font-weight:500}
+.bub code{background:var(--bg4);padding:1px 5px;border-radius:4px;font-family:var(--mono);font-size:11px;color:var(--amber)}
+.src{font-size:10px;color:var(--text3);margin-top:4px}
+.thinking{display:flex;align-items:center;gap:5px;padding:9px 13px;background:var(--bg3);border:1px solid var(--border);border-radius:10px;width:fit-content}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:bl 1.2s infinite}
+.dot:nth-child(2){animation-delay:.2s}.dot:nth-child(3){animation-delay:.4s}
+@keyframes bl{0%,80%,100%{opacity:.2}40%{opacity:1}}
+.chips{padding:0 18px 8px;display:flex;gap:6px;flex-wrap:wrap;flex-shrink:0}
+.chip{background:var(--bg3);border:1px solid var(--border);color:var(--text2);border-radius:20px;padding:4px 11px;font-size:11px;cursor:pointer;transition:all .15s;font-family:var(--font)}
+.chip:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-dim)}
+.inp-area{padding:10px 18px 14px;border-top:1px solid var(--border);flex-shrink:0}
+.fprev{display:none;align-items:center;gap:6px;background:var(--amber-dim);border:1px solid rgba(245,158,11,.25);border-radius:6px;padding:5px 10px;font-size:11px;color:var(--amber);margin-bottom:7px}
+.inp-wrap{display:flex;align-items:flex-end;gap:8px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:8px 10px;transition:border .15s}
+.inp-wrap:focus-within{border-color:var(--teal)}
+#chat-ta{flex:1;background:none;border:none;color:var(--text);font-family:var(--font);font-size:13px;resize:none;height:36px;max-height:100px;outline:none;line-height:1.6}
+#chat-ta::placeholder{color:var(--text3)}
+.btn-att{background:none;border:none;color:var(--text3);cursor:pointer;padding:4px;border-radius:6px;display:flex;transition:color .15s}
+.btn-att:hover{color:var(--teal)}
+.btn-send{background:var(--teal);border:none;border-radius:8px;padding:7px 11px;color:#0f1117;cursor:pointer;display:flex;transition:background .15s}
+.btn-send:hover{background:var(--teal2)}
+#file-input{display:none}
+
+/* GENERIC PANEL */
+.ph{padding:12px 18px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.ph h2{font-size:14px;font-weight:500}
+.ph p{font-size:11px;color:var(--text3);margin-top:1px}
+.pb{flex:1;overflow-y:auto;padding:14px 18px}
+.pb::-webkit-scrollbar{width:3px}.pb::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
+.info-box{background:var(--teal-glow);border:1px solid rgba(0,201,167,.15);border-radius:8px;padding:10px 13px;font-size:12px;color:var(--text2);margin-bottom:12px;line-height:1.6}
+.info-box strong{color:var(--teal)}
+.cat-label{font-size:10px;font-weight:500;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin:14px 0 7px}
+
+/* BUTTONS */
+.btn-sm{background:var(--teal);border:none;border-radius:8px;padding:6px 14px;color:#0f1117;font-size:12px;font-weight:500;cursor:pointer;font-family:var(--font);display:inline-flex;align-items:center;gap:5px;transition:background .15s}
+.btn-sm:hover{background:var(--teal2)}
+.btn-sm.amber{background:var(--amber);color:#0f1117}
+.btn-sm.amber:hover{background:#d97706}
+.btn-sm.red{background:var(--red);color:#fff}
+.btn-sm.red:hover{background:#dc2626}
+.btn-sm.ghost{background:none;border:1px solid var(--border);color:var(--text2)}
+.btn-sm.ghost:hover{border-color:var(--teal);color:var(--teal)}
+
+/* ROWS */
+.row{display:flex;align-items:center;gap:10px;padding:9px 11px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:5px;transition:border .15s}
+.row:hover{border-color:var(--border2)}
+.row-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;color:#fff}
+.row-title{font-size:13px;color:var(--text);font-weight:500}
+.row-meta{font-size:11px;color:var(--text3)}
+.row-actions{display:flex;gap:5px;margin-left:auto}
+.pill{font-size:10px;padding:2px 8px;border-radius:20px}
+.pill.teal{background:var(--teal-dim);color:var(--teal)}
+.pill.purple{background:var(--purple-dim);color:var(--purple)}
+.pill.amber{background:var(--amber-dim);color:var(--amber)}
+.pill.red{background:var(--red-dim);color:var(--red)}
+
+/* ADMIN */
+.admin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px}
+.cat-card{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:12px;cursor:pointer;transition:all .15s;position:relative}
+.cat-card:hover{border-color:var(--border2);transform:translateY(-1px)}
+.cat-card .cc-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;margin-bottom:8px}
+.cat-card .cc-label{font-size:13px;font-weight:500;color:var(--text);margin-bottom:3px}
+.cat-card .cc-desc{font-size:11px;color:var(--text3);line-height:1.4}
+.cat-card .cc-actions{display:flex;gap:5px;margin-top:8px}
+.search-bar{display:flex;gap:8px;margin-bottom:12px}
+.search-bar input{flex:1;padding:8px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--font);font-size:13px;outline:none;transition:border .15s}
+.search-bar input:focus{border-color:var(--teal)}
+
+/* MODAL */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;align-items:center;justify-content:center;padding:1rem}
+.modal-bg.open{display:flex}
+.modal{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto}
+.modal h3{font-size:15px;font-weight:500;margin-bottom:1.2rem;color:var(--text)}
+.modal-actions{display:flex;gap:8px;margin-top:1.2rem;justify-content:flex-end}
+
+/* TAGS INPUT */
+.tags-wrap{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.tag{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px}
+.tag button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;line-height:1;padding:0}
+
+@media(max-width:600px){
+  .sidebar{width:50px}.s-logo .lsub,.nb span,.s-bottom .uname,.s-bottom .urole{display:none}
+  .nb{justify-content:center;padding:10px}.s-logo{padding:12px 8px}
+}
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="lname">DentBill KI</div>
+      <div class="lsub">Abrechnungs-Assistent</div>
+    </div>
+    <div class="tabs-row">
+      <button class="tab-pill active" onclick="authTab('login',this)">Anmelden</button>
+      <button class="tab-pill" onclick="authTab('register',this)">Registrieren</button>
+    </div>
+    <div id="auth-login">
+      <div class="field"><label>Benutzername</label><input id="l-user" type="text" placeholder="Benutzername" onkeydown="if(event.key==='Enter')doLogin()"></div>
+      <div class="field"><label>Passwort</label><input id="l-pass" type="password" placeholder="Passwort" onkeydown="if(event.key==='Enter')doLogin()"></div>
+      <button class="btn-primary" onclick="doLogin()">Anmelden</button>
+    </div>
+    <div id="auth-register" style="display:none">
+      <div class="field"><label>Ihr Name</label><input id="r-name" type="text" placeholder="Vollständiger Name"></div>
+      <div class="field"><label>Benutzername</label><input id="r-user" type="text" placeholder="Wählen Sie einen Benutzernamen"></div>
+      <div class="field"><label>Passwort</label><input id="r-pass" type="password" placeholder="Mindestens 6 Zeichen"></div>
+      <div class="field"><label>Zugangscode</label><input id="r-code" type="text" placeholder="Code von der Plattform-Inhaberin"><div class="code-hint">Den Zugangscode erhalten Sie nach Abo-Abschluss.</div></div>
+      <button class="btn-primary" onclick="doRegister()">Konto erstellen</button>
+    </div>
+    <div class="alert error" id="auth-err"></div>
+    <div class="alert success" id="auth-ok"></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app-screen">
+  <div class="sidebar">
+    <div class="s-logo">
+      <div class="lname">DentBill KI</div>
+      <div class="lsub">Pro Abonnement</div>
+    </div>
+    <div class="nav">
+      <button class="nb active" onclick="showPanel('chat',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <span>KI-Chat</span>
+      </button>
+      <button class="nb" onclick="showPanel('knowledge',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <span>Wissenssuche</span>
+      </button>
+      <button class="nb" onclick="showPanel('community',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        <span>Community</span>
+      </button>
+      <div class="nav-sep" id="admin-sep" style="display:none"></div>
+      <button class="nb admin-nav" id="nav-admin-cats" style="display:none" onclick="showPanel('admin-cats',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        <span>Kategorien</span>
+      </button>
+      <button class="nb admin-nav" id="nav-admin-know" style="display:none" onclick="showPanel('admin-know',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v1H8zm0 2h5v1H8zm0-4h2v1H8z"/></svg>
+        <span>Wissensbasis</span>
+      </button>
+      <button class="nb admin-nav" id="nav-admin-users" style="display:none" onclick="showPanel('admin-users',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3a3 3 0 110 6 3 3 0 010-6zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"/></svg>
+        <span>Nutzer</span>
+      </button>
+      <button class="nb" onclick="showPanel('upload',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
+        <span>Hochladen</span>
+      </button>
+    </div>
+    <div class="s-bottom">
+      <div class="u-row">
+        <div class="av" id="app-av">?</div>
+        <div><div class="uname" id="app-name">–</div><div class="urole" id="app-role">Nutzer</div></div>
+      </div>
+      <button class="btn-logout" onclick="doLogout()">Abmelden</button>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <!-- CHAT -->
+    <div id="panel-chat" class="panel active">
+      <div class="chat-bar">
+        <div><h2>Abrechnungs-Assistent</h2><p>BEMA · GOZ · Festzuschüsse · Labor · Gewährleistung</p></div>
+        <div class="badge">claude-sonnet</div>
+      </div>
+      <div class="msgs" id="msgs">
+        <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Hallo! Ich bin Ihr persönlicher Abrechnungs-Assistent.<br><br>Fragen Sie mich alles – keine Frage ist zu einfach:<br>• <strong>„Erzähl mir alles über BEMA 1040"</strong><br>• <strong>„Gibt es Gewährleistung auf Zahnhalsfüllungen?"</strong><br>• <strong>„Kann ich neben PZR noch Zahnstein abrechnen?"</strong><br>• <strong>Bild/Dokument hochladen → Abrechnungsvorschlag</strong></div><div class="src">BEMA 2024 · GOZ 2012 · BEL II · Festzuschuss-Richtlinien</div></div></div>
+      </div>
+      <div class="chips">
+        <span class="chip" onclick="sendQ('Erzähl mir alles über die Abrechnungsnummer 1040')">BEMA 1040 alles</span>
+        <span class="chip" onclick="sendQ('Wie rechne ich eine Prothesenreparatur ab?')">Prothesenreparatur</span>
+        <span class="chip" onclick="sendQ('Gibt es Gewährleistung auf Zahnhalsfüllungen?')">Gewährleistung?</span>
+        <span class="chip" onclick="sendQ('Kann ich Zahnstein (1040) neben der PZR abrechnen?')">PZR + 1040?</span>
+        <span class="chip" onclick="sendQ('Ist eine MU innerhalb von 3 Monaten nach Protheseneinsetzen möglich?')">MU nach Prothese?</span>
+        <span class="chip" onclick="sendQ('Was ist der Unterschied zwischen Regelversorgung und gleichartiger Versorgung beim Festzuschuss?')">Festzuschuss erklärt</span>
+      </div>
+      <div class="inp-area">
+        <div class="fprev" id="fprev">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/></svg>
+          <span id="fname">Datei</span>
+          <button onclick="clearFile()" style="background:none;border:none;color:var(--amber);cursor:pointer;font-size:15px;margin-left:4px">×</button>
+        </div>
+        <div class="inp-wrap">
+          <textarea id="chat-ta" placeholder="Ihre Frage... (Enter = Senden, Shift+Enter = Zeilenumbruch)" onkeydown="handleKey(event)" oninput="autoR(this)"></textarea>
+          <div style="display:flex;align-items:center;gap:5px">
+            <label class="btn-att" title="Bild/PDF anhängen">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
+              <input type="file" id="file-input" accept="image/*,.pdf" onchange="handleFile(this)">
+            </label>
+            <button class="btn-send" onclick="sendMsg()"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></button>
+          </div>
+        </div>
+        <div style="font-size:10px;color:var(--text3);margin-top:4px;text-align:center">📎 Bilder & PDFs anhängen · Enter zum Senden</div>
+      </div>
+    </div>
+
+    <!-- WISSENSSUCHE -->
+    <div id="panel-knowledge" class="panel">
+      <div class="ph"><div><h2>Wissenssuche</h2><p>Durchsuchen Sie alle Kategorien und Einträge</p></div></div>
+      <div class="pb">
+        <div class="search-bar">
+          <input id="know-search" placeholder="Suchen... z.B. 1040, Prothese, Gewährleistung" oninput="searchKnowledge()">
+        </div>
+        <div id="know-cats" class="admin-grid"></div>
+        <div id="know-results"></div>
+      </div>
+    </div>
+
+    <!-- COMMUNITY -->
+    <div id="panel-community" class="panel">
+      <div class="ph"><div><h2>Community-Wissen</h2><p>Von Nutzerinnen geteilte Dokumente</p></div>
+        <button class="btn-sm" onclick="showPanel('upload',document.querySelectorAll('.nb')[3])">+ Beitragen</button>
+      </div>
+      <div class="pb">
+        <div class="info-box"><strong>So wächst die Plattform:</strong> Jede Praxis kann eigene Abrechnungsbeispiele und Sonderfälle teilen. Der Assistent nutzt diese Informationen für alle Nutzerinnen.</div>
+        <div id="community-list"></div>
+      </div>
+    </div>
+
+    <!-- UPLOAD -->
+    <div id="panel-upload" class="panel">
+      <div class="ph"><div><h2>Dokument hochladen</h2><p>Teilen Sie Ihr Wissen mit der Community</p></div></div>
+      <div class="pb">
+        <div class="info-box"><strong>Rechtlich sicher:</strong> Nur fachliche Inhalte werden genutzt – Logos und Firmennamen werden vom KI-System ignoriert.</div>
+        <div class="field"><label>Titel</label><input id="up-title" type="text" placeholder="z.B. Prothesenreparatur – Sonderfall beides in einer Sitzung"></div>
+        <div class="field"><label>Kategorie</label>
+          <select id="up-cat"><option>BEMA</option><option>GOZ</option><option>Festzuschuss</option><option>Labor / BEL II</option><option>Gewährleistung</option><option>Prothetik</option><option>Chirurgie</option><option>Prophylaxe</option><option>Fortbildungs-Skript</option><option>Sonstiges</option></select>
+        </div>
+        <div class="field"><label>Datei</label>
+          <input type="file" id="up-file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" onchange="document.getElementById('up-fname').textContent=this.files[0]?.name||''">
+          <div id="up-fname" style="font-size:11px;color:var(--text3);margin-top:4px"></div>
+        </div>
+        <button class="btn-sm" onclick="doUpload()">Hochladen & Teilen</button>
+        <div id="up-msg" style="font-size:12px;color:var(--teal);margin-top:10px;display:none">✓ Erfolgreich hochgeladen!</div>
+      </div>
+    </div>
+
+    <!-- ADMIN: KATEGORIEN -->
+    <div id="panel-admin-cats" class="panel">
+      <div class="ph"><div><h2>⚙️ Kategorien verwalten</h2><p>Fachbereiche hinzufügen, bearbeiten, löschen</p></div>
+        <button class="btn-sm amber" onclick="openCatModal()">+ Neue Kategorie</button>
+      </div>
+      <div class="pb">
+        <div class="info-box">Kategorien entsprechen den <strong>Fachbereichen</strong> wie bei Daisy (BEMA, GOZ, Chirurgie etc.). Du kannst beliebig viele anlegen.</div>
+        <div id="admin-cats-grid" class="admin-grid"></div>
+      </div>
+    </div>
+
+    <!-- ADMIN: WISSENSBASIS -->
+    <div id="panel-admin-know" class="panel">
+      <div class="ph"><div><h2>⚙️ Wissensbasis verwalten</h2><p>Inhalte hinzufügen, bearbeiten, löschen</p></div>
+        <button class="btn-sm amber" onclick="openKnowModal()">+ Neuer Eintrag</button>
+      </div>
+      <div class="pb">
+        <div class="info-box">Hier fügst du <strong>dein Wissen</strong> ein: Abrechnungsregeln, Kombinierbarkeit, Sonderfälle, Tipps aus Fortbildungen. Die KI nutzt diese Einträge als Vorrangs-Wissen.</div>
+        <div class="search-bar"><input id="adm-know-search" placeholder="Einträge durchsuchen..." oninput="loadAdminKnow()"></div>
+        <div class="field" style="margin-bottom:10px">
+          <select id="adm-know-cat-filter" onchange="loadAdminKnow()">
+            <option value="">Alle Kategorien</option>
+          </select>
+        </div>
+        <div id="admin-know-list"></div>
+      </div>
+    </div>
+
+    <!-- ADMIN: NUTZER -->
+    <div id="panel-admin-users" class="panel">
+      <div class="ph"><div><h2>⚙️ Nutzer verwalten</h2><p>Abonnenten und ihre Rollen</p></div></div>
+      <div class="pb">
+        <div class="info-box">Hier siehst du alle registrierten Nutzerinnen. Du kannst Rollen ändern oder Zugänge sperren. Der <strong>Zugangscode</strong> für neue Registrierungen: <code style="color:var(--amber);font-family:var(--mono)" id="admin-code-display">–</code></div>
+        <div id="admin-users-list"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MODAL: KATEGORIE -->
+<div class="modal-bg" id="modal-cat">
+  <div class="modal">
+    <h3 id="modal-cat-title">Neue Kategorie</h3>
+    <div class="field"><label>Name der Kategorie</label><input id="cat-label" type="text" placeholder="z.B. Implantologie"></div>
+    <div class="field"><label>Beschreibung</label><input id="cat-desc" type="text" placeholder="Kurze Beschreibung des Fachbereichs"></div>
+    <div class="field"><label>Farbe</label><input id="cat-color" type="color" value="#00c9a7" style="height:36px;width:80px;cursor:pointer"></div>
+    <div class="field"><label>Buchstaben-Icon</label><input id="cat-icon" type="text" placeholder="z.B. I" maxlength="2" style="width:80px"></div>
+    <input type="hidden" id="cat-edit-id">
+    <div class="modal-actions">
+      <button class="btn-sm ghost" onclick="closeModals()">Abbrechen</button>
+      <button class="btn-sm amber" onclick="saveCat()">Speichern</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: WISSENSEINTRAG -->
+<div class="modal-bg" id="modal-know">
+  <div class="modal">
+    <h3 id="modal-know-title">Neuer Wissenseintrag</h3>
+    <div class="field"><label>Kategorie</label><select id="know-cat-sel"></select></div>
+    <div class="field"><label>Titel</label><input id="know-title" type="text" placeholder="z.B. BEMA 98a – Parodontalbehandlung"></div>
+    <div class="field"><label>Inhalt (Wissen, Regeln, Tipps)</label><textarea id="know-content" placeholder="Erkläre hier ausführlich: was wird abgerechnet, welche Punkte, was ist kombinierbar, welche Fristen gibt es, häufige Fehler..."></textarea></div>
+    <div class="field"><label>Tags (für Suche, kommagetrennt)</label><input id="know-tags" type="text" placeholder="z.B. 98a, parodontitis, par, upa"></div>
+    <input type="hidden" id="know-edit-id">
+    <div class="modal-actions">
+      <button class="btn-sm ghost" onclick="closeModals()">Abbrechen</button>
+      <button class="btn-sm amber" onclick="saveKnow()">Speichern</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let token = localStorage.getItem('db_token');
+let me = null;
+let chatHistory = [];
+let attachedFile = null;
+let attachedB64 = null;
+let allCategories = [];
+let currentEditCat = null;
+let currentEditKnow = null;
+
+async function api(path, opts={}) {
+  const r = await fetch(path, { headers: { 'Content-Type':'application/json', 'x-session-token': token||'' }, ...opts });
+  return r.json();
+}
+
+// AUTH
+function authTab(tab, btn) {
+  document.getElementById('auth-login').style.display = tab==='login'?'':'none';
+  document.getElementById('auth-register').style.display = tab==='register'?'':'none';
+  document.querySelectorAll('.tab-pill').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  hideAlerts();
+}
+function showErr(msg) { const el=document.getElementById('auth-err'); el.textContent=msg; el.style.display='block'; }
+function showOk(msg) { const el=document.getElementById('auth-ok'); el.textContent=msg; el.style.display='block'; }
+function hideAlerts() { document.getElementById('auth-err').style.display='none'; document.getElementById('auth-ok').style.display='none'; }
+
+async function doLogin() {
+  hideAlerts();
+  const username=document.getElementById('l-user').value.trim(), password=document.getElementById('l-pass').value;
+  if (!username||!password) return showErr('Bitte alle Felder ausfüllen');
+  const d = await api('/api/login',{method:'POST',body:JSON.stringify({username,password})});
+  if (d.error) return showErr(d.error);
+  token=d.token; me={name:d.name,role:d.role,username};
+  localStorage.setItem('db_token',token); localStorage.setItem('db_name',d.name); localStorage.setItem('db_role',d.role);
+  initApp();
+}
+
+async function doRegister() {
+  hideAlerts();
+  const name=document.getElementById('r-name').value.trim(), username=document.getElementById('r-user').value.trim(),
+        password=document.getElementById('r-pass').value, adminCode=document.getElementById('r-code').value.trim();
+  if (!name||!username||!password||!adminCode) return showErr('Bitte alle Felder ausfüllen');
+  if (password.length<6) return showErr('Passwort muss mindestens 6 Zeichen haben');
+  const d = await api('/api/register',{method:'POST',body:JSON.stringify({name,username,password,adminCode})});
+  if (d.error) return showErr(d.error);
+  showOk('✓ Konto erstellt! Bitte jetzt anmelden.');
+  authTab('login', document.querySelectorAll('.tab-pill')[0]);
+}
+
+async function doLogout() {
+  try { await api('/api/logout',{method:'POST'}); } catch {}
+  localStorage.clear(); token=null; me=null; chatHistory=[];
+  document.getElementById('login-screen').style.display='flex';
+  document.getElementById('app-screen').style.display='none';
+}
+
+async function initApp() {
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('app-screen').style.display='flex';
+  const name = me?.name || localStorage.getItem('db_name') || '?';
+  const role = me?.role || localStorage.getItem('db_role') || 'user';
+  document.getElementById('app-name').textContent = name;
+  document.getElementById('app-av').textContent = name.charAt(0).toUpperCase();
+  document.getElementById('app-role').textContent = role==='admin' ? '👑 Admin' : 'Pro · 29€/Mo';
+
+  // Show admin nav
+  if (role==='admin') {
+    ['admin-sep','nav-admin-cats','nav-admin-know','nav-admin-users'].forEach(id => {
+      const el=document.getElementById(id); if(el) el.style.display='';
+    });
+    document.getElementById('admin-code-display').textContent = '(in Render Env: ADMIN_CODE)';
+  }
+
+  allCategories = await api('/api/categories');
+  loadKnowledgePanel();
+  loadCommunity();
+}
+
+// PANELS
+function showPanel(id, btn) {
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  if (btn) btn.classList.add('active');
+  if (id==='admin-cats') loadAdminCats();
+  if (id==='admin-know') { loadAdminKnow(); populateCatSelects(); }
+  if (id==='admin-users') loadAdminUsers();
+  if (id==='knowledge') loadKnowledgePanel();
+  if (id==='community') loadCommunity();
+}
+
+// CHAT
+function handleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMsg();} }
+function autoR(el) { el.style.height='36px'; el.style.height=Math.min(el.scrollHeight,100)+'px'; }
+function handleFile(input) {
+  const file=input.files[0]; if(!file) return;
+  attachedFile=file;
+  document.getElementById('fname').textContent=file.name;
+  document.getElementById('fprev').style.display='flex';
+  const r=new FileReader(); r.onload=e=>{attachedB64=e.target.result.split(',')[1];}; r.readAsDataURL(file);
+}
+function clearFile() { attachedFile=null; attachedB64=null; document.getElementById('fprev').style.display='none'; document.getElementById('file-input').value=''; }
+function sendQ(q) { document.getElementById('chat-ta').value=q; sendMsg(); }
+
+function addMsg(role, html, src) {
+  const msgs=document.getElementById('msgs');
+  const d=document.createElement('div'); d.className='msg '+(role==='user'?'user':'ai');
+  const initials=role==='user'?(me?.name||'SIE').charAt(0).toUpperCase():'KI';
+  const avClass=role==='user'?'us':'ai';
+  d.innerHTML=`<div class="mav ${avClass}">${initials}</div><div><div class="bub">${html}</div>${src?'<div class="src">BEMA 2024 · GOZ · Festzuschüsse · BEL II</div>':''}</div>`;
+  msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight;
+}
+
+async function sendMsg() {
+  const ta=document.getElementById('chat-ta');
+  const text=ta.value.trim();
+  if(!text&&!attachedFile) return;
+  ta.value=''; ta.style.height='36px';
+  let html=text.replace(/\n/g,'<br>');
+  if(attachedFile) html+=(text?'<br>':'')+`<code>📎 ${attachedFile.name}</code>`;
+  addMsg('user',html,false);
+
+  let content;
+  if(attachedFile&&attachedB64){
+    const isImg=attachedFile.type.startsWith('image/');
+    const prompt=text||(isImg?'Analysiere dieses Bild und mache Abrechnungsvorschläge.':'Analysiere dieses Dokument und mache Abrechnungsvorschläge.');
+    content=isImg
+      ?[{type:'image',source:{type:'base64',media_type:attachedFile.type,data:attachedB64}},{type:'text',text:prompt}]
+      :[{type:'document',source:{type:'base64',media_type:'application/pdf',data:attachedB64}},{type:'text',text:prompt}];
+  } else { content=text; }
+
+  chatHistory.push({role:'user',content}); clearFile();
+
+  const msgs=document.getElementById('msgs');
+  const th=document.createElement('div'); th.className='msg ai';
+  th.innerHTML=`<div class="mav ai">KI</div><div class="thinking"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
+  msgs.appendChild(th); msgs.scrollTop=msgs.scrollHeight;
+
+  try {
+    const d=await api('/api/chat',{method:'POST',body:JSON.stringify({messages:chatHistory})});
+    th.remove();
+    const reply=d.content?.map(b=>b.text||'').join('')||d.error||'Keine Antwort.';
+    const fmt=reply.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\n/g,'<br>');
+    addMsg('ai',fmt,true);
+    chatHistory.push({role:'assistant',content:reply});
+  } catch { th.remove(); addMsg('ai','Verbindungsfehler.',false); }
+}
+
+// KNOWLEDGE PANEL
+async function loadKnowledgePanel() {
+  const cats=await api('/api/categories');
+  allCategories=cats;
+  const grid=document.getElementById('know-cats');
+  grid.innerHTML=cats.map(c=>`
+    <div class="cat-card" onclick="filterKnowledge('${c.id}','${c.label}')">
+      <div class="cc-icon" style="background:${c.color}">${c.icon||c.label.charAt(0)}</div>
+      <div class="cc-label">${c.label}</div>
+      <div class="cc-desc">${c.desc||''}</div>
+    </div>`).join('');
+  searchKnowledge();
+}
+
+async function filterKnowledge(catId, label) {
+  document.getElementById('know-search').value=label;
+  const items=await api(`/api/knowledge?categoryId=${catId}`);
+  renderKnowResults(items);
+}
+
+async function searchKnowledge() {
+  const q=document.getElementById('know-search').value.trim();
+  const items=await api(`/api/knowledge${q?`?q=${encodeURIComponent(q)}`:''}`);
+  renderKnowResults(items);
+}
+
+function renderKnowResults(items) {
+  const el=document.getElementById('know-results');
+  if(!items.length){el.innerHTML='<div style="color:var(--text3);font-size:12px;margin-top:10px">Keine Einträge gefunden.</div>';return;}
+  el.innerHTML=items.map(i=>{
+    const cat=allCategories.find(c=>c.id===i.categoryId);
+    return `<div class="row" style="cursor:pointer" onclick="sendQ('Erzähl mir alles über: ${i.title.replace(/'/g,"\\'")}')">
+      <div class="row-icon" style="background:${cat?.color||'#444'}">${cat?.icon||'?'}</div>
+      <div style="flex:1"><div class="row-title">${i.title}</div><div class="row-meta">${cat?.label||''} · ${i.date}</div></div>
+      <span class="pill teal">Im Chat öffnen</span>
+    </div>`;
+  }).join('');
+}
+
+// COMMUNITY
+async function loadCommunity() {
+  const docs=await api('/api/uploads');
+  const el=document.getElementById('community-list');
+  if(!docs.length){el.innerHTML='<div style="color:var(--text3);font-size:12px">Noch keine Community-Beiträge.</div>';return;}
+  el.innerHTML=docs.map(d=>`
+    <div class="row" style="cursor:pointer" onclick="sendQ('Informiere mich über das Thema: ${d.title.replace(/'/g,"\\'")}')">
+      <div class="row-icon" style="background:var(--purple)">D</div>
+      <div style="flex:1"><div class="row-title">${d.title}</div><div class="row-meta">${d.category} · ${d.uploader} · ${d.date}</div></div>
+      <span class="pill purple">Community</span>
+    </div>`).join('');
+}
+
+// UPLOAD
+async function doUpload() {
+  const title=document.getElementById('up-title').value.trim();
+  const cat=document.getElementById('up-cat').value;
+  const file=document.getElementById('up-file').files[0];
+  if(!title||!file){alert('Bitte Titel und Datei angeben');return;}
+  const fd=new FormData(); fd.append('file',file); fd.append('title',title); fd.append('category',cat);
+  const r=await fetch('/api/upload',{method:'POST',headers:{'x-session-token':token},body:fd});
+  if(r.ok){
+    document.getElementById('up-msg').style.display='block';
+    document.getElementById('up-title').value='';
+    document.getElementById('up-file').value='';
+    document.getElementById('up-fname').textContent='';
+  }
+}
+
+// ADMIN: CATEGORIES
+async function loadAdminCats() {
+  const cats=await api('/api/categories');
+  allCategories=cats;
+  document.getElementById('admin-cats-grid').innerHTML=cats.map(c=>`
+    <div class="cat-card">
+      <div class="cc-icon" style="background:${c.color}">${c.icon||c.label.charAt(0)}</div>
+      <div class="cc-label">${c.label}</div>
+      <div class="cc-desc">${c.desc||''}</div>
+      <div class="cc-actions">
+        <button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="openCatModal('${c.id}','${c.label.replace(/'/g,"\\'")}','${(c.desc||'').replace(/'/g,"\\'")}','${c.color}','${c.icon||''}')">Bearbeiten</button>
+        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteCat('${c.id}')">Löschen</button>
+      </div>
+    </div>`).join('');
+}
+
+function openCatModal(id,label,desc,color,icon) {
+  currentEditCat=id||null;
+  document.getElementById('modal-cat-title').textContent=id?'Kategorie bearbeiten':'Neue Kategorie';
+  document.getElementById('cat-label').value=label||'';
+  document.getElementById('cat-desc').value=desc||'';
+  document.getElementById('cat-color').value=color||'#00c9a7';
+  document.getElementById('cat-icon').value=icon||'';
+  document.getElementById('cat-edit-id').value=id||'';
+  document.getElementById('modal-cat').classList.add('open');
+}
+
+async function saveCat() {
+  const body={ label:document.getElementById('cat-label').value.trim(), desc:document.getElementById('cat-desc').value.trim(), color:document.getElementById('cat-color').value, icon:document.getElementById('cat-icon').value.trim() };
+  if(!body.label) return alert('Bitte Name eingeben');
+  if(currentEditCat) await api(`/api/categories/${currentEditCat}`,{method:'PUT',body:JSON.stringify(body)});
+  else await api('/api/categories',{method:'POST',body:JSON.stringify(body)});
+  closeModals(); loadAdminCats();
+}
+
+async function deleteCat(id) {
+  if(!confirm('Kategorie wirklich löschen?')) return;
+  await api(`/api/categories/${id}`,{method:'DELETE'});
+  loadAdminCats();
+}
+
+// ADMIN: KNOWLEDGE
+async function populateCatSelects() {
+  const cats=await api('/api/categories');
+  allCategories=cats;
+  const opts=cats.map(c=>`<option value="${c.id}">${c.label}</option>`).join('');
+  document.getElementById('know-cat-sel').innerHTML=opts;
+  document.getElementById('adm-know-cat-filter').innerHTML='<option value="">Alle Kategorien</option>'+opts;
+}
+
+async function loadAdminKnow() {
+  const q=document.getElementById('adm-know-search')?.value.trim()||'';
+  const catId=document.getElementById('adm-know-cat-filter')?.value||'';
+  let url='/api/knowledge?'; if(catId) url+=`categoryId=${catId}&`; if(q) url+=`q=${encodeURIComponent(q)}`;
+  const items=await api(url);
+  const el=document.getElementById('admin-know-list');
+  if(!items.length){el.innerHTML='<div style="color:var(--text3);font-size:12px">Keine Einträge. Legen Sie den ersten Eintrag an!</div>';return;}
+  el.innerHTML=items.map(i=>{
+    const cat=allCategories.find(c=>c.id===i.categoryId);
+    return `<div class="row">
+      <div class="row-icon" style="background:${cat?.color||'#444'}">${cat?.icon||'?'}</div>
+      <div style="flex:1"><div class="row-title">${i.title}</div><div class="row-meta">${cat?.label||''} · ${(i.tags||[]).join(', ')} · ${i.date}</div></div>
+      <div class="row-actions">
+        <button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="openKnowModal('${i.id}')">Bearbeiten</button>
+        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteKnow('${i.id}')">Löschen</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function openKnowModal(editId) {
+  currentEditKnow=editId||null;
+  document.getElementById('modal-know-title').textContent=editId?'Eintrag bearbeiten':'Neuer Wissenseintrag';
+  if(editId){
+    api('/api/knowledge').then(items=>{
+      const i=items.find(x=>x.id===editId);
+      if(i){
+        document.getElementById('know-cat-sel').value=i.categoryId||'';
+        document.getElementById('know-title').value=i.title||'';
+        document.getElementById('know-content').value=i.content||'';
+        document.getElementById('know-tags').value=(i.tags||[]).join(', ');
+        document.getElementById('know-edit-id').value=i.id;
+      }
+    });
+  } else {
+    document.getElementById('know-title').value='';
+    document.getElementById('know-content').value='';
+    document.getElementById('know-tags').value='';
+    document.getElementById('know-edit-id').value='';
+  }
+  document.getElementById('modal-know').classList.add('open');
+}
+
+async function saveKnow() {
+  const body={
+    categoryId: document.getElementById('know-cat-sel').value,
+    title: document.getElementById('know-title').value.trim(),
+    content: document.getElementById('know-content').value.trim(),
+    tags: document.getElementById('know-tags').value.split(',').map(t=>t.trim()).filter(Boolean)
+  };
+  if(!body.title||!body.content) return alert('Bitte Titel und Inhalt eingeben');
+  if(currentEditKnow) await api(`/api/knowledge/${currentEditKnow}`,{method:'PUT',body:JSON.stringify(body)});
+  else await api('/api/knowledge',{method:'POST',body:JSON.stringify(body)});
+  closeModals(); loadAdminKnow();
+}
+
+async function deleteKnow(id) {
+  if(!confirm('Eintrag wirklich löschen?')) return;
+  await api(`/api/knowledge/${id}`,{method:'DELETE'});
+  loadAdminKnow();
+}
+
+// ADMIN: USERS
+async function loadAdminUsers() {
+  const users=await api('/api/users');
+  document.getElementById('admin-users-list').innerHTML=users.map(u=>`
+    <div class="row">
+      <div class="av" style="width:30px;height:30px;flex-shrink:0">${u.name.charAt(0).toUpperCase()}</div>
+      <div style="flex:1"><div class="row-title">${u.name}</div><div class="row-meta">@${u.username}</div></div>
+      <span class="pill ${u.role==='admin'?'amber':'teal'}">${u.role==='admin'?'Admin':'Nutzer'}</span>
+      <div class="row-actions">
+        ${u.role!=='admin'?`<button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="makeAdmin('${u.username}')">Admin machen</button>`:''}
+        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteUser('${u.username}')">Löschen</button>
+      </div>
+    </div>`).join('');
+}
+
+async function makeAdmin(username) {
+  await api(`/api/users/${username}/role`,{method:'PUT',body:JSON.stringify({role:'admin'})});
+  loadAdminUsers();
+}
+
+async function deleteUser(username) {
+  if(!confirm(`Nutzer @${username} wirklich löschen?`)) return;
+  await api(`/api/users/${username}`,{method:'DELETE'});
+  loadAdminUsers();
+}
+
+function closeModals() {
+  document.querySelectorAll('.modal-bg').forEach(m=>m.classList.remove('open'));
+}
+document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModals();}));
+
+// INIT
+if(token) {
+  me={ name: localStorage.getItem('db_name')||'Nutzer', role: localStorage.getItem('db_role')||'user' };
+  initApp();
+}
+</script>
+</body>
+</html>
