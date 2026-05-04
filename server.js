@@ -684,10 +684,147 @@ BESONDERHEITEN IM PRAXISALLTAG:
   - Individuelle Gesundheitsleistungen (IGeL): NICHT erstattungsfähig, gehen auf eigene Kosten
   - Abrechnungsstelle: Heilfürsorge Bundespolizei, 53754 Sankt Augustin
 
+=== SOZIALHILFE-RAHMENVEREINBARUNG ZAHNÄRZTLICHE VERSORGUNG BADEN-WÜRTTEMBERG ===
+(Rahmenvereinbarung KZVen BW + Landkreistag/Städtetag/Landeswohlfahrtsverbände BW, gültig ab 01.01.2000, geändert ab 01.10.2025)
+
+ANSPRUCHSBERECHTIGTE:
+- Hilfeempfänger nach BSHG / SGB XII (§48 SGB XII) und SGB VIII (Jugendhilfe)
+- Anspruchsberechtigte auf Krankenversorgung nach §276 LAG
+- Behandlungsnachweis: Behandlungsausweis des Kostenträgers (Landkreis/Stadtkreis/Landeswohlfahrtsverband)
+
+BEHANDLUNGSAUSWEIS (§7 Rahmenvereinbarung, aktualisiert ab 01.10.2025):
+- Gültig für das Kalendervierteljahr der Ausstellung
+- Bei Fortdauer: neuer Ausweis je weiteres Kalendervierteljahr erforderlich
+- Patientenwechsel innerhalb Quartal: nur bei triftigem Grund
+- Ohne gültigen Ausweis: Privatvergütung möglich, Nachreichung binnen 10 Tagen → Rückerstattung
+- Notfall ohne Ausweis: formloser Kostenübernahmeantrag binnen 4 Wochen beim zuständigen Kostenträger
+- Ausweis gilt NICHT bei Arbeitsunfällen, Berufskrankheiten, Schülerunfällen
+- Neue Ausweismuster (ab 01.10.2025): für §48 SGB XII und für SGB VIII (stationäre Jugendhilfe) getrennt
+- SGB VIII-Ausweis gilt nur für Dauer der Gewährung stationärer Jugendhilfe
+
+VERGÜTUNG (§12 Rahmenvereinbarung):
+- Bemisst sich nach AOK Baden-Württemberg-Grundsätzen (BEMA Teil 1-5 + vereinbarte Punktwerte)
+- KCH (BEMA Teil 1): vierteljährliche Abrechnung über KZV
+- KBR (Teil 2), PAR (Teil 4), ZE (Teil 5): monatliche Abrechnung über KZV
+- KFO (BEMA Teil 3): Genehmigung des Kostenträgers VOR Behandlungsbeginn erforderlich
+- PAR (BEMA Teil 4): Parodontalstatus mit Genehmigung des Kostenträgers VOR Behandlungsbeginn
+- ZE (BEMA Teil 5): HKP mit Genehmigung des Kostenträgers VOR prothetischer Behandlung
+- Zahntechnische Leistungen (Zahnarzt): nach KZV-AOK-Leistungs-/Preisverzeichnis
+- Zahntechnische Leistungen (Labor): nach Zahntechniker-Innungen BW / AOK BW vereinbarte Preise
+- Zahlungsfrist der Kostenträger: 1 Monat nach Rechnungseingang
+- Berichtigungsanträge: bis 6 Monate nach Rechnungseingang möglich
+
+GENEHMIGUNGSPFLICHT:
+- KCH + KBR: KEINE vorherige Genehmigung erforderlich
+- KFO: Genehmigung durch Kostenträger VOR Behandlungsbeginn
+- PAR: Genehmigung durch Kostenträger VOR Behandlungsbeginn
+- ZE/Prothetik: Genehmigung durch Kostenträger VOR Behandlungsbeginn
+- Krankenhauspflege: Genehmigung durch Kostenträger
+
+BEHANDLUNGSRECHT UND PFLICHTEN:
+- Alle Vertragszahnärzte (KZV-zugelassen) sind zur Behandlung berechtigt
+- Behandlung: ausreichend, zweckmäßig, wirtschaftlich (kein Übermaß)
+- Freie Arztwahl für Patienten (Sprechstunde + Besuch)
+- Besuch: nur wenn Aufsuchen der Praxis unmöglich/unzumutbar
+- Mehrkosten bei weiterem Wegstrecke Besuch: Patient trägt selbst
+- Aufzeichnungen: min. 3 Jahre aufzubewahren (Röntgen: nach Röntgenverordnung)
+- Gutachter: KZV stellt Liste; Kostenträger erteilt Auftrag direkt; Gutachtergebühr nach AOK-Vereinbarung
+- Haftung KZV: rechnerische + gebührenordnungsmäßige Prüfung der Honorare
+- KZV-Beratung: Wirtschaftlichkeit der Behandlungs-/Verordnungsweise
+
+WICHTIG FÜR DIE PRAXIS – SOZIALHILFE-PATIENTEN BW:
+- Behandlungsausweis VOR Behandlung prüfen (Gültigkeitsquartal, etwaige Einschränkungsvermerke)
+- Einschränkende Vermerke des Kostenträgers auf Überweisung übertragen
+- Keine privaten Zuzahlungen vereinbaren (außer §7 Abs.3 oder ausdrücklicher Privatwunsch)
+- Taxi/Mietwagen: nur bei zwingenden medizinischen Gründen; Kostenträger entscheidet
+- Rückfragen/Anforderungen: immer Abrechnungsnummer angeben
+
+=== BUNDESWEHR-HEILFÜRSORGE – ZAHNÄRZTLICHE VERSORGUNG (A-860/13, Version 2, Stand 06.12.2021) ===
+
+RECHTSGRUNDLAGE:
+- Unentgeltliche truppenärztliche Versorgung (utV) nach §69a BBesG, §16 WSG, §22 USG i.V.m. §9 BwHFV
+- Mindeststandard: Leistungen nach SGB V
+- Freiwillige/Reservisten (≤6 Monate Dienstzeit): NUR akute Behandlung zur Wiederherstellung der Dienstfähigkeit
+- Prothetik: in ersten 4 Monaten und letzten 6 Monaten des Dienstverhältnisses nur bei Dienstfähigkeitsbedarf
+- Nach Dienstzeitende: keine Kostenübernahme mehr
+
+BEHANDLUNGSBERECHTIGUNG:
+- Grundsätzlich: Sanitätsstabsoffiziere Zahnarzt (SanStOffz Zahnarzt) in BW-Zahnärztl.Behandlungseinrichtungen
+- Zivile Zahnärzte: nur nach Überweisung durch zuständige ZahnärztlBehEinr
+- Weiterüberweisung durch zivile Zahnärzte: NICHT zulässig (nur mit Zustimmung BW-SanStOffz)
+- Vergütung zivil (BEMA-Basis): nach §75 Abs.3 Satz 2 SGB V wie Ersatzkassen | Abrechnung über KZV
+- Vergütung zivil (GOZ/GOÄ-Basis, genehmigungspflichtig): direkt mit BAPersBw Ref. VII 3.3, 15344 Strausberg
+
+BEHANDLUNGSPRIORITÄTEN (Reihenfolge):
+1. Notfall- und Schmerzbehandlung
+2. Eingehende zahnärztliche Untersuchung + Befunderhebung
+3. Individualprophylaktische Maßnahmen
+4. Chirurgische Versorgung
+5. Konservierende Versorgung
+6. Systematische PAR-Behandlung
+7. Prothetische Versorgung
+
+NICHT GENEHMIGUNGSPFLICHTIGE LEISTUNGEN (kein Antrag erforderlich):
+- Individualprophylaxe (IP1, IP2, IP4, IP5 BEMA) – ohne Altersbeschränkung
+- Chirurgische Behandlungen nach BEMA Teil 1
+- Konservierende Behandlung nach BEMA Teil 1
+- Füllungen HR1-HR4 (Schmelz-Dentin-Adhäsivtechnik Seitenzahn)
+- Klinische Funktionsanalyse GOZ 8000
+- Wiederherstellung Kronen/Brücken/Prothesen, Gebühren-Nr. K4, K6-K9 BEMA
+- Extraktion von Implantaten
+
+GENEHMIGUNGSPFLICHTIGE LEISTUNGEN (Antrag mit Heil- und Kostenplan Bw-2087 beim zuständigen SanStOffz BGZ):
+- Prothetik (Zahnersatz, Kronen, Suprakonstruktionen): Bw-2087 VOR Behandlung
+- Systematische PAR-Behandlung: Parodontalstatus Bw-2182 VOR Behandlung
+- Kieferorthopädie: nur bei Kieferanomalien die WÄHREND Dienstzeit entstanden sind (Verschlechterung!)
+- Implantate: nur bei Ausnahmeindikationen (Tumoroperationen, Trauma, angeborene Fehlbildungen, intakte Nachbarzähne Schaltlücke, Freiendlücke, atrophierter zahnloser Kiefer)
+- Funktionstherapeutische Leistungen (FAL/FTL): nur wenn Nichtbehandlung Verwendungsfähigkeit gefährdet
+- Aufbissbehelfe K1-K3: genehmigungspflichtig (Ausnahme K4, K6-K9)
+- Unterkieferprotrusionsschienen (UPS): bei Schlafapnoe, nur nach Schlafmediziner-Verordnung
+- Kieferorthopädisch-kieferchirurgische Dysgnathie-Behandlung
+- PZR im Zusammenhang mit PAR oder KFO (GOZ 1040): einmal genehmigungsfähig
+- GOZ/GOÄ-Leistungen außerhalb BEMA: vorher genehmigungspflichtig, max. 3,5-facher Satz
+
+VERBLENDGRENZEN (Kostenübernahme utV):
+- Bis Zahn 5 im Unterkiefer vestibulär
+- Bis Zahn 6 im Oberkiefer vestibulär
+- Überschreitung: nur zur hygienefähigen Brückengestaltung
+
+MEHRKOSTEN (Mehrkostenvereinbarung MKV Formular Bw-2074):
+- Bei Wunsch nach anderer Legierung/Werkstoff als medizinisch indiziert
+- Schriftliche MKV vor Behandlung, Aufrechnung gegen Bezüge (bei aktiven Soldaten)
+- Edelmetallfreie Legierungen erfüllen grundsätzlich die utV-Anforderungen
+
+PROTHETIK BESONDERHEITEN:
+- Festsitzende Versorgung bevorzugt (besonders bei Auslandseinsatz)
+- Brücken für Schaltlücken: Standard; Implantate nur in begründeten Fällen
+- Freiendbrücken: max. Prämolarenbreite, min. 2 verblöckte Pfeiler
+- Keine Metallbasis Totalprothese (außer Torus palatinus/Exostosen)
+
+KFO BESONDERHEITEN:
+- Nur wenn Kieferanomalie WÄHREND Dienstzeit entstanden/verschlechtert
+- Gutachter (Fachzahnarzt KFO) wird durch SanStOffz BGZ hinzugezogen
+- Neue Behandlung: Nachweis Verschlechterung seit Diensteintritt erforderlich
+- Bei Einstellung mit laufender KFO: Kostenübernahme in genehmigter Form bis Dienstzeitende
+- PZR (GOZ 1040) im Rahmen KFO: 1x/Halbjahr genehmigungsfähig
+
+PAR BESONDERHEITEN:
+- G-BA Richtlinie + S3-Leitlinie AWMF 083-043 sind maßgeblich
+- Parodontalstatus Bw-2182 mit Röntgen, API, SBI VOR Behandlung
+- UPT-Frequenz nach Grad: A=1x/Jahr, B=2x/Jahr, C=3x/Jahr (2,5 Jahre Regelzeitraum)
+- Nach UPT: weitergehende Nachsorge GOZ/GOÄ genehmigungspflichtig
+
+ABRECHNUNG ZIVILE LEISTUNGEN BW:
+- BEMA-Leistungen: über zuständige KZV
+- GOZ/GOÄ-Leistungen: direkt an BAPersBw Ref. VII 3.3 Heilfürsorgeabrechnung, Prötzeler Chaussee 25, 15344 Strausberg
+- Zahntechnische Sonderleistungen außerhalb BEL II: VOR Behandlung beantragen (auf Basis BEB)
+
+KOSTENTRÄGER-NUMMER BUNDESWEHR: 00 9520 9
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
-Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin.`;
+Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin. Bei Fragen zur Sozialhilfe/Jugendhilfe BW weise auf Behandlungsausweis und Genehmigungspflichten hin. Bei Fragen zur Bundeswehr-Heilfürsorge weise auf utV-Besonderheiten, Genehmigungspflichten und Verblendgrenzen hin.`;
 
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
