@@ -466,7 +466,7 @@ BEV Befundevaluation (3-6 Monate nach AIT bzw. CPT):
   Dokumentation: Sondierungstiefen, Sondierungsblutung, Lockerung, Furkation, Röntgen, Knochenabbau %/Alter | NICHT neben Ä1
 CPT Chirurgische Therapie (offenes Vorgehen, Lappenop., nach AIT, bei ≥6mm):
   a) je einwurzeliger Zahn: 22 Pkt
-  b) je mehrwurzeliger Zahn: 34 Pkt
+  b) je mehrwurzelig Zahn: 34 Pkt
   105, 107, 107a während/danach abgegolten
 UPT Unterstützende Parodontitistherapie (2-Jahres-Zeitraum, Verlängerung max. 6 Monate):
   a) Mundhygienekontrolle: 18 Pkt
@@ -555,10 +555,139 @@ HKP VOR Behandlung unterschrieben + genehmigt!
 === GEWÄHRLEISTUNG ===
 Füllungen GKV: 2 Jahre | Zahnersatz mit Festzuschuss: 5 Jahre (§136a SGB V) | Prothesen GKV: 5 Jahre | Implantate: keine gesetzliche Frist | GOZ/Privat: 2 Jahre (§634 BGB)
 
+=== ZULASSUNGSVERORDNUNG FÜR VERTRAGSZAHNÄRZTE (Zahnärzte-ZV, Stand 20.07.2021) ===
+
+ZAHNARZTREGISTER (§§1-10):
+- Jede KZV führt ein Zahnarztregister für ihren Zulassungsbezirk
+- Eintragungsvoraussetzungen: Approbation als Zahnarzt + mindestens 2-jährige Vorbereitungszeit
+- Vorbereitungszeit: min. 6 Monate als Assistent/Vertreter eines Kassenzahnarztes
+- EU-Zahnärzte: Vorbereitungszeit entfällt bei anerkanntem EU-Ausbildungsnachweis
+- KZBV führt das Bundeszahnarztregister
+
+ZULASSUNG (§§17-25):
+- Antrag schriftlich beim Zulassungsausschuss, Angabe des gewünschten Vertragszahnarztsitzes
+- Dem Antrag beizufügen: Auszug Zahnarztregister, Bescheinigungen über Tätigkeiten, Lebenslauf, polizeiliches Führungszeugnis, Erklärung über Abhängigkeiten, Berufshaftpflichtversicherungsnachweis
+- Zulassung verpflichtet zur vollzeitigen Tätigkeit (§19a) – Halbzulassung möglich auf Antrag
+- Vertragszahnarzt muss am Vertragszahnarztsitz Sprechstunden halten
+- Zweigpraxen an weiteren Orten möglich wenn: Verbesserung Versorgung + keine Beeinträchtigung Hauptpraxis
+
+RUHEN/ENTZUG/ENDE DER ZULASSUNG (§§26-28):
+- Ruhen: bei Erfüllung der Voraussetzungen nach §95 Abs.5 SGB V
+- Entzug: bei Voraussetzungen nach §95 Abs.6 SGB V (von Amts wegen)
+- Verzicht: wirksam nach Ende des folgenden Kalendervierteljahrs
+
+ERMÄCHTIGUNG (§§31-31a):
+- Zulassungsausschüsse können weitere Zahnärzte ermächtigen bei Unterversorgung oder besonderem Versorgungsbedarf
+- Krankenhauszahnärzte können ermächtigt werden bei besonderen Kenntnissen
+
+BERUFSAUSÜBUNGSGEMEINSCHAFT (§33):
+- Örtliche BAG: gemeinsamer Vertragszahnarztsitz, alle zugelassenen Leistungserbringer
+- Überörtliche BAG: unterschiedliche Sitze möglich, Versorgungspflicht je Sitz muss erfüllt sein
+- Vorherige Genehmigung des Zulassungsausschusses erforderlich
+
+VERTRETER/ASSISTENTEN (§32):
+- Vertretung bei Krankheit/Urlaub/Fortbildung/Wehrübung: max. 3 Monate in 12 Monaten
+- Vertretung bei Entbindung: bis 12 Monate
+- Vertretungsdauer >1 Woche → Meldung an KZV
+- Assistent darf nicht der Praxisvergrößerung dienen
+
+GEBÜHREN ZULASSUNGSVERFAHREN (§46):
+- Eintragung Zahnarztregister: 100€
+- Antrag auf Zulassung: 100€
+- Sonstige Anträge: 120€
+- Widerspruch: 200€
+- Nach erteilter Zulassung (Verwaltungsgebühr): 400€
+- In Unterversorgungsgebieten: keine Gebühren
+
+ZULASSUNGSAUSSCHUSS (§§34-35):
+- 6 Mitglieder: je 3 Vertreter Zahnärzte + Krankenkassen
+- Amtsdauer: 4 Jahre
+- Berufungsausschuss: zusätzlich Vorsitzender mit Befähigung zum Richteramt
+
+=== BUNDESPOLIZEI-HEILFÜRSORGE (BPolHfV Stand 22.05.2014 + VVBPolHfV Stand 01.04.2017) ===
+
+ANSPRUCHSBERECHTIGTE:
+- Polizeivollzugsbeamte (PVB) der Bundespolizei mit Besoldungsanspruch
+- KEIN Wahlrecht zwischen Heilfürsorge und Beihilfe (Ausnahme: auslaufende Übergangsregelung §80 BBesG)
+- Familienangehörige haben KEINEN Anspruch auf Heilfürsorge (nur ggf. Beihilfe)
+- PVB sind KEINE Privatpatienten – private Vereinbarungen gehen auf eigene Kosten
+
+HEILFÜRSORGEKARTE (HfK):
+- Allgemeine HfK: für PVB in Dienststellen ohne eigenen polizeiärztlichen Dienst (für alle Heilfürsorgeleistungen)
+- HfK-Z (Zahnarzt-Karte): für alle übrigen PVB – NUR für zahnärztliche Behandlungen
+- HfK-Z darf NICHT beim Hausarzt/Facharzt/Klinik vorgelegt werden
+- Fehlende HfK: innerhalb 10 Tagen nachreichen, sonst Privatvergütung möglich
+- Bei Verlust/Defekt: Überweisungsschein beim Bundespolizeipräsidium Ref.83, 53754 Sankt Augustin
+
+ZAHNÄRZTLICHE BEHANDLUNG (§8 BPolHfV + Nr.8 VVBPolHfV):
+Regelversorgung:
+  - Volle Übernahme der tatsächlichen Kosten der Regelversorgung (§56 SGB V)
+  - KEIN Bonus-System (§55 Abs.1 Sätze 3-7 SGB V gilt nicht)
+  - Mehrkosten für Edelmetall/Reinmetall vs. NEM: gehen auf Kosten des PVB
+  - Abrechnung über KZV mit Abrechnungsstelle Heilfürsorge
+
+Gleichartiger Zahnersatz:
+  - Doppelter Festzuschuss (max. tatsächliche Kosten)
+  - Mehrkosten für Edelmetall: gehen auf Kosten des PVB
+  - Abrechnung über KZV
+
+Andersartiger Zahnersatz:
+  - Doppelter Festzuschuss (max. tatsächliche Kosten)
+  - Zahnarzt rechnet DIREKT mit PVB ab (NICHT über KZV)
+  - PVB reicht Teil 1 HKP + Eingliederungsdatum + Arztunterschrift + Rechnung + Bankverbindung bei Ref.83 ein
+
+Wichtige Hinweise Zahnersatz:
+  - HKP (Teil 1+2) VOR Behandlung einreichen und genehmigen lassen bei Ref.83, Sankt Augustin
+  - Ausnahmen ohne vorherige Genehmigung: Befunde 6.0-6.10, 7.3, 7.4, 7.7, 1.4, 1.5 der Festzuschuss-Richtlinie
+  - Gutachterverfahren nach EKVZ-Bestimmungen
+  - Abrechnungsgrundlage Zahntechnik Regelversorgung: BEL-II
+
+Professionelle Zahnreinigung (PZR):
+  - 1x pro Kalenderjahr auf Heilfürsorgekosten
+  - Abrechnung: GOZ Nr. 1040, direkt vom Zahnarzt mit PVB
+  - PVB zahlt selbst, beantragt Erstattung mit Vordruck BPOL 8 10 001 bei Abrechnungsstelle Heilfürsorge
+  - Für PVB unter 18 Jahren: PZR zusätzlich zu IP1-IP5
+
+Kieferorthopädie:
+  - Nur bei schweren Kieferanomalien (Abschnitt B Nr.4 der KFO-Richtlinien)
+  - KFO muss vor Einstellung in die Bundespolizei abgeschlossen sein
+  - Abrechnung über KZV
+
+Systematische PAR-Behandlung:
+  - Erfordert vorherige Genehmigung
+  - Gutachterverfahren möglich
+
+ZUZAHLUNGEN (analog SGB V):
+  - Arznei-/Verbandmittel: 10%, min. 5€, max. 10€
+  - Heilmittel: 10% + 10€ je Verordnung
+  - Hilfsmittel: 10%, min. 5€, max. 10€
+  - Krankenhausbehandlung: 10€/Tag, max. 28 Tage/Jahr
+  - Medizinische Rehabilitation: 10€/Tag
+  - Fahrkosten: 10%, min. 5€, max. 10€
+
+KRANKENHAUSBEHANDLUNG:
+  - Anspruch auf Zweibettzimmer: Eigenanteil 14,50€/Nacht
+  - Wahlärztliche Leistungen möglich (KEINE privaten Chefarzt-Sätze nach GOÄ!)
+  - Chefarzt-/Einbettzimmer: privat auf eigene Kosten
+
+GENEHMIGUNGSPFLICHTIGE LEISTUNGEN:
+  - Zahnersatz (HKP) → Ref.83, Bundespolizeipräsidium, 53754 Sankt Augustin
+  - Systematische PAR-Behandlung → Ref.83
+  - Kieferorthopädie → Ref.83
+  - Rehabilitation → Ref.83
+  - Stationäre Behandlung bei Auslandsaufenthalt → Ref.83
+  - Hilfsmittel über 500€ oder nicht im Hilfsmittelverzeichnis → Ref.83 (bei HfK-Inhabern)
+
+BESONDERHEITEN IM PRAXISALLTAG:
+  - PVB mit allgemeiner HfK: behandeln wie GKV-Patient, Kassenvordrucke verwenden
+  - PVB mit HfK-Z: nur zahnärztliche Behandlung, Überweisungen nach Polizeiarzt-Vordrucken
+  - Individuelle Gesundheitsleistungen (IGeL): NICHT erstattungsfähig, gehen auf eigene Kosten
+  - Abrechnungsstelle: Heilfürsorge Bundespolizei, 53754 Sankt Augustin
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
-Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin.`;
+Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin.`;
 
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
