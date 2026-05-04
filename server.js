@@ -1004,10 +1004,183 @@ ABRECHNUNG:
 - GOZ/GOÄ: BAPersBw Ref. VII 3.3, Prötzeler Chaussee 25, 15344 Strausberg
 - KOSTENTRÄGER-NUMMER BUNDESWEHR: 00 9520 9
 
+=== FZ-KOMPENDIUM KZBV (Stand 01.01.2026) – HINWEISE & BERECHNUNGSBEISPIELE ===
+
+DREI FORMEN DES ZAHNERSATZES:
+- Regelversorgung: KK trägt Festzuschuss (60%/70%/75%/100%). Zahnarzt rechnet zahnärztlichen Anteil über KZV ab, zahntechnischen Anteil über KZV (BEL II).
+- Gleichartiger Zahnersatz: Versicherte wählen anderes Material/Methode, aber gleiche Versorgungsform. HALBER Festzuschuss. Zahnarzt rechnet zahnärztliche Mehrleistungen DIREKT mit Patient ab, GKV-Anteil über KZV.
+- Andersartiger Zahnersatz: Wechsel der Versorgungsform (z.B. Brücke statt Prothese bei Freiendsituation). KEIN Festzuschuss. Vollständige Privatrechnung an Patient.
+- Suprakonstruktionen: FZ richtet sich nach Befundsituation VOR Implantation (was wäre ohne Implantat die Regelversorgung?). Für Implantate selbst, Implantataufbau, implantatbedingte Verbindungselemente: KEIN FZ!
+
+HKP-GRUNDREGELN:
+- HKP IMMER vor Behandlungsbeginn – mit Patientenunterschrift!
+- Genehmigung durch KK, bevor begonnen wird
+- Änderungen: bei Befundänderung neuer HKP erforderlich, Nachgenehmigung beantragen
+- Gültigkeitsdauer: 6 Monate (nach §87 Abs.1a SGB V)
+- Befundkürzel: ww = weitgehend zerstört | ur = unzureichende Retention | E = vorhanden | f = fehlt | B = Brückenanker | TV = Teleskopkrone | TP = Teleskopprothese
+
+WICHTIGE INTERPRETATIONEN (KZBV/GKV-Spitzenverbände, Stand 25.05.2005):
+
+1. Abrasionsgebiss + Befund 1.1:
+   - FZ 1.1 ansetzbar wenn wegen starker Abnutzung Pulpaschutz durch Krone notwendig (Befundkürzel "ww")
+   - Hinweis "Abrasionsgebiss" in Bemerkungsfeld eintragen
+   - Begründung: Befundbeschreibung zu 1.1 (weitgehende Zerstörung klinische Krone) trifft auch beim Abrasionsgebiss zu
+
+2. Überkronung zur Prothesen-Abstützung + Befund 1.1:
+   - 1.1 ansetzbar AUCH wenn Zahn NICHT weitgehend zerstört, aber unzureichende Retention für Prothesen-Halteelemente
+   - Befundkürzel "ur" (unzureichende Retention) eingeführt – ergänzt das bisherige "ww"
+   - Indikation: wenn Abstützung/Retention auf andere Weise nicht möglich
+
+3. Zusätzlicher Pfeilerzahn/Brückenanker (nicht lückenangrenzend) + Befund 1.1:
+   - Bei Notwendigkeit eines weiteren Pfeilers zur verbesserten Stabilität/Retention einer Brücke: Befund 1.1 mit Kürzel "ur" ansetzbar
+   - Verblockung mit Brücke ändert NICHT die Versorgungsform
+   - Verblockter Zahn wird abrechnungstechnisch als Einzelkrone (Befund 1.1) gewertet
+
+4. Freiendbrücke – Versorgungsform:
+   - Wegfall der spezifischen Nennung von Freiendbrücken in ZE-RL bedeutet NICHT, dass sie keine Regelversorgung sind
+   - Zahnbegrenzte Lücke (Befunde 2.1-2.5): Freiendbrücke = Regelversorgung (oder gleichartig bei Verblendung außerhalb Grenzen)
+   - Freiendsituation (Befund 3.1, Regelversorgung = Modellgussprothese): Freiendbrücke = ANDERSARTIGER ZE (Versorgungsformwechsel!)
+   - Nicht direkt lückenangrenzender Pfeilerzahn bei Freiendbrücke = ebenfalls Regelversorgung (91a/c)
+
+5. Zahnwanderung/Lückenschluss:
+   - Topografische Lage im Kiefer ist entscheidend für HKP-Eintragung
+   - Beispiel: Zahn 5 steht an Stelle von Zahn 6 → im HKP: Zahn 6 = vorhanden, Zahn 5 = fehlt
+   - Verblendzuschüsse 1.3/2.7 richten sich nach topografischer Lage (nicht nach Zahnbezeichnung)
+
+6. Inlaybrücken:
+   - Partner im G-BA haben Inlaybrücken NICHT als anerkannte Methode bezeichnet
+   - Folge: KEINE Befunde für Festzuschüsse ansetzbar
+
+7. Teleskopversorgung + Brücke (Befund 3.2 + 2.1/2.2 am gleichen Zahn):
+   - Befunde 2.1/2.2 können bei Notwendigkeit einer Teleskopkrone NICHT zusätzlich zu 3.2 und 3.1 angesetzt werden
+   - Gilt bei Fehlen eines oder zweier nebeneinander fehlender seitlicher Schneidezähne
+
+8. Klammerverankerte Kunststoffprothese (unsichere Prognose Restzähne / Kinderprothese):
+   - Entspricht BEFUNDKLASSE 5 (Interimsprothese) – unabhängig von Art der Klammern
+
+9. Langzeitprovisorium bei Brücken:
+   - Indikationen für provisorische Brücken sind besonders kritisch zu prüfen (Richtlinienänderungen möglich)
+
+10. Auffüllen Sekundärteleskop nach Extraktion:
+    - Befund 6.1 | Regelversorgung | BEMA 100a
+
+11. Löten perforiertes Sekundärteleskop:
+    - Befund 6.8 | Regelversorgung | BEMA 24a
+
+12. Wiederherstellung Verblendung Rückenschutzplatte:
+    - Befund 6.3 (Maßnahmen im gegossenen Metallbereich) je Prothese
+
+13. Wiedereingliederung Krone (mit oder ohne Laborleistung):
+    - Befund 6.8 ansetzbar – KEINE Differenzierung ob mit/ohne Labor
+    - BEMA 24a bzw. 95a/b
+
+14. Erweiterung Prothese um gebogene Retention:
+    - Ohne Lötung: Befund 6.4 (Kunststoffbereich)
+    - Mit Lötung: Befund 6.5 (gegossener Metallbereich)
+
+15. Komposit-Vollverblendung bei festsitzendem ZE:
+    - G-BA hat dies NICHT als anerkannte Methode bezeichnet
+    - Folge: KEIN FZ ansetzbar für Komposit-Vollverblendungen bei festsitzendem ZE
+    - AUSNAHME: Vollverblendung Sekundärteleskope mit Komposit/Kunststoff ist statthaft → gleichartiger ZE
+
+KOMBINIERBARKEIT DER BEFUNDE (Gemeinsame Erläuterungen G-BA/KZBV, Stand 16.11.2006 + Ergänzungen):
+
+GRUNDPRINZIP:
+- Befunde sind nebeneinander ansetzbar wenn sie UNABHÄNGIG voneinander festgestellt werden
+- Im selben Kiefer kann gleicher Befund mehrfach ansetzbar sein (z.B. mehrere ww-Zähne)
+- Im selben Kiefer können verschiedene Befunde nebeneinander auftreten
+- Am selben Zahn können verschiedene Befunde gleichzeitig auftreten (z.B. 1.1 + 1.4/1.5)
+- Nicht aufgeführte Kombinationen sind NICHT ansetzbar
+
+VERBLEND-BEFUNDE 1.3 / 2.7 / 4.7:
+- 1.3 je Einzelkrone im Verblendbereich kombinierbar mit 1.1
+- 2.7 je Ankerkrone und je Brückenzwischenglied im Verblendbereich kombinierbar mit 2.1, 2.2, 2.3, 2.4, 2.5, 2.6
+- 4.7 je Teleskopkrone/Sekundärteil im Verblendbereich kombinierbar mit 3.2, 4.6, 6.10
+- 1.3/2.7/4.7 richten sich in ihrer Kombinierbarkeit nach 1.1/2.1-2.6/3.2/4.6/6.10
+
+BEFUND 6.4.1:
+- Nur in Verbindung mit 6.4 ansetzbar
+- Bei Erweiterung um NUR EINEN Zahn: nur 6.4 (nicht 6.4.1)
+- Bei Erweiterung um weitere Zähne: je weiterem Zahn 6.4.1
+
+BEFUND 6.5.1:
+- Nur in Verbindung mit 6.5 ansetzbar
+- Bei Erweiterung um NUR EINEN Zahn: nur 6.5 (nicht 6.5.1)
+- Bei Erweiterung um weitere Zähne: je weiterem Zahn 6.5.1
+
+INTERIMSPROTHESEN (Befundklasse 5):
+- Nur in begründeten Einzelfällen kombinierbar mit Befundklassen 1 und 6
+- Vorrang: endgültige Versorgung (Wirtschaftlichkeitsgebot)
+
+SUPRAKONSTRUKTIONEN (Befundklasse 7):
+- 7.2 kombinierbar mit 1.3 (Verblendzuschuss Krone) ODER 2.7 (Verblendzuschuss Brückenanker/-glied) je nach Art der Suprakonstruktion
+- 7.5 erfasst alle Implantate + natürliche Zähne die zur Verankerung dienen. Kombination mit 7.1/7.2 oder BK 1/2 nur bei weiteren, NICHT verankerenden Implantaten/Zähnen
+- 7.6 nur mit 7.5, atrophierter zahnloser Kiefer, max. 4x je Kiefer, je implantatgetragenem Konnektor
+
+REPARATUREN / WIEDERHERSTELLUNGEN (BK 6, Befunde 7.3, 7.4, 7.7):
+- Grundsatz: BK 6 und 7.3/7.4/7.7 nur UNTEREINANDER kombinierbar
+- Ausnahme: gleichzeitige Neuversorgung auf demselben HKP → dann auch Kombinationen mit anderen BK möglich (siehe Anlage 3 Kombitabelle)
+
+TEILLEISTUNGEN (BK 8):
+- Wenn Befunde teils versorgt, teils noch nicht: FZ nach BK 8 mit FZ anderer BK kombinierbar
+
+KOMBITABELLE 1 – MÖGLICHE KOMBINATIONEN (Befundklassen 1-4, Befunde 7.1/7.2/7.5, Stand 01.01.2014):
+X = im selben Kiefer | O = am selben Zahn
+
+1.1 ww kombinierbar mit: 1.2(X), 1.4(XO), 1.5(XO), 2.1(X), 2.2(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.2/4.4(X), 4.5(X), 4.6(XO), 4.8(X), 4.9(X), 7.1(X), 7.2(X), 7.5(X³)
+1.2 pw kombinierbar mit: 1.1(X), 1.4(XO), 1.5(XO), 2.1(X), 2.2(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 4.6(XO), 4.8(X), 4.9(X), 7.1(X), 7.2(X), 7.5(X³)
+1.4 Stift konf. kombinierbar mit: 1.1(XO), 1.2(XO), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X), 3.2(XO), 4.1/4.3(X), 4.5(X), 4.6(XO), 4.8(X), 4.9(X), 7.1(X), 7.2(X), 7.5(X³)
+1.5 Stift gegoss. kombinierbar mit: 1.1(XO), 1.2(XO), 1.4(X), 2.1(X), 2.2(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X), 3.2(XO), 4.1/4.3(X), 4.5(X), 4.6(XO), 4.8(X), 4.9(X), 7.1(X), 7.2(X), 7.5(X³)
+2.1 Lücke 1 Zahn kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.2(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X²), 3.2(X²), 4.1/4.3(X), 4.5(X), 7.1(X), 7.2(X), 7.5(X³)
+2.2 Lücke 2 Zähne kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.3(X), 2.4(X), 2.5(X), 2.6(X), 3.1(X²), 3.2(X²), 4.1/4.3(X), 4.5(X), 7.1(X), 7.2(X), 7.5(X³)
+2.3 Lücke 3 Zähne kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.4(X), 2.5(X), 2.6(X), 3.2(X²), 7.1(X), 7.2(X)
+2.4 Lücke 4 Zähne kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.5(X)
+2.5 weitere Lücke kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.4(X), 2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X)
+2.6 disparallele Pfeiler kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.5(X), 3.1(X), 3.2(X²), 4.1/4.3(X²), 4.5(X)
+3.1 Lückensit.II kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X²), 2.2(X²), 2.5(X²), 2.6(X), 3.2(X), 4.1/4.3(X)
+3.2 TK kombinierbar mit: 1.1(X), 1.2(X), 1.4(XO), 1.5(XO), 2.1(X²), 2.2(X²), 2.3(X²), 2.6(X), 3.1(X), 4.1/4.3(X), 4.5(X), 4.6(X)
+4.1/4.3 Deckpr. kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.5(X), 2.6(X²), 3.1(X), 3.2(X), 4.5(X), 4.6(X)
+4.2/4.4 zahnlos Pr. kombinierbar mit: 4.5(X), 4.9(X)
+4.5 Metallbasis kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.6(X), 3.2(X), 4.1/4.3(X), 4.6(X), 4.8(X), 4.9(X), 7.5(X⁵)
+4.6 TK zu 4.1/4.3 kombinierbar mit: 1.1(X), 1.4(XO), 1.5(XO), 3.2(X), 4.1/4.3(X), 4.5(X), 4.8(X⁴), 4.9(X)
+4.8 Wurzelstiftkappe kombinierbar mit: 1.1(X), 1.2(X), 4.5(X), 4.6(X⁴), 4.9(X)
+4.9 Stützstiftreg. kombinierbar mit: 1.1(X), 1.2(X), 4.2/4.4(X), 4.5(X), 4.6(X), 4.8(X)
+7.1 Einzelimpl. kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.5(X), 2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 7.2(X), 7.5(X³)
+7.2 kombinierbar mit: 1.1(X), 1.2(X), 1.4(X), 1.5(X), 2.1(X), 2.2(X), 2.3(X), 2.5(X), 2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 7.1(X), 7.5(X³)
+7.5 Proth. kombinierbar mit: 1.1(X³), 1.2(X³), 1.4(X³), 1.5(X³), 2.1(X³), 2.2(X³), 4.5(X⁵), 7.1(X³), 7.2(X²³)
+
+Fußnoten Kombitabelle 1:
+² = nur bei beidseitiger Freiendsituation und maximal 2 nebeneinander fehlenden OK-Schneidezähnen
+³ = nur unter Bedingungen "Erneuerung von Suprakonstruktionen" kombinierbar
+⁴ = nur bei Reparaturen
+⁵ = nur bei Vorliegen der Zahnersatz-Richtlinie Nr. 36-Voraussetzungen (Metallbasis)
+
+KOMBITABELLE 2 – KOMBINATIONEN BEI WIEDERHERSTELLUNGEN/ERNEUERUNGEN (BK 6, Befunde 7.3/7.4/7.7, Stand 06.11.2016):
+X = im selben Kiefer | O = am selben Zahn
+
+6.0 kombinierbar mit: 6.1(XXX), 6.2(XXX)
+6.1 kombinierbar mit: 6.0(XXX), 6.2(XXX)
+6.2 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(X), 2.1-2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 4.6(X), 4.8(X), 5.1-5.3(X), 6.3(XXX), 6.4(XXX), 6.5(XXX)
+6.3 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(X), 2.1-2.6(X), 3.2(X), 4.6(X), 6.2(XXX), 6.4(XX), 6.5(XXX)
+6.4 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(X), 2.1-2.6(X), 3.2(X), 4.6(X), 6.2(XXX), 6.3(XX), 6.5(XXX)
+6.5 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(X), 2.1-2.6(X), 3.2(X), 4.6(X), 6.2(XXX), 6.3(XXX), 6.4(XXX)
+6.6 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(X), 2.1-2.6(X), 3.2(X), 4.6(X), 6.7(XX), 6.8(X)
+6.7 kombinierbar mit: 6.6(XXX), 6.8(X)
+6.8 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(XO), 2.1-2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 4.6(X), 4.8(X), 5.1-5.3(X), 6.6(X), 6.7(X), 6.9(X), 6.10(X), 7.3(X), 7.4(X), 7.7(X)
+6.9 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(XO), 2.1-2.6(X), 3.1(X), 3.2(X), 4.1/4.3(X), 4.5(X), 4.6(X), 4.8(X), 5.1-5.3(X), 6.8(X), 6.10(XO), 7.3(X)
+6.10 kombinierbar mit: 1.1/1.2(X), 1.4/1.5(XO), 2.1-2.6(X), 3.2(X), 4.6(X), 6.8(XX), 6.9(X), 7.4(X), 7.7(XX)
+7.3 kombinierbar mit: 6.8(X), 6.9(X), 7.4(X), 7.7(X)
+7.4 kombinierbar mit: 6.8(X), 6.10(X), 7.3(X), 7.7(X)
+7.7 kombinierbar mit: 6.8(XX), 6.10(X), 7.3(X), 7.4(X), 7.5(X²³)
+
+ERGÄNZUNG KOMBITABELLE (KZBV/GKV-Spitzenverband, 24.09.2013, ab 01.01.2014):
+- Befund 4.5 (Metallbasis) + Befund 7.5 (erneuerungsbedürftige implantatgetragene Prothese) sind KOMBINIERBAR
+- Voraussetzung: Zahnersatz-Richtlinie Nr. 36 (atrophierter Kiefer, Torus palatinus, Exostosen)
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
-Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Festzuschuss-Fragen: immer alle 4 Stufen (60%/70%/75%/100%) nennen und auf den neuen Stand ab 01.01.2026 hinweisen. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin. Bei Fragen zur Sozialhilfe/Jugendhilfe BW weise auf Behandlungsausweis und Genehmigungspflichten hin. Bei Fragen zur Bundeswehr-Heilfürsorge weise auf BwHFV-Rechtsgrundlage, utV-Besonderheiten, Genehmigungspflichten und Verblendgrenzen hin.`;
+Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Festzuschuss-Fragen: immer alle 4 Stufen (60%/70%/75%/100%) nennen und auf den neuen Stand ab 01.01.2026 hinweisen. Bei Fragen zur Befundkombinierbarkeit: nutze die Kombitabellen und Erläuterungen (G-BA/KZBV). Bei Fragen zu HKP-Befundkürzeln (ww/ur): weise auf die Interpretationen KZBV/GKV-Spitzenverbände hin. Bei Fragen zur Versorgungsform (Regelversorgung/gleichartig/andersartig): erkläre die Abgrenzung klar. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin. Bei Fragen zur Sozialhilfe/Jugendhilfe BW weise auf Behandlungsausweis und Genehmigungspflichten hin. Bei Fragen zur Bundeswehr-Heilfürsorge weise auf BwHFV-Rechtsgrundlage, utV-Besonderheiten, Genehmigungspflichten und Verblendgrenzen hin.`;
 
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
