@@ -1177,11 +1177,171 @@ ERGÄNZUNG KOMBITABELLE (KZBV/GKV-Spitzenverband, 24.09.2013, ab 01.01.2014):
 - Befund 4.5 (Metallbasis) + Befund 7.5 (erneuerungsbedürftige implantatgetragene Prothese) sind KOMBINIERBAR
 - Voraussetzung: Zahnersatz-Richtlinie Nr. 36 (atrophierter Kiefer, Torus palatinus, Exostosen)
 
+
+=== MEHRKOSTENVEREINBARUNG (MKV) UND PRIVATVEREINBARUNG ===
+
+GRUNDUNTERSCHIED:
+- Mehrkostenvereinbarung (MKV) § 28 Abs.2 SGB V: GKV-Patient wählt höherwertige Füllung → trägt Mehrkosten selbst. KK rechnet günstigste plastische Füllung als Sachleistung ab (BEMA 13a-d). MKV ist PROSPEKTIV. Abrechnungsgrundlage: GOZ.
+- Privatvereinbarung § 8 Abs.7 BMV-Z: Für Leistungen außerhalb GKV-Sachleistungskatalog (z.B. Austausch intakter Füllung, Wunschleistungen). Vollständige GOZ-Abrechnung OHNE BEMA-Abzug.
+- Vereinbarung abweichende Gebührenhöhe § 2 GOZ: Wenn Steigerungssatz über 3,5-fach → zusätzlich zur MKV erforderlich. DEFINITIV (nicht prospektiv). NICHT kombinierbar mit MKV oder § 8 Abs.7 BMV-Z auf einem Formular!
+
+ZULÄSSIGE FORMULARKOMBINATIONEN:
+- § 2 GOZ + § 8 Abs.7 BMV-Z: NICHT kombinierbar (§ 2 Abs.2 S.3 GOZ: keine weiteren Erklärungen – BGH 09.03.2000 Az. III ZR 356/98)
+- MKV + § 8 Abs.7 BMV-Z: NICHT kombinierbar (MKV deckt § 8 Abs.7 BMV-Z bei Füllungen bereits ab)
+- MKV + § 2 GOZ: Getrennte Formulare, je 2 Unterschriften – möglich
+- Zwei Formulare auf einem Blatt: möglich wenn optisch eindeutig getrennt + je 2 Unterschriften
+
+BEMA-ABZUG BEI MKV (Gegenrechnung):
+- Füllungen: BEMA 13a (F1), 13b (F2), 13c (F3), 13d (F4) gegenzurechnen
+- Mehrschichtige Aufbaufüllung in Adhäsivtechnik: Nicht im GOZ → § 6 Abs.1 GOZ analog (z.B. 2120 GOZ je Zahn) | Abzug BEMA 13b (F2) für ZE-Vorbereitung: Abzug BEMA 13a/b
+- Inlays: MKV möglich (GOZ 2150-2170 abzgl. BEMA 13a-d)
+
+BEGLEITLEISTUNGEN BEI MKV:
+- Anästhesie (auch bei GKV-Füllung nötig): BEMA 40/41 | Anästhesie NUR wegen Privatleistung: § 8 Abs.7 BMV-Z + GOZ 0090/0100 + Anästhetikum separat
+- BEMA-Anästhesie: Anästhetikum NICHT extra | GOZ-Anästhesie: Anästhetikum EXTRA berechenbar
+- Spanngummi/Kofferdam (GOZ 2040): Nur wenn NUR wegen Komposit nötig → privat; sonst BEMA 12
+- BEMA 12 (bmf): NUR: Separieren, Zahnfleisch beseitigen, Spanngummi, Blutung stillen – KEINE anderen Maßnahmen!
+- GOZ 2030 je Kieferhälfte/Frontzahn: je einmal für Präparieren + je einmal für Füllen ansetzbar
+- Lupenbrille: NICHT gesondert abrechenbar → nur über erhöhten Steigerungsfaktor der Hauptleistung
+
+PRIVATVEREINBARUNG § 8 ABS.7 BMV-Z:
+- Schriftlich VOR Behandlungsbeginn | KZBV-Muster oder § 4 Abs.5d BMV-Z / § 7 Abs.7 EKV-Z
+- Patient bestätigt: GKV-Recht bekannt, ausdrücklicher Wunsch nach Privatbehandlung, keine KK-Erstattung
+- Beratung über Privatleistungen: GOÄ Ä1 – NICHT für Beratung über MKV!
+- HKP privat: GOZ 0030 (auf Wunsch des Patienten, nicht zwingend)
+
+SEPARAT VEREINBARUNGSFÄHIGE LEISTUNGEN BEI GKV-PATIENTEN (Beispiele):
+- Beratung über Privatleistungen (z.B. Amalgam-Entfernung, Politur): GOÄ Ä1 – NICHT wenn BEMA 01 gleiche Sitzung!
+- Schriftlicher HKP für Privatleistungen: GOZ 0030
+- Oberflächenanästhesie je Kieferhälfte/Frontzahn: GOZ 0080 (Anästhetikum NICHT extra)
+- Entfernen weicher Beläge einwurzelig: GOZ 4050 | mehrwurzelig: GOZ 4055 (BEMA 107 = nur harte Beläge, 1x/Jahr)
+- Besondere Maßnahmen Präparieren/Füllen: GOZ 2030
+- Präparationsschutz Nachbarzähne mit Teflon: GOZ 2030 (nicht in BEMA 12)
+- Formgebungshilfe/Matrize anlegen: GOZ 2030 (separater Ansatz von Separieren möglich)
+- Anlegen Spanngummi/Kofferdam (wenn nur wegen Komposit): GOZ 2040
+- Kariesdetektor (Erythrosin, Fuchsin, Silbernitrat): analog § 6 Abs.1 GOZ
+- Zahnfarbbestimmung: BEB 0723 einfach | 0724 individuell | 0725 digital
+- Nachpolitur/Rekonturierung Restauration: GOZ 2130 (NUR Restaurationen; Rekonstruktionen wie Teilkrone → § 6 Abs.1 GOZ analog)
+- Finieren/Polieren Rekonstruktion (z.B. Teilkrone): analog § 6 Abs.1 GOZ
+- Fluoridierung angeätzter Schmelzpartien nach Füllungstherapie: GOZ 1020 je Sitzung (NICHT als üZ nach BEMA 10!)
+- Entfernung Amalgamfüllung mit speziellen Verfahren (Absaugtechnik, Austamponieren): analog § 6 Abs.1 GOZ
+- Subgingivale medikamentöse antibakt. Lokalapplikation je Zahn: GOZ 4025 + Material (bei Implantat: § 6 Abs.1 GOZ analog); NICHT für einfache Taschenspülung!
+- PZR GOZ 1040 je Zahn/Implantat/Brückenglied: § 8 Abs.7 BMV-Z erforderlich
+
+ENDODONTIE + ADHÄSIVE BEFESTIGUNG (GOZ 2197):
+- GOZ 2197 neben BEMA 34 (Med): Adhäsiver keimdichter Verschluss zwischen Sitzungen → über GKV-Standard → privat vereinbarungsfähig (Liebold/Raff/Wissing)
+- GOZ 2197 neben BEMA 35 (WF): Adhäsive Befestigung Wurzelkanalfüllung → privat vereinbarungsfähig
+- GOZ 2197 neben GOZ 2440: Beschluss Beratungsforum Gebührenordnungsfragen Nr.4 → zusätzlich berechnungsfähig
+- Bei GKV immer: § 8 Abs.7 BMV-Z VOR Behandlung | Keine MKV bei Endo (Sachleistungsprinzip)
+
+KINDERPROPHYLAXE PRIVAT:
+- IP1+IP2 nur 1x/Kalenderhalbjahr GKV (6. bis <18. Lj)
+- Häufigere Frequenz (z.B. KFO-Träger): § 8 Abs.7 BMV-Z + GOZ 1000/1010
+- BEMA 107 (harte Beläge) + GOZ 4050/4055 gleiche Sitzung: VERBOTEN
+- GOZ 1020 NICHT neben BEMA IP4 gleiche Sitzung (Leistungsüberschneidung)
+- GOZ 1040 NICHT neben BEMA 107, GOZ 1020, 4050/4055 gleichzeitig
+
+PAR-BEHANDLUNG PRIVATLEISTUNGEN:
+- PZR (GOZ 1040): Privatvereinbarung § 8 Abs.7 BMV-Z | VOR AIT oder zeitlich getrennt (AIT enthält supragingivale Belagsentfernung!)
+- PZR während AIT: nur für Zähne mit ST < 4mm (kein AIT-Anspruch) | PZR + UPTc gleiche Sitzung: NICHT möglich
+- PZR in UPT-Phase: streitig; medizinisch indizierte PZR zwischen UPT-Terminen möglich (laut KZV Sachsen)
+- PZR am Implantat: auch während UPT privat vereinbarbar (GOZ 1040)
+- Polieren nach UPTc: NICHT gesondert abrechenbar
+- Lokale Antibiotikabehandlung: GOZ 4025 | bei Implantat: § 6 Abs.1 GOZ analog
+- Mikrobielle Diagnostik: GOÄ 298 je Entnahmestelle/Papierspitze; Labor-Kosten aufklären
+- Chirurgische PAR-Zusatzleistungen (nur nach PAR, privat): GOZ 4110 (Knochendefekte auffüllen), 4138 (Membran), 4120, 4130, 4133
+- PRGF-Verfahren: analog GOÄ 2442 oder 2255
+- Laserbehandlung PAR: analog GOZ 4090/4100 | Gesamte PAR per Laser → gesamte Behandlung privat
+- Vector-System: mehrheitlich NICHT als AIT-Vertragsleistung → privat vereinbaren
+- BEV (BEMA BEVa): Nur 1x in Behandlungsstrecke | überweisende Praxis rechnet BEVa ab; BEVb nach CPT: Hauszahnarzt
+- PAR über BEMA 50 (Exz2): nur absoluter Ausnahmefall (Patient verliert UPT-Anspruch!) → immer KZV fragen
+- Häufigere UPT als Frequenz Progressionsgrad: NICHT als Privatleistung vereinbarbar
+
+ZAHNERSATZ-BEGLEITLEISTUNGEN:
+- Regelversorgung: Begleitleistungen nach BEMA (Versorgungsart "ZE/5") über KZV | HKP-Aufstellung KOSTENFREI!
+- Gleichartig: Begleitleistungen auch bei Regelversorgung angefallen → BEMA; nur wegen Gleichartigkeit → GOZ
+- Andersartig/Mischfall: Begleitleistungen nach GOZ (§ 8 Abs.7 BMV-Z VOR Behandlung)
+- Beratung Privatleistungen: GOÄ Ä1 | HKP privat: GOZ 0030
+- Adhäsive Befestigung GOZ 2197 bei gleichartigem ZE (Zirkon): privat (ausschließlich durch Gleichartigkeit bedingt)
+- Mischfall: >50% Honorar Regel+gleichartig → KZV; >50% andersartig → Direktabrechnung mit Patient
+- Provisorische Kronen aufwendig (über BEMA 19 hinaus): § 8 Abs.7 BMV-Z + GOZ 2270/5120/5140 + BEB
+- BEB Provisorien chairside: 1430 (Ausarbeiten), 1431 (Überarbeiten/Polieren), 1437 (Verbindungsstelle), 1438 (okklusaler Aufbau), 1404 (Formteil Silikon), 1432 (Umarbeitung definitive Krone)
+- Materialkosten Provisorium: Kunststoff NICHT extra; nur Konfektionsteile + Abformmaterial
+- BEMA 98a: Nur wenn Brücke oder mind. 3 Einzelkronen; NICHT bei einziger Einzelkrone
+
+=== ELEKTRONISCHES BEANTRAGUNGS- UND GENEHMIGUNGSVERFAHREN (EBZ, ab 01.07.2022) ===
+
+GRUNDPRINZIP:
+- EBZ ersetzt papiergebundenes HKP-Verfahren für alle Krankenkassen (NICHT für Sozialämter, Asyl, Heilfürsorge → dort weiter Papier!)
+- Ab 01.01.2023 verpflichtend für alle Zahnarztpraxen | Papier nur bei technischen Störungen (Papier-Stylesheets)
+- Rechtsgrundlage: 30. ÄndV zum BMV-Z (ab 01.01.2022), Anlage 15 BMV-Z
+
+VORAUSSETZUNGEN (Praxis):
+- Bundesweit eindeutige Zahnarztnummer (aus KBV-Kontingent, zugeteilt von KZV)
+- Anschluss an Telematikinfrastruktur (TI) | eZahnarztausweis (ZOD-/G0-/G2-Karte)
+- KIM-Anbindung (Kommunikation im Medizinwesen, mind. 1 KIM-Mailadresse)
+- EBZ-Module beim PVS-Anbieter bestellen
+
+ABLAUF:
+- Praxis generiert per PVS eindeutige Auftragsnummer → Daten als XML-Datei per KIM verschlüsselt an KK
+- Übersendung erfolgt NICHT automatisch → Praxis muss aktiv anstoßen
+- KK muss Genehmigung oder Ablehnung herbeiführen (keine bloße Kenntnisnahme!)
+- Automatisierte "Dunkelfeldverarbeitung": Interimsprothesen u.U. innerhalb eines halben Tages genehmigt
+- Ablehnung → Fall gilt als nicht abrechenbar (auch wenn noch keine Antwort vorliegt!)
+- Antwortdatensatz kommt direkt ins PVS | KFO-Änderungsanträge auch für Papier-genehmigte Pläne möglich
+
+MEHRSTUFIGES PRÜFVERFAHREN:
+- Vorprüfung: physikalische Lesbarkeit + Gültigkeit Kommunikationspartner
+- Schematische Validierung: Struktur-, Syntax- und Schlüsselprüfungen → bei Fehler: "Fehlernachricht"
+- Fachliche Fehler/Implausibilitäten: führen zu Ablehnung über "Antwortnachricht" (nicht Fehlernachricht)
+
+SCHLÜSSELVERZEICHNISSE KASSE (ANW):
+0 = nicht genehmigt | 1 = genehmigt
+Begründung: 01=nicht richtlinienkonform | 02=fehlende Versicherung | 03=gutachterlich befürwortet | 04=nicht befürwortet | 05=teilweise befürwortet | 06=Taschentiefen unzureichend (PAR) | 07=Implantatversorgung (PAR) | 08=letzte Behandlung <2 Jahre (PAR) | 10=ZE innerhalb Gewährleistung | 11=anderer Kostenträger | 12=auf Wunsch Versicherten zurückgezogen | 13=Sonstiges | 14=Aktualisierung von selber Praxis
+
+NEUE BEFUND-/THERAPIEKÜRZEL ZE (ab 01.07.2022 verbindlich – auch für Papierverfahren!):
+Neue Befundkürzel:
+- bw = erneuerungsbedürftiges Brückenglied (alt: "b" reichte nicht)
+- pkw = erneuerungsbedürftige Teilkrone
+- sb = implantatgetragenes Brückenglied | sbw = erneuerungsbedürftig
+- se = ersetzter Zahn implantatgetragener Prothese | sew = erneuerungsbedürftig
+- sk = implantatgetragene Krone | skw = erneuerungsbedürftig
+- so = implantatgetragenes Verbindungselement (Locator, Kugelanker, Steg) | sow = erneuerungsbedürftig
+- st = implantatgetragene Teleskopkrone | stw = erneuerungsbedürftig
+- t2w = erneuerungsbedürftiges Sekundärteil einer Teleskopkrone (alt: "tw")
+WEGFALL: "i" (intaktes Implantat) und "sw" (zu erneuernde Suprakonstruktion) entfallen!
+
+Neue Therapiekürzel:
+- T2 = Sekundärteil Teleskopkrone | T2M = vollkeramisch | T2V = mit vestibulärer Verblendung
+- SK = implantatgetragene Krone | SKMO = vollkeramisch mit Geschiebe
+- SB = implantatgetragenes Brückenglied | SBM = vollkeramisch | SBV = mit vestibulärer Verblendung
+- SE = zu ersetzender Zahn | SEO = mit Stegverbindung
+- SO = implantatgetragenes Verbindungselement (ersetzt "SR")
+- A = Adhäsivbrücke Anker | ABV = mit vestibulärer Verblendung | ABM = vollkeramisch
+- KO = Krone mit Geschiebe | KMH = Krone vollkeramisch mit Halteelement
+Nicht integriert (kein eigener FZ bei Implantaten): st2w, ST2, ST2M, ST2V
+
+Bemerkungsfeld-Schlüssel ZE:
+01=Medizinische Indikation | 02=ZE verloren | 03=Indikation Metallbasis | 04=Langzeitprovisorium | 07=ZA wünscht Rücksprache | 11=Wiederherstellung/Bruch | 15=Erosionsgebiss | 18=Fehlende Versorgungsnotwendigkeit Freiendsituation
+
+KFO IM EBZ – 7 Schlüssellisten:
+1. KIG-Einstufung (z.B. D1 = KIG 1 sagittal distal bis 3mm | M5 = KIG 5 mesial über 3mm)
+2. Anamnese: 01=Milchgebiss | 02=frühes Wechselgebiss | 03=spätes Wechselgebiss | 04=bleibendes Gebiss | 05=kfo vorbehandelt | 06=Zustand nach Trauma | 07=Metall-/Kunststoffallergie | 08=familiäres Vorkommen | 99=Sonstiges
+3. Geräte: 01=Plattenapparaturen | 05=FKO-Gerät | 06=Multibracket | 07=TPA | 08=Quadhelix | 09=Lingualbogen | 11=Headgear | 12=GME | 13=Herbstscharnier | 14=Delairemaske | 17=Retainer 33-43 | 99=Sonstiges
+4-7: Diagnose Bisslage, Therapie, Bisslage Therapie, Grund unplanmäßiger Verlauf/Abbruch
+Freitext: überall im "Sonstiges"-Feld (Schlüssel 99) möglich
+
+PAR IM EBZ (geplant ab April 2023): 15 Schlüssellisten
+- Knochenabbau: 1=<15% | 2=15-33% | 3=>33%
+- CAL: 1=1-2mm | 2=3-4mm | 3=>=5mm
+- Diabetes: 1=kein | 2=HbA1c<7% | 3=HbA1c>=7%
+- Rauchen: 1=kein | 2=<10 Zigaretten/Tag | 3=>=10
+- Bemerkungsfeld PAR: 01=richtlinienüberschreitend auf Wunsch Versicherten | 99=Sonstiges
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
-Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Festzuschuss-Fragen: immer alle 4 Stufen (60%/70%/75%/100%) nennen und auf den neuen Stand ab 01.01.2026 hinweisen. Bei Fragen zur Befundkombinierbarkeit: nutze die Kombitabellen und Erläuterungen (G-BA/KZBV). Bei Fragen zu HKP-Befundkürzeln (ww/ur): weise auf die Interpretationen KZBV/GKV-Spitzenverbände hin. Bei Fragen zur Versorgungsform (Regelversorgung/gleichartig/andersartig): erkläre die Abgrenzung klar. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin. Bei Fragen zur Sozialhilfe/Jugendhilfe BW weise auf Behandlungsausweis und Genehmigungspflichten hin. Bei Fragen zur Bundeswehr-Heilfürsorge weise auf BwHFV-Rechtsgrundlage, utV-Besonderheiten, Genehmigungspflichten und Verblendgrenzen hin.`;
-
+Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei BEMA-Fragen immer Bewertungszahl nennen. Weise auf Abrechnungsausschlüsse und wichtige Hinweise hin. Bei Festzuschuss-Fragen: immer alle 4 Stufen (60%/70%/75%/100%) nennen und auf den neuen Stand ab 01.01.2026 hinweisen. Bei Fragen zur Befundkombinierbarkeit: nutze die Kombitabellen und Erläuterungen (G-BA/KZBV). Bei Fragen zu HKP-Befundkürzeln (ww/ur): weise auf die Interpretationen KZBV/GKV-Spitzenverbände und neuen EBZ-Kürzel ab 01.07.2022 hin. Bei Fragen zur Versorgungsform (Regelversorgung/gleichartig/andersartig): erkläre die Abgrenzung klar. Bei Fragen zur MKV/Privatvereinbarung: erkläre Unterschied, Formularregeln und was kombinierbar ist. Bei Fragen zur Bundespolizei-Heilfürsorge weise auf Besonderheiten gegenüber normalen GKV-Patienten hin. Bei Fragen zur Sozialhilfe/Jugendhilfe BW weise auf Behandlungsausweis und Genehmigungspflichten hin. Bei Fragen zur Bundeswehr-Heilfürsorge weise auf BwHFV-Rechtsgrundlage, utV-Besonderheiten, Genehmigungspflichten und Verblendgrenzen hin. Bei Fragen zum EBZ: Schlüsselverzeichnisse, neue Befundkürzel (sb/sk/so/bw/pkw/t2w etc.) und technische Voraussetzungen nennen. Bei GOZ 2197: alle Einsatzmöglichkeiten neben BEMA und GOZ erläutern. Bei Kinderprophylaxe privat: GKV-Grenzen und GOZ-Möglichkeiten klar abgrenzen.`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
