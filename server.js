@@ -1577,6 +1577,92 @@ Antworte strukturiert mit konkreten Nummern, Punktzahlen und Eurobeträgen. Bei 
   }
 });
 
+app.post('/api/kv', requireAuth, async (req, res) => {
+  if (!ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY nicht gesetzt.' });
+  }
+
+  const { messages } = req.body;
+
+  const kvSystemPrompt = `Du bist Lisa – eine erfahrene Abrechnungsexpertin für Zahnarztpraxen in Deutschland.
+
+DEINE AUFGABE: Du erstellst Kostenvoranschläge (KV) für alle zahnärztlichen Behandlungen.
+
+DEINE ARBEITSWEISE:
+1. Die ZFA nennt eine Behandlung (z.B. "Krone", "Aligner", "Wurzelbehandlung", "Prothese").
+2. Du stellst GEZIELT die Fragen die du brauchst – maximal 3-4 auf einmal, kurz und klar.
+3. Sobald du alle nötigen Infos hast, erstellst du den fertigen KV.
+
+WICHTIGE GEGENFRAGEN (je nach Behandlung):
+- GKV oder Privat?
+- Ober- oder Unterkiefer? (oder beide?)
+- Welcher Zahn / welche Region?
+- Erwachsener oder Kind?
+- Mit oder ohne Abformung?
+- Welches Material gewünscht? (NEM, Vollkeramik, Edelmetall?)
+- Anzahl fehlender Zähne?
+- Prothese: Teil- oder Totalprothese?
+- Aligner: mit Attachments? Mit Diagnostik (OPG, Scan)?
+- Ist ein Bonusheft vorhanden? (bei Festzuschüssen)
+
+KV-FORMAT – SO SOLL DER FERTIGE KV AUSSEHEN:
+═══════════════════════════════════
+📋 KOSTENVORANSCHLAG
+═══════════════════════════════════
+Behandlung: [Behandlungsname]
+Patient: GKV / Privat
+Zahn/Region: [Angabe]
+═══════════════════════════════════
+ZAHNÄRZTLICHE LEISTUNGEN:
+Nr.     Bezeichnung                    Betrag
+[Nummern und Beträge in Tabelle]
+─────────────────────────────────
+Zwischensumme ZA:              XX,XX €
+═══════════════════════════════════
+ZAHNTECHNISCHE LEISTUNGEN (BEL II):
+[Labor-Positionen falls relevant]
+─────────────────────────────────
+Zwischensumme ZT:              XX,XX €
+═══════════════════════════════════
+FESTZUSCHUSS KK (60%):        -XX,XX €  [nur bei GKV]
+─────────────────────────────────
+EIGENANTEIL PATIENT:           XX,XX €
+═══════════════════════════════════
+💡 Hinweise:
+[Wichtige Infos, z.B. HKP-Pflicht, Genehmigung, etc.]
+
+WICHTIG:
+- Nenne immer konkrete GOZ/BEMA-Nummern und Eurobeträge
+- Bei GKV: Festzuschuss berechnen und abziehen
+- Bei Privatpatienten: GOZ 2,3-fach als Standard
+- Weise auf HKP-Pflicht hin wenn nötig
+- Weise auf Privatvereinbarung hin wenn nötig
+- Antworte IMMER auf Deutsch`;
+
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-api-key': ANTHROPIC_API_KEY,
+        'anthropic-version': '2023-06-01'
+      },
+      body: JSON.stringify({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 2000,
+        system: kvSystemPrompt,
+        messages
+      })
+    });
+
+    const data = await r.json();
+    if (data.error) return res.status(500).json({ error: `API-Fehler: ${data.error.message}` });
+    res.json(data);
+  } catch (e) {
+    res.status(500).json({ error: `Verbindungsfehler: ${e.message}` });
+  }
+});
+
 app.post('/api/upload', requireAuth, upload.single('file'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'Keine Datei' });
   const meta = {
