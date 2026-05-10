@@ -1384,6 +1384,171 @@ PAR IM EBZ (geplant ab April 2023): 15 Schlüssellisten
 - Rauchen: 1=kein | 2=<10 Zigaretten/Tag | 3=>=10
 - Bemerkungsfeld PAR: 01=richtlinienüberschreitend auf Wunsch Versicherten | 99=Sonstiges
 
+=== ALIGNER-THERAPIE – ABRECHNUNG KOMPLETT (GOZ/GOÄ/BEMA, Stand 2025/2026) ===
+
+GRUNDPRINZIP:
+- Aligner-Therapie ist im BEMA NICHT enthalten → auch bei GKV-Patienten immer Privatleistung (GOZ)!
+- Schriftliche Privatvereinbarung gemäß §8 Abs.7 BMV-Z VOR Behandlungsbeginn erforderlich
+- DGKFO-Stellungnahme: Aligner sind im Rahmen der vertragszahnärztlichen Versorgung "im Allgemeinen nicht zu erbringen" (Jan. 2010)
+- PKV-Patienten: können bei gegebener Indikation Erstattung erwarten – keine verbindliche Auskunft möglich
+- Honorarvereinbarung nach §2 Abs.1+2 GOZ vor Behandlung empfohlen (wegen Geringbewertung GOZ 6030–6090)
+- Aligner sind KEINE Mehr-/Zusatzleistung nach Anlage B BMV-Z
+
+WAS SIND ALIGNER / ATTACHMENTS:
+- Aligner: dünne, elastische, durchsichtige Kunststoffschienen; ca. 0,2mm Korrektur je Schiene; Tragedauer ca. 14 Tage je Schiene
+- Einfache Korrekturen: 15-30 Aligner; umfangreich/komplex (z.B. Extraktion): 30-60 Aligner
+- Attachments: biomechanische Haltepunkte aus zahnfarbenem Kunststoff, adhäsiv auf den Zahn geklebt; vergrößern Zahnoberfläche künstlich → verbessern Kraftübertragung und Halt des Aligners
+- Attachments nicht immer nötig: bei einfachen Bewegungen auch ohne; bei Extrusion, Intrusion, größeren Fehlständen sinnvoll
+- Platzierung über Attachment-Template (indirektes Klebeverfahren): Zahnreinigung (KEINE Fluoridierung!) → Haftvermittler → Template mit Kunststoff → aushärten → Template entfernen → Überschüsse polieren
+- Entfernung nach Abschluss: rückstandsfrei, keine Schmelzschädigung
+
+CMD-DIAGNOSTIK VOR ALIGNER-THERAPIE:
+- OLG Hamm Az. 26 U 131/13: Screeningtest VOR jeder KFO-Behandlung Pflicht!
+- CMD-Screeningtest (Funktions-Schnelltest) → analog §6 Abs.1 GOZ (BZÄK-Analogliste)
+- Funktionsstatus → GOZ 8000
+- ACHTUNG: CMD-Screeningtest darf bei "Kassenbehandlung" NICHT als Privatleistung nach §8 Abs.7 BMV-Z vereinbart werden! Nur GOZ 8000 ff. (funktionsanalytisch/therapeutisch) darf privat vereinbart werden.
+
+DIAGNOSTIK-LEISTUNGEN (zusätzlich zu Hauptleistungen abrechenbar):
+- GOÄ Ä1 oder Ä3 – Beratung (Ä3 als alleinige Leistung wenn >10 Minuten)
+- GOZ 0040 – Heil- und Kostenplan für KFO-Behandlung (mehrfach möglich, z.B. für Alternativplan Multibracket zum Vergleich)
+- GOZ 0060 – Abformung beider Kiefer für Situationsmodelle/Diagnosemodelle (KEINE Arbeitsmodelle!) + einfache Bissfixierung inkl. Auswertung; neben 0060 auch GOZ 5170 (individueller Löffel) abrechenbar
+- GOZ 0065 – Optisch-elektronische Abformung (Kieferscan) je Kieferhälfte oder Frontzahnbereich; max. 4x bei Vollscan beider Kiefer; NICHT kombinierbar mit GOZ 5170/5180/5190 für denselben Bereich!
+- GOZ 5170 – Abformung mit individuellem Löffel je Kiefer (bei Silikonabformung; mit Begründung "Präzisionsabformung notwendig"); neben GOZ 0060 ansetzbar
+- GOZ 6000 – Profil-/Enface-Fotografie inkl. KFO-Auswertung (NUR Profil/Enface, NICHT intraorale Fotos!)
+- GOZ 6000a – Intraorale Fotografie (separate Ziffer; bis zu 10 intraorale Fotos möglich)
+- BEB 0706 – Foto zu therapeutischen Zwecken (digital, intra- und extraoral; Anzahl nicht eingeschränkt; VG Stuttgart 12 K 6383/07)
+- GOZ 6010 – Analyse von Kiefermodellen (dreidimensional, grafisch, metrisch); Voraussetzung: vorherige GOZ 0060; mehrfach berechenbar (Anfangs-, Zwischen-, Enddiagnose)
+- GOZ 6010a – Analyse digitaler Kiefermodelle (analog abrechenbar; PKV-Empfehlung: GOZ 6010 als Analogziffer)
+- §6 Abs.1 GOZ analog – Computergestützte Auswertung zur Diagnostik/Planung (z.B. Scan-Auswertung, digitale Modellanalyse); Wahl der Analogziffer obliegt Behandler nach Aufwand; GOÄ 5377a = verbreitete Wahl
+- §6 Abs.1 GOZ analog – ClinCheck/Zielplanung (virtuelle 3D-Behandlungsplanung); medizinische Notwendigkeit anerkannt (LZK BW 12.10.2016; AG Waiblingen Az. 7 C 533/20, 18.07.2022); je ClinCheck berechnungsfähig; in HKP als z.B. "GOZ 6260a" ausweisen
+- §9 GOZ – Set-up-Modelle (konventionell oder digital); zahntechnische Leistungen
+- GOÄ 5004 – OPG (Anzahl nicht eingeschränkt, medizinisch notwendig; kein Zuschlag digitales Röntgen!)
+- GOÄ 5090 – FRS/Schädelaufnahme (Anzahl nicht eingeschränkt)
+- GOÄ 5298 – Zuschlag digitales Röntgen für FRS (1,0-facher Satz; 25% von 1,0-fachem Satz der Ä5090; NICHT neben Ä5004!)
+- GOÄ 5370 + 5377 – DVT-Aufnahme + Auswertung
+- BEB 0812 – Modellanalyse KFO (für ClinCheck oder Set-up-Modelle; Anzahl nicht eingeschränkt)
+- BEB 0522 – Konstruktionsplan KFO (für Online-Plan/Behandlungsplanung)
+- §6 Abs.1 GOZ analog – Fotostatus (wenn keine KFO-Auswertung erforderlich; PKV schlägt GOZ 6000 als Analogziffer vor)
+
+HAUPTLEISTUNGEN ALIGNER (GOZ 6030–6090):
+Umformung eines Kiefers (unabhängig von Wachstumsphase, abgeschlossen oder nicht):
+- GOZ 6030 – Umformung eines Kiefers, geringer Umfang (je Kiefer)
+- GOZ 6040 – Umformung eines Kiefers, mittlerer Umfang (je Kiefer)
+- GOZ 6050 – Umformung eines Kiefers, hoher Umfang (je Kiefer)
+
+Einstellung in den Regelbiss (NUR während Wachstumsphase):
+- GOZ 6060 – Einstellung der Kiefer in den Regelbiss, geringer Umfang (nur für Unterkiefer)
+- GOZ 6070 – Einstellung der Kiefer in den Regelbiss, mittlerer Umfang
+- GOZ 6080 – Einstellung der Kiefer in den Regelbiss, hoher Umfang
+
+Einstellung der Okklusion (NUR bei abgeschlossener Wachstumsphase):
+- GOZ 6090 – Einstellung der Okklusion durch alveolären Ausgleich (je Kiefer)
+
+Zuordnung: 6030↔6060, 6040↔6070, 6050↔6080 (korrespondierend)
+
+KRITERIEN FÜR GERINGEN/MITTLEREN/HOHEN UMFANG (GOZ 6030–6050):
+1. Zahl der bewegten Zahngruppen (Seitengruppen links/rechts + Frontzahngruppe = 3 Gruppen)
+2. Ausmaß der Zahnbewegung: mehr als 2 mm
+3. Art der Zahnbewegung: körperlich >2mm, kontrollierte Wurzelbewegung, Bisshöhenänderung, Drehung >30°
+4. Richtung der Zahnbewegung: entgegen natürlicher Wanderungstendenz
+5. Verankerung: mit zusätzlichen intra-/extraoralen Maßnahmen (Headgear, Nance, TPA, Wilson-Appliance, Lip-Bumper, Pins)
+Mittlerer Umfang: min. 3 von 5 Kriterien; Hoher Umfang: min. 4 von 5 Kriterien
+
+MIT DEN HAUPTLEISTUNGEN ABGEGOLTEN (NICHT gesondert berechenbar!):
+- GOZ 6190 Beratendes/belehrendes Gespräch
+- GOZ 6200 Eingliederung Hilfsmittel zur Beseitigung von Funktionsstörungen
+- GOZ 6210 Kontrolle des Behandlungsverlaufs
+- GOZ 6220 Vorbereitende Maßnahmen zur Herstellung KFO-Behandlungsmittel
+- GOZ 6230 Eingliederung KFO-Behandlungsmittel
+- GOÄ Ä5 Verlaufskontrolle
+- Vorbereitende Maßnahmen (Abformungen für Schienen), Eingliederung aller Aligner-Schienen, Aligner-Wechsel (Case Refinement), Verlaufskontrollen, Retention (Retentionsschienen) bis 4 Jahre nach Behandlungsbeginn
+- WICHTIG: Nachbearbeitung/Anpassung von Invisalign-Schienen zusätzlich NICHT berechenbar (LG Wiesbaden Az. 1 S 86/20, 25.05.2023)
+
+ZUSÄTZLICHE LEISTUNGEN (NEBEN Hauptleistungen berechnungsfähig):
+Attachments:
+- GOZ 6100 (analog §6 Abs.1) – Eingliedern eines Attachments je Attachment (da Attachments in GOZ 2012 nicht aufgeführt; selbstständige Leistung nach §4 Abs.2 GOZ; NICHT in GOZ 6030-6090 enthalten!)
+- GOZ 2197 – Adhäsive Befestigung je Attachment (unterschiedliche Rechtsprechungen; ggf. mit Erläuterung)
+- GOZ 6110 (analog §6 Abs.1) – Entfernung eines Attachments je Attachment (nach Behandlungsabschluss oder bei Austausch)
+- §6 Abs.1 GOZ – Zahnärztliche Leistungen im Zusammenhang mit Herstellung und Anwendung Attachment-Template (Abformungen etc.)
+- §9 GOZ – Dentalmonitoring (zahntechnische Überwachungsleistung)
+- Versicherung behauptet Attachments seien in GOZ 6030-6090 enthalten → NEIN: Gesetzgeber hätte dies explizit beschreiben müssen; Attachments sind nicht immer erforderlich → selbstständige Leistung!
+
+Approximale Schmelzreduktion (ASR/Strippen/Slicen):
+- Kein eigener GOZ-Code → analog §6 Abs.1 GOZ
+- Mögliche Analogziffer: GOZ 2110 (je Zahn/je Interdentalraum)
+- Air-Rotor-Stripping (ARS) zur Non-Ex-Therapie: GOZ 5000a analog §6 Abs.1, je Kieferhälfte oder Frontzahnbereich (NICHT je Zahn!)
+- NICHT in GOZ 6030-6080 enthalten! (kein KFO-Separieren, sondern Veränderung der Kronenform zur Extraktionsvermeidung)
+- Erläuterungsschreiben an PKV empfohlen
+
+Zahnreinigung/Prophylaxe:
+- GOZ 1040 – PZR je Zahn/Implantat/Brückenglied (Privatvereinbarung §8 Abs.7 BMV-Z bei GKV; bei BW-KFO: 1x/Halbjahr genehmigungsfähig)
+- GOZ 4050 / 4055 – Entfernung harter/weicher Beläge
+- GOZ 1020 – Fluoridierung je Sitzung
+
+Retainer:
+- Herausnehmbarer Retainer → GOÄ 2700 + Material- und Laborkosten | Entfernen: GOÄ 2702 je Kiefer
+- Festsitzender Retainer → GOZ 6100 (Attachment/Klebestelle) + GOZ 6140 (Teilbogen) + Material- und Laborkosten | Entfernen: GOZ 6110 je Zahn
+- Alternative 3-3-Retainer: GOÄ 2698 (Schiene am unverletzten Kiefer)
+- §6 Abs.1 GOZ – Eingliederung festsitzender Retainer (analog, da nicht explizit in GOZ; BZÄK-Empfehlung: über Steigerungsfaktor GOZ 6030 ff. berücksichtigen)
+
+Sonstige Leistungen:
+- GOZ 2030 je Kieferhälfte/Frontzahn – Besondere Maßnahmen Präparieren/Füllen
+- GOZ 2000 – Fissurenversiegelung / vestibuläre Versiegelung je Zahn
+- GOZ 1020 – Fluoridierung je Sitzung
+- GOZ 4060 – Parodontale Behandlung/Scaling
+
+ABRECHNUNG BEI GKV-PATIENTEN – BESONDERHEITEN:
+- Schriftliche Privatvereinbarung §8 Abs.7 BMV-Z zwingend VOR Behandlung
+- Kein BEMA-Abzug (keine Gegenrechnung wie bei MKV), da Aligner vollständig außerhalb GKV-Leistungskatalog
+- Beiblatt zum HKP mit Begründung der medizinischen Notwendigkeit empfohlen (spart PKV-Formulare)
+- PKV muss Aligner bei gegebener Indikation grundsätzlich erstatten (Urteile: LG Lüneburg 5 O 364/07; AG München 223 C 31469/07; LG Köln 23 O 239/05 u.a.)
+- Postbeamtenkasse: erstattet wenn nicht teurer als konventionelle Multibandbehandlung (VGH BW Az. 2 S 191/11, 31.05.2011) → Alternativplan Multibracket miteinreichen!
+- Beihilfe: Erstattung ab 18 Jahren nur bei kombiniert KFO-kieferchirurgischer Behandlung (Ausnahmen: VG Minden 4 K 833/07; VGH BW 2 S 2904/10)
+
+HONORARVEREINBARUNG & STEIGERUNGSFAKTOR:
+- GOZ 6030–6090 sind gering bewertet → abweichende Honorarvereinbarung nach §2 Abs.1+2 GOZ VOR Behandlung dringend empfohlen
+- Über 3,5-fachen Satz: Honorarvereinbarung mit Steigerungsfaktor in der Vereinbarung festlegen
+- BVerwG Az. 5 C 7.19 (26.02.2021): BZÄK empfiehlt Mehraufwand bei Bemessung des Steigerungsfaktors zu berücksichtigen
+
+QUARTALSWEISE ABRECHNUNG:
+- GOZ 6030–6090 können anteilig je Quartal berechnet werden (ähnlich wie GKV-KFO), z.B. geviertelt oder halbiert
+- Kernpositionen decken die gesamte Laufzeit ab (bis 4 Jahre), inkl. Case Refinement/Refinement
+
+VORVERTRAG:
+- Vor Diagnostik: Vorvertrag empfohlen – Patient erklärt sich zur Übernahme der Diagnostikkosten (ca. 400€) bereit, auch wenn er die Behandlung ablehnt
+
+BEB-LEISTUNGEN EIGENLABOR (Aligner mit Set-up):
+BEB 0002 Modell Superhartgips | BEB 0015 Modell vorbereiten | BEB 0732 Desinfektion | BEB 0601 Modellpaar trimmen | BEB 0303 Modell ausblocken | BEB 0308 Modell radieren | BEB 7601 + Material Kunststoffschiene tiefgezogen | BEB 0103 Modellsegment sägen (je Segment) | BEB 0241 Doublieren eines Modells | BEB 0021 Modell für Sägesegmente | BEB 0833 Set-up je Zahn (tatsächliche Anzahl) | BEB 0812 Modellanalyse KFO | BEB 7418 Einarbeiten Aktivierungspunkte/Divots (Thermozange bei Alignern, ca. 13,86€ je Aktivierungspunkt)
+
+ABRECHNUNGSÜBERSICHT HALTE- UND STÜTZVORRICHTUNGEN (BEL II, BEMA):
+Herstellung Interimsprothese:
+- Einfache Haltevorrichtungen → mit BEMA 96a-96c abgegolten
+- Höherwertige → nach BEMA 98f (BEL-Nrn. 202 7 Auflage, 203 1 zweiarmige gegossene HV, 204 1 zweiarmige gegossene HV/Auflage, 205 0 Bonwillklammer, 380 5 gebogene Auflage, 381 0 sonstige gebogene HV/Stützvorrichtung)
+
+Herstellung Modellgussprothese:
+- Einfache Haltevorrichtungen → mit BEMA 96a-96c abgegolten
+- Gegossene Halte- und Stützvorrichtungen → nach BEMA 98h/1 bzw. 98h/2 (BEL-Nrn. 204 1, 205 0; Kombination: 136 0 Gefrästes Lager, 137 0 Schubverteilungsarm, 202 1 einarmige gegossene HV)
+
+Wiederherstellung Modellgussprothese:
+- Einfache Haltevorrichtungen → mit BEMA 100b abgegolten
+- Höherwertige → nach BEMA 98f (BEL-Nrn. 202 7, 203 1, 380 5, 381 0)
+- Gegossene → nach BEMA 98h/1 bzw. 98h/2 (204 1, 205 0; Kombination: 137 0, 202 1)
+
+BERECHNUNGSBEISPIEL FZ-KOMPENDIUM – Aligner/Kunststoffprothese als Dauerversorgung:
+- Beispiel UK: Kunststoffprothese als dauerhafte Versorgung mit gebogenen Halte-/Stützelementen, Ersatz Zähne 12-22 und 24-25
+- Befund im HKP: Zuordnung RV; Befundkürzel E an Pfeilerzähnen
+- Zahnärztliche Leistungen: BEMA 96b (partielle Kunststoffprothese) + BEMA 98f (gebogene Halte-/Stützvorrichtungen) | Festzuschuss: 5.2
+- Hinweis: Kunststoffprothese als Dauerversorgung nach ZE-RL Nr.28 nicht angezeigt → Ausnahme ZE-RL Nr.29
+- Fußnote: Klammerverankerte Kunststoffprothesen lösen bei unsicherer Prognose Restzähne Befund Nr.5 aus (KZBV/Spitzenverbände 28.08.2008)
+
+RECHTSPRECHUNG ALIGNER (Zusammenfassung):
+- LG Wiesbaden Az. 1 S 86/20 (25.05.2023): Nachbearbeitung Invisalign-Schienen NICHT gesondert berechenbar
+- AG Waiblingen Az. 7 C 533/20 (18.07.2022): PC-gestützte Auswertung bei GOZ 0065 NICHT enthalten → analog abrechnen
+- OLG Hamm Az. 26 U 131/13: CMD-Screeningtest vor KFO Pflicht
+- LZK BW GOZ-Ausschuss (12.10.2016): simulierte Therapie mit Planungssoftware = selbstständige Leistung → analog §6 Abs.1 GOZ
+- VGH BW Az. 2 S 191/11 (31.05.2011): Postbeamtenkasse muss Aligner erstatten wenn nicht teurer als Multibandbehandlung
+- PKV-Erstattungspflicht: LG Lüneburg 5 O 364/07 | AG München 223 C 31469/07 | AG Saarbrücken 5 C 828/07 | LG Köln 23 O 239/05 | AG Stuttgart 11 C 2023/07 | LG Koblenz 14 S 388/03
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
