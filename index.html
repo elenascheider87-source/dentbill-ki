@@ -162,6 +162,12 @@ html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--t
 .tag{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px}
 .tag button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;line-height:1;padding:0}
 
+/* KV GENERATOR */
+.kv-output{background:var(--bg4);border:1px solid var(--border2);border-radius:8px;padding:12px 14px;font-family:var(--mono);font-size:12px;line-height:1.8;white-space:pre-wrap;color:var(--text);margin-top:10px}
+.kv-btn-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.kv-chip{background:var(--bg3);border:1px solid var(--border);color:var(--text2);border-radius:20px;padding:5px 13px;font-size:12px;cursor:pointer;transition:all .15s;font-family:var(--font)}
+.kv-chip:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-dim)}
+
 @media(max-width:600px){
   .sidebar{width:50px}.s-logo .lsub,.nb span,.s-bottom .uname,.s-bottom .urole{display:none}
   .nb{justify-content:center;padding:10px}.s-logo{padding:12px 8px}
@@ -209,6 +215,10 @@ html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--t
       <button class="nb active" onclick="showPanel('chat',this)">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
         <span>KI-Chat</span>
+      </button>
+      <button class="nb" onclick="showPanel('kv',this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13zM9 13h6v1H9zm0 2h6v1H9zm0-4h2v1H9z"/></svg>
+        <span>KV-Generator</span>
       </button>
       <button class="nb" onclick="showPanel('knowledge',this)">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -281,6 +291,39 @@ html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--t
           </div>
         </div>
         <div style="font-size:10px;color:var(--text3);margin-top:4px;text-align:center">📎 Bilder & PDFs anhängen · Enter zum Senden</div>
+      </div>
+    </div>
+
+    <!-- KV-GENERATOR -->
+    <div id="panel-kv" class="panel">
+      <div class="chat-bar">
+        <div><h2>📋 KV-Generator</h2><p>Kostenvoranschlag für jede Behandlung – geführtes Gespräch</p></div>
+        <div class="badge">KI-gestützt</div>
+      </div>
+      <div class="msgs" id="kv-msgs">
+        <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Hallo! Ich erstelle für Sie einen Kostenvoranschlag. 📋<br><br>Nennen Sie mir einfach die gewünschte Behandlung – ich stelle dann die richtigen Fragen:<br><br>• <strong>„Krone auf Zahn 36"</strong><br>• <strong>„Aligner Oberkiefer"</strong><br>• <strong>„Totalprothese UK"</strong><br>• <strong>„Wurzelbehandlung + Aufbau"</strong><br>• <strong>„Implantat mit Krone"</strong><br>• <strong>„Inlay Zahn 16"</strong></div></div></div>
+      </div>
+      <div class="chips" id="kv-chips">
+        <span class="kv-chip" onclick="sendKV('Krone')">👑 Krone</span>
+        <span class="kv-chip" onclick="sendKV('Aligner-Therapie')">😁 Aligner</span>
+        <span class="kv-chip" onclick="sendKV('Totalprothese')">🦷 Prothese</span>
+        <span class="kv-chip" onclick="sendKV('Wurzelbehandlung')">🔧 WB + Aufbau</span>
+        <span class="kv-chip" onclick="sendKV('Implantat mit Krone')">🔩 Implantat</span>
+        <span class="kv-chip" onclick="sendKV('Inlay')">💎 Inlay</span>
+        <span class="kv-chip" onclick="sendKV('PZR Prophylaxe')">🧹 PZR</span>
+        <span class="kv-chip" onclick="sendKV('Zahnersatz Festzuschuss')">📊 Festzuschuss KV</span>
+      </div>
+      <div class="inp-area">
+        <div class="inp-wrap">
+          <textarea id="kv-ta" placeholder="Behandlung eingeben... z.B. 'Brücke 3-gliedrig UK' (Enter = Senden)" onkeydown="handleKvKey(event)" oninput="autoR(this)"></textarea>
+          <button class="btn-send" onclick="sendKvMsg()">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
+          </button>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button class="btn-sm ghost" onclick="resetKV()" style="font-size:11px;padding:4px 10px">🔄 Neuer KV</button>
+          <button class="btn-sm" onclick="copyKV()" style="font-size:11px;padding:4px 10px">📋 KV kopieren</button>
+        </div>
       </div>
     </div>
 
@@ -756,6 +799,92 @@ function closeModals() {
   document.querySelectorAll('.modal-bg').forEach(m=>m.classList.remove('open'));
 }
 document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModals();}));
+
+// KV-GENERATOR
+let kvHistory = [];
+let lastKvText = '';
+
+function handleKvKey(e) {
+  if(e.key==='Enter' && !e.shiftKey){e.preventDefault();sendKvMsg();}
+}
+
+function sendKV(text) {
+  document.getElementById('kv-ta').value = text;
+  sendKvMsg();
+}
+
+async function sendKvMsg() {
+  const ta = document.getElementById('kv-ta');
+  const text = ta.value.trim();
+  if(!text) return;
+  ta.value = ''; ta.style.height = '36px';
+
+  kvHistory.push({ role: 'user', content: text });
+  appendKvMsg('user', text);
+
+  const think = document.createElement('div');
+  think.className = 'msg ai';
+  think.innerHTML = '<div class="mav ai">KI</div><div class="thinking"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>';
+  document.getElementById('kv-msgs').appendChild(think);
+  scrollKv();
+
+  try {
+    const r = await api('/api/kv', {
+      method: 'POST',
+      body: JSON.stringify({ messages: kvHistory })
+    });
+    think.remove();
+    const reply = r.content?.[0]?.text || 'Fehler beim Laden.';
+    kvHistory.push({ role: 'assistant', content: reply });
+    lastKvText = reply;
+    appendKvMsg('ai', reply);
+  } catch(e) {
+    think.remove();
+    appendKvMsg('ai', '⚠️ Verbindungsfehler. Bitte erneut versuchen.');
+  }
+}
+
+function appendKvMsg(role, text) {
+  const el = document.createElement('div');
+  el.className = `msg ${role}`;
+  const avClass = role === 'ai' ? 'ai' : 'us';
+  const avText = role === 'ai' ? 'KI' : (me?.name?.charAt(0)||'U');
+  const formatted = formatKvText(text);
+  el.innerHTML = `<div class="mav ${avClass}">${avText}</div><div><div class="bub">${formatted}</div></div>`;
+  document.getElementById('kv-msgs').appendChild(el);
+  scrollKv();
+}
+
+function formatKvText(text) {
+  return text
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
+    .replace(/═+/g, s => `<span style="color:var(--teal);opacity:.5">${s}</span>`)
+    .replace(/─+/g, s => `<span style="color:var(--border2)">${s}</span>`)
+    .replace(/📋|💡|⚠️|✅|❗/g, m => m)
+    .replace(/\n/g,'<br>');
+}
+
+function scrollKv() {
+  const m = document.getElementById('kv-msgs');
+  m.scrollTop = m.scrollHeight;
+}
+
+function resetKV() {
+  kvHistory = [];
+  lastKvText = '';
+  document.getElementById('kv-msgs').innerHTML = `
+    <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Neuer KV – Nennen Sie mir die Behandlung! 📋<br><br>• <strong>„Krone auf Zahn 36"</strong><br>• <strong>„Aligner Oberkiefer"</strong><br>• <strong>„Totalprothese UK"</strong><br>• <strong>„Wurzelbehandlung + Aufbau"</strong><br>• <strong>„Implantat mit Krone"</strong></div></div></div>`;
+}
+
+function copyKV() {
+  if(!lastKvText) { alert('Noch kein KV vorhanden.'); return; }
+  navigator.clipboard.writeText(lastKvText).then(() => {
+    const btn = event.target;
+    btn.textContent = '✓ Kopiert!';
+    setTimeout(() => btn.textContent = '📋 KV kopieren', 2000);
+  });
+}
 
 // INIT
 if(token) {
