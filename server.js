@@ -1549,6 +1549,124 @@ RECHTSPRECHUNG ALIGNER (Zusammenfassung):
 - VGH BW Az. 2 S 191/11 (31.05.2011): Postbeamtenkasse muss Aligner erstatten wenn nicht teurer als Multibandbehandlung
 - PKV-Erstattungspflicht: LG Lüneburg 5 O 364/07 | AG München 223 C 31469/07 | AG Saarbrücken 5 C 828/07 | LG Köln 23 O 239/05 | AG Stuttgart 11 C 2023/07 | LG Koblenz 14 S 388/03
 
+=== GOZ-FAKTORSTEIGERUNGEN & BEGRÜNDUNGEN (Stand 2024/2025) ===
+
+GRUNDPRINZIP FAKTORSTEIGERUNG (§5 GOZ):
+- Gebührenrahmen: Faktor 1,0 bis 3,5
+- 2,3-fach = Mittelwert / Durchschnitt
+- Über 2,3-fach: Begründung auf der Rechnung zwingend erforderlich
+- Über 3,5-fach: schriftliche Honorarvereinbarung VOR Behandlung (§2 Abs.1+2 GOZ)
+- Begründung muss patientenindividuell sein – Vorlagen erlaubt, aber individuell anpassen!
+- System: Wahrnehmen → Kommunizieren → Dokumentieren → mit richtigem Faktor berechnen
+- 72,3% der GOZ-Leistungen werden nur zum 2,3-fachen liquidiert (KZBV 2022) → Praxis verschenkt Honorar!
+- Röntgen GOÄ Ä5000ff: Schwellenwert 1,8-fach; Höchstsatz 2,5-fach (keine Abweichende Vereinbarung möglich!)
+
+VON BEIHILFESTELLEN OFT ABGELEHNTE FORMULIERUNGEN (unbedingt vermeiden!):
+„pulpanahe Präparation", „starker Speichelfluss", „erschwerter Mundzugang", „divergierende Pfeilerzähne", „subgingivale Präparation", „Verblendung und Farbauswahl", „erhöhter Zungen- und Wangendruck", „kurze oder lange klinische Krone", „tiefe Zahnfleischtaschen", „gekrümmte oder verengte Wurzelkanäle"
+Bei Röntgen: „digitales Röntgen", „umweltschonend", „geringere Strahlenbelastung" (VG Stuttgart Az. 6 K 4261/12)
+
+AKZEPTIERTE BEGRÜNDUNGEN – ALLGEMEINE LEISTUNGEN:
+- 0010: „Sehr komplizierte Diagnose und Schwierigkeit der Differentialtherapie mit überdurchschnittlichem Zeitaufwand"
+- 0030: „Enorm hoher Zeitaufwand wegen Berücksichtigung mehrerer alternativer Versorgungsformen und Aufzeigen verschiedener therapeutischer Möglichkeiten"
+- 1020: „Besonders starker Zahnengstand, weitere Zähne nicht in regelrechter Reihe, Fluoridierungsapplikationen nur erschwert durchführbar um entkalkten Schmelz zu remineralisieren"
+- 1040 PZR: „Überdurchschnittlich hoher Zeitaufwand durch festsitzende KFO-Apparatur"
+- 2000 Versiegelung: „Erschwerte Trockenlegung durch extrem starken Speichelfluss mit erheblichem Zeitaufwand" / „Enorm hoher Zeitaufwand durch zweizeitige Versiegelung getrennter Fissuren und Grübchen"
+- 4000 Parodontalstatus: „Besonders schwieriger Zugang, umfangreiche Aufzeichnung an sechs Messpunkten, Komplexitätsfaktoren Diabetes und Nikotin"
+- 4005 PSI: „Erhebung PSI aufgrund andauernder Papillenblutung in Verbindung mit starker Aktivität M. masseter extrem zeitaufwendig"
+- 5010 Brückenanker: „Erhöhter Substanzabtrag bei tiefen kariösen Läsionen zum Erhalt vitaler Pulpa, reduzierte Tourenzahl"
+- 5040 Teleskopkrone: „Pfeilerdivergenz erforderte extremen Mehraufwand für parallelwandige Passung der Präzisionsteile"
+- 7010 Aufbissbehelf: „Extremer Bruxismus, nicht konzeptionsgerechte Okklusion, besonders umfangreiche Einschleifmaßnahmen" / „Einseitige Diskus-Blockade, eingeschränkte Bewegung des Gelenkköpfchens"
+- 9050: „Eingeschränkter Manipulationsbereich durch notwendige Implantatposition nach dorsal"
+
+BEGRÜNDUNGEN – FÜLLUNGSLEISTUNGEN (Zeitangaben bei Praxisstundensatz 400€):
+- 2010 (0:58/1:29): „Erhöhter Arbeitsaufwand mehrerer Zahnflächen in einem Kiefer" / „Freiliegende Zahnhälse, besonders vorsichtiges Vorgehen"
+- 2020 (1:54/2:54): „Umfangreiches Exkavieren, erschwerte Trockenlegung" / „Aufwendige Formgebung mit Okklusions- und Artikulationskontrollen"
+- 2030 (1:16/1:55): „Multiple Stillung einer Papillenblutung" / „Vermehrter Speichelfluss, ungünstig gelegene Zahnregion" / „Beständiger Speichelfluss erzwang permanenten Austausch Watterollen → über 50% erhöhter Zeitaufwand" / „Erschwerte Matrizenlegung wegen unter sich gehendem Kavitätenboden, doppelte Verkeilung, Heidemannspatel, zweite Assistenz"
+- 2040 Kofferdam (1:16/1:55): „Mehrfaches Abnehmen und Anlegen, ständige Neueinstellung" / „Extremer Zahnengstand" / „Hohe Anzahl mit Kofferdam zu versorgender Zähne"
+- 2050/2070/2090/2110 (4:08-6:11 / 6:17-9:25): „Erschwerte Trockenlegung, Retentionsgewinnung bei ungünstig gelegener Kavität" / „Anpassung an Halte- und Stützvorrichtungen bei herausnehmbarem ZE" / „Sehr große, tiefe Kavität bis unter Gingivaniveau"
+- 2060/2080/2100/2120 (10:14-14:56 / 15:34-22:44): „Aufwendige Farb- und Formgestaltung, erschwerte Retentionsgewinnung" / „Besonders schwierige Entfernung alter Restauration durch geringen Farbkontrast" / „Erhöhter Aufwand durch Teilschritte bei kombinierter Schmelz-/Dentinkonditionierung"
+- 2130 (2:01/3:04): „Ungünstig gelegene, schwer erreichbare Zahnregion" / „Aufwendiges Polieren/Finieren der großen Restauration, schwierige morphologische Feingestaltung"
+- 2150/2160/2170 (22:08-33:10 / 33:41-50:28): „Zahnsubstanzschonende Präparation, okklusales Feineinschleifen, aufwendige Farb-/Formgestaltung" / „Interdisziplinäre Abstimmung, Mehrfacheinproben, gnathologische Feingestaltung"
+- 2180 Aufbaufüllung (2:55/4:26): „Aufwendige Entfernung vorheriger Restauration, schwierige Retentionsgewinnung bei stark reduzierter Restzahnsubstanz" / „Subgingivale Ausdehnung, Aufbau in mehreren Teilschritten"
+- 2197 (2:31/3:50): „Aufwendige individuelle Farbanpassung des Befestigungskomposits" / „Stark verlängerte Lichtaushärtungszeit aufgrund besonders tief ausgeprägter Defekte" / „Erschwerte Sicht im Seitenzahnbereich, sehr lange Lichtaushärtung je Fläche 20 Sek."
+
+BEGRÜNDUNGEN – EINZELKRONEN (Zeitangaben bei Praxisstundensatz 400€):
+- 2190 Stiftaufbau (8:44/13:17): „Schwierige Präparation des verengten, gebogenen Wurzelkanals, Einbringen mehrerer Stiftverankerungen" / „Verengter, obliterierter Wurzelkanal, mehrere Kanaleingänge, starke Kavitätenausdehnung"
+- 2195 (5:49/8:51): „Befestigung mehrerer Glasfaserstifte/Schraubenaufbauten" / „Weiche, stark reduzierte Restzahnsubstanz, schwierige Retentionsgewinnung" / „Erhöhter Präparationsaufwand durch Mehrfachbohrung bei intakter Wurzelkanalfüllung"
+- 2200 Implantatversorgung (25:39/39:02): „Erschwerter Zugang bei Verschraubung und Abdeckung Schraubkanal" / „Ausgeprägter Würgereiz → Behandlungspausen bei Abformung und Eingliederung"
+- 2210 Keramikkrone (32:34/49:33): „Erhöhter Präparationsaufwand, okklusales Feineinschleifen nach gnathologischen Kriterien, schwierige Sicht, aufwendige Farb-/Formgestaltung, erschwerte Retentionsgewinnung" / „Eingeschränkte Mundöffnung, Mehrfachabformung, Abrasionsgebiss" / „Mehrere Anproben aufgrund besonders schwieriger ästhetischer und funktioneller Anpassung"
+- 2220 Veneer (40:06/60:02): „Minimalinvasives Vorgehen, besonders vorsichtige Entfernung Vorrestauration" / „Erhöhte ästhetische Anforderungen Frontzahnbereich, starker Lippendruck, schwierige Kontaktpunktgestaltung"
+- 2250 konfektionierte Krone (4:04/6:12): „Eingeschränkte Compliance, stark reduzierte/zerstörte Restzahnsubstanz" / „Aufwendige Anpassung an vorhandene KFO-Geräte" / „Erschwerter Behandlungsablauf im Wechselzahngebiss"
+- 2260 Langzeitprovisorium (1:56/2:57): „Klinisch schwierig erreichbare Retention durch sehr kurzen Kronenstumpf" / „Mehrfache Abnahme und Wiederbefestigung des Provisoriums"
+- 2270 Direktes Provisorium (5:14/7:58): „Schwierige Farb-/Formanpassung, erschwerte Befestigung bei reduzierter Restzahnsubstanz" / „Starke Sulcusblutungen nach Präparation, erschwerte Sicht und Trockenlegung" / „5x Abnahme/Wiederbefestigung statt 2-3x im Durchschnitt"
+- 2290 Entfernen Krone (3:30/5:19): „Besonders schwierige Entfernung Zirkonoxid/Keramik-Versorgung" / „Besonders vorsichtiges Vorgehen zur Vermeidung Zahnfraktur bei endodontisch behandeltem Zahn"
+- 2300 Entfernen Wurzelstift (5:14/7:58): „Entfernung adhäsiv befestigter Wurzelstift bei Bruchgefahr" / „Extrem dünne Kavitätenwände, besonders vorsichtiges Vorgehen"
+- 2310 Wiedereingliederung (2:49/4:17): „Umfangreiche Entfernung alter Zementreste, Wiedereingliederung bei Zahnengstand und kurzem Zahnstumpf mit Kippung der Eingliederungsachse"
+- 2320 Reparatur (6:47/10:02): „Wiederherstellung Kaufläche, Anpassung Nachbarzahn, Reinigung Zahnstumpf und Krone" / „Aufwendige Farbnahme mehrere Zahnfarben/Schattierungen"
+
+BEGRÜNDUNGEN – ENDODONTIE / CHIRURGIE:
+- 2330 Caries profunda: „Überdurchschnittlicher Zeitaufwand wegen aufwendigen Abtragens kariösen Dentins mit Handinstrumenten"
+- 2390 Trepanation: „Sehr aufwendige Trepanation durch Verblendkrone mit besonders harter Metalllegierung, Verschleiß von zwei Hartmetallfräsen"
+- 2400 Längenbestimmung: „Maximaler Schwierigkeitsgrad wegen Vergrößerungshilfe durch spezifische anatomische Situation"
+- 2410 WK-Aufbereitung: „Enorm erhöhter Zeitaufwand wegen enormer Stufenbildung im Wurzelkanal, mehrfache Anläufe"
+- 2430 Medikamentöse Einlage: „Exorbitant aufwendige Entfernung alter medikamentöser Einlage aufgrund Materialzerfalls"
+- 2440 Wurzelfüllung: „Doppelt so hoher Zeitaufwand bei vertikaler Kondensationstechnik" / „Apikale Abdichtung bei offenem Kanal, langsames Einbringen zur Vermeidung Überfüllung"
+- 3010 Extraktion mehrwurzelig: „Stark ausgeprägte ankylotische Verbindung zwischen Knochen und Zahn, Extraktion in mehreren Arbeitsansätzen mit unterschiedlichen Instrumenten"
+- 3070 Exzision Schleimhaut: „Eingriff im stark ausgedehnten, entzündlich veränderten Gebiet, erschwerter Zugang im Interdentalraum unter besonderer Sichtbehinderung"
+
+BEGRÜNDUNGEN – RÖNTGEN (GOÄ Ä5000ff, Höchstsatz 2,5-fach):
+- „Erhöhter Zeitaufwand bei digitaler Nachbearbeitung: Röntgenfilter, plastische Darstellung, Kontrast-/Helligkeitsveränderungen, Detailvergrößerungen, Farbdarstellungen"
+- „Erheblicher Schwierigkeitsgrad und stark erhöhter Zeitaufwand wegen erschwerten Zugangs bei Zahnkippung"
+- „Bilddetails schwierig zu erkennen, Falschfarbendarstellung erforderlich, Grauwerte durch Farben ersetzt, Kontrast und Helligkeit reguliert"
+
+=== KOSTENVORANSCHLAG – KERAMIKKRONE ZAHN 46 (GOZ 2210 + PRIVATE VEREINBARUNG, 2026) ===
+
+Komplettbeispiel KVA Keramikkrone Zahn 46:
+HKP ZE: GOZ 2210 Keramikkrone → 330,31 €
+Labor gesamt: 754,27 € (Eigenlabor BEL II 104,27 € + Fremdlabor 650,00 €)
+Eigenlabor BEL II: 0723 Zahnfarbenbestimmung 15,13€ | 0732 Desinfektion ×3 22,80€ | 1009 Umarbeiten konfektionierter Löffel 15,77€ | 5306 Keramik konditionieren 30,20€ | 5401 Keramik ätzen 14,58€
+Private Vereinbarung §8 Abs.7 BMV-Z: 15 Positionen, Honorar 280,92 € + Material 26,90 € = 307,82 €
+Private Leistungen: 0030 (2,3) 25,87€ | 4055 (2,3) 1,68€ | 2030 Blutstillung (2,3) 8,41€ | 2030 Retraktionsfäden (2,3) 8,41€ | 4080 (2,3) 5,82€ | 4075 (2,3) 16,82€ | 5170 (3,5) 49,21€ | 5170a analog (3,5) 49,21€ | 2270 (3,5) 53,15€ | 4060 (2,3) 0,91€ | 4150 (2,3) 0,91€ | 2030 (2,3) 8,41€ | 2030 (2,3) 8,41€ | 2197 (3,5) 25,59€ | 6190 (2,3) 18,11€
+Materialien privat §4 Abs.3 GOZ: Alginat 3,00€ | Impregum 13,80€ | Futar D fast 5,80€ | Optosil 4,30€
+Hinweis: Leistungen über 2,3-fach (5170, 5170a, 2270, 2197 je 3,5-fach) müssen ausführlich begründet werden
+Privatvereinbarung §8 Abs.7 BMV-Z mit Unterschriftenfeld und Aufklärungstext
+
+=== ANALOGABRECHNUNG – BESONDERE BEHANDLUNGEN ===
+
+KRONENKANALAUFBAU AUS KUNSTSTOFF:
+- Kanalverankerter Kronenaufbau ist weder in GOZ noch GOÄ beschrieben
+- Abrechnung: analog §6 Abs.1 GOZ
+- Hohen Materialverbrauch, mehrfache Schichtung UND adhäsive Befestigung in Analogkalkulation einberechnen!
+
+MEHRFACHGESCHICHTETE REKONSTRUKTION IM DIREKTEN VERFAHREN (als Alternative zur Krone/Teilkrone):
+- Ist weder in GOZ noch GOÄ beschrieben → analog §6 Abs.1 GOZ
+- Unterschied zur Füllung/Restauration: Rekonstruktion = kompletter Zahnstumpf wird wiederhergestellt; Restauration = Füllung mit stabilen Seitenwänden
+- Präparation der Kavität ist Leistungsinhalt der Analogposition → NICHT extra berechenbar!
+- Politur und einfache Einschleifmaßnahmen sind ebenfalls Leistungsinhalt → NICHT extra berechenbar!
+- Patient VOR Behandlung über mögliche Nichterstattung von Analogleistungen aufklären
+- Analogwahl obliegt allein dem Zahnarzt (Art, Kosten- und Zeitaufwand)
+- In einzelnen Kammergebieten können abweichende Abrechnungsempfehlungen existieren
+
+Praxisfall Rekonstruktion Zahn 26 (PKV, 65 Jahre):
+08.01: 0010 + GOÄ Ä1 (nebeneinander möglich!) + 0070 Vitalitätsprobe + GOÄ Ä5000 Röntgen + 0030 KV + 2020 temporärer Verschluss (+ 2197 wenn adhäsiv!)
+24.01: 0080 Oberflächenanästhesie je KH/FZB (Material inklusive!) + 0090 ×2 Infiltration vest.+palatinal (höherer Faktor oder 2× mit Begründung) + 4050 ×2 + 4055 ×3 Beläge (30-Tage-Regelung!) + 2040 Kofferdam je KH/FZB + 2030 Blutstillung (beim Präparieren) + 2030 Keil/Matrize (beim Füllen; mehrfach ansetzbar!) + §6 Abs.1 analog Rekonstruktion + 1020 Fluoridierung
+
+=== PRGF-VERFAHREN – PKV-ERSTATTUNG & PATIENTENAUFKLÄRUNG ===
+
+Was ist PRGF: Plasma Rich in Growth Factors – Eigenblutprodukt zur Unterstützung Gewebeheilung; Thrombozyten setzen Wachstumsfaktoren frei → beschleunigen Wundheilung und Regeneration; Einsatz bei: Implantat-Therapien, Sinusbodenelevationen, parodontal-chirurgischen Eingriffen
+
+PKV-Erstattung PRGF:
+- PKV erstattet i.d.R. NICHT → bezeichnet es als überwiegend experimentell
+- PKV-Kommentar (Juli 2022): Muss als Verlangensleistung nach §1 Abs.2 Satz 2 + §2 Abs.3 GOZ berechnet werden
+- Zahnarzt MUSS Patient aufklären: Kostenübernahme nicht gesichert + voraussichtliche Kosten (§630c Abs.3 BGB)
+- Musterschreiben für Patienten empfohlen (mit BGH-Urteilen IV ZR 133/95 + IV ZR 60/01)
+
+Rechtsprechung pro PRGF:
+- LG Köln Az. 23 O 409/07 (04.11.2009): Medizinische Notwendigkeit muss nicht zwingend sein – es reicht, dass sie vertretbar ist; Kostenerwägungen bleiben außer Betracht
+- LG München Az. 26 O 16356/15 (14.11.2017): PRGF war medizinisch erforderlich wenn Arzt es nach objektiven Kriterien für sinnvoll halten konnte
+- PKV kann Erstattung NICHT allein wegen fehlender offizieller wissenschaftlicher Anerkennung verweigern!
+- Entscheidung über medizinische Notwendigkeit liegt allein beim approbierten Zahnarzt
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
