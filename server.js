@@ -1667,6 +1667,481 @@ Rechtsprechung pro PRGF:
 - PKV kann Erstattung NICHT allein wegen fehlender offizieller wissenschaftlicher Anerkennung verweigern!
 - Entscheidung über medizinische Notwendigkeit liegt allein beim approbierten Zahnarzt
 
+=== GOZ-BEGRÜNDUNGEN: DAS PERFEKTE SYSTEM ===
+
+GRUNDPRINZIP PERFEKTER BEGRÜNDUNGEN (§5 GOZ):
+Das System der perfekten Begründung läuft immer in 4 Schritten: WAHRNEHMEN → DOKUMENTIEREN → KOMMUNIZIEREN → ABRECHNEN.
+- Wahrnehmen: Besonderheiten aktiv wahrnehmen (z.B. Patient stark erkältet)
+- Dokumentieren: Sachverhalt in der Kartei vermerken
+- Kommunizieren: Patient WÄHREND der Behandlung über Besonderheiten informieren
+- Abrechnen: Genau diesen Sachverhalt als Begründung auf der Rechnung anführen
+
+HÄUFIGSTE FEHLER BEI BEGRÜNDUNGEN:
+- Es wird ein Befund beschrieben statt begründet (z.B. nur "eingeschränkte Mundöffnung" – besser: "Durch die eingeschränkte Mundöffnung war es erheblich erschwert, Instrumente regelgerecht zu platzieren")
+- Begriffe wie "besonders schonend", "präzise", "sorgfältig" verwenden → Kostenerstatter drehen das um: "sorgfältiges Arbeiten ist selbstverständlich"
+- Reine Situationsbeschreibungen ohne Mehraufwand-Nachweis
+- "Mehraufwand von Materialien und Instrumentarium" (kein Kriterium nach §5 GOZ!)
+- Schematisches Bemessen ohne individuellen Bezug
+
+DIE 3 ZULÄSSIGEN BEMESSUNGSKRITERIEN (§5 Abs.2 GOZ):
+1. Schwierigkeit der Leistung (auch durch Schwierigkeit des Krankheitsfalls)
+2. Zeitaufwand der Leistung
+3. Umstände bei der Ausführung
+Mindestens eines dieser Kriterien muss "Besonderheiten" aufweisen! Ist ein Kriterium bereits in der Leistungsbeschreibung enthalten → kann NICHT zur Begründung herangezogen werden.
+
+BEGRÜNDUNGSBEISPIELE – ALLGEMEINE SITUATIONEN:
+- Erkältung: "Deutlich erhöhter Zeitaufwand: Aufgrund der starken Erkältung des Patienten (keine Nasenatmung möglich) war es notwendig, die Behandlung öfter zu unterbrechen. Das Behandlungsfeld musste mehrfach neu eingestellt werden."
+- Mundtrockenheit durch Betablocker: "Erhöhter Zeitaufwand durch mehrmaliges Umspülen des Patienten und dadurch Unterbrechung der Behandlung bei extremer Mundtrockenheit durch die Einnahme von Betablockern"
+- Herpes/Rhagaden: "Erheblich erschwerte Behandlung, da – bedingt durch Herpes labialis/Rhagaden – die Mundöffnung stark behindert war"
+- Bandscheibenerkrankung: "Überdurchschnittlich erhöhter Zeitaufwand und Schwierigkeitsgrad aufgrund einer Bandscheibenerkrankung; ständiger Wechsel der Liegeposition notwendig und erschwerter Zugang zum Behandlungsfeld (Molarenbereich)"
+- Rheumatische Erkrankung: "Besondere Schwierigkeit des Krankheitsfalles: Wegen einer rheumatischen Erkrankung konnte der Patient nur in aufrechter Sitzposition behandelt werden. Eine behandlungsgerechte Lagerung für die Behandlung des Oberkiefers war ausgeschlossen. Durch diesen Umstand war nur sehr erschwert eine Einsichtnahme in das Behandlungsgebiet möglich."
+
+BEGRÜNDUNGSBEISPIELE – NIEDRIG BEWERTETE GOZ-LEISTUNGEN:
+- 0010 Untersuchung: "Die erheblich komplizierte Diagnose bei Herrn/Frau XY und die damit einhergehende Schwierigkeit der Differentialtherapie waren zusätzlich mit einem überdurchschnittlichen Zeitaufwand verbunden."
+- 0040 HKP KFO: "Die Einbeziehung mehrerer alternativer Versorgungsformen und das Aufzeigen sämtlicher therapeutischer Möglichkeiten sowie Konsequenzen erforderten bei Herrn/Frau XY einen extrem hohen Zeitaufwand."
+- 1020 Fluoridierung: "Durch den besonders starken Zahn-Engstand und weitere Zähne, die nicht in regelrechter Reihe stehen, konnten die Fluoridierungsapplikationen nur erschwert gezielt durchgeführt werden."
+- 2000 Versiegelung: "Die Schwierigkeit ergab sich aus der erschwerten Trockenlegung durch extrem starken Speichelfluss, der zusätzlich einen erheblichen Zeitaufwand zur Folge hatte."
+- 2110 Füllung >3-flächig: "Aufgrund extremer Ausdehnung kariöser Läsionen war es erforderlich, eine besonders große Füllung zu legen, und es war besonders schwierig, dafür bei so wenig Zahnsubstanz eine für die Füllung notwendige Retention herzustellen."
+- 2180 Aufbaufüllung: "Die besondere Schwierigkeit lag bei der Gewinnung von retentiven Arealen. Ausgelöst durch hohen Substanzverlust, der mit der Versorgung einer mehrflächigen Aufbaufüllung verbunden war und zusätzlichen Zeitaufwand erforderte."
+- 3060 Stillung Blutung: "Die extreme Schwierigkeit und der intensive Zeitaufwand entstand bei der Versorgung der Blutung bei ungünstigen Schleimhautverhältnissen durch die vorliegende entzündete Schleimhaut."
+- 3070 Exzision Schleimhaut: "Der extreme Zeitaufwand ergab sich durch den Eingriff im stark ausgedehnten und entzündlich veränderten Gebiet. Aufgrund der erschwerten Zugänglichkeit im Interdentalraum erfolgte die Exzision unter besonderer Sichtbehinderung."
+- 3090 Plastischer Verschluss Kieferhöhle: "Die außergewöhnlich schwierige Deckung war aufgrund der extrem dünnen Schleimhaut nur mit äußerster Vorsicht zu erbringen. Dies erforderte einen weit über dem Durchschnitt liegenden Zeitaufwand, um die Schleimhaut nicht einzureißen."
+- 3130 Hemisektion: "Besonders schwierig gestaltete sich die Hemisektion, da hier ein extrem spröder Zahn vorlag. Die Behandlung war sehr zeitaufwendig und musste sehr behutsam erfolgen, damit der zweite Zahnteil unversehrt erhalten bleiben konnte."
+- 4000 Parodontalstatus: "Durch besonders schwierigen Zugang und umfangreiche Aufzeichnung der Befundung war der Parodontalstatus außergewöhnlich zeitaufwendig. Ebenfalls lagen starke Taschenblutungen vor, die ein besonders eingeschränktes Behandlungsfeld vorlegten."
+- 4075 Parodontalchir. Therapie: "Der extreme Zeitaufwand bei der Entfernung der Beläge wurde durch die besonders starke Blutung und damit einhergehend eingeschränkte Sicht hervorgerufen."
+- 5250 Rep. Prothese ohne Abformung: "Bedingt durch die besonders schwierige individuelle Anpassung der Prothese an die vorhandene Situation nach derartig umfangreicher Wiederherstellung entstand ein extrem hoher Zeitaufwand."
+- 6190 Beratendes Gespräch: "Das Gespräch erforderte einen extrem hohen Zeitaufwand, um den Beteiligten das erforderliche Fachwissen und die Konsequenzen der Fehlmotorik zu erläutern."
+
+BEGRÜNDUNGSBEISPIELE – PROPHYLAXE:
+- Konkremente: "Erheblicher zeitlicher Mehraufwand, weil die alten und harten Konkremente nur durch zusätzlichen Einsatz eines Pulver-Wasser-Strahl-Geräts zu entfernen waren"
+- Zahnengstand: "Schwierigste Reinigung interdental; bei verschachtelter Zahnstellung war zusätzlicher Ultraschalleinsatz notwendig"
+- Fissuren: "Erheblich erhöhter Zeitaufwand bei der Versiegelung mehrerer getrennter Fissuren und Grübchen an einem Zahn"
+
+BEGRÜNDUNGSBEISPIELE – FÜLLUNGEN (detailliert):
+- Zahnengstand: "Schwierige Kavitätenpräparation, da durch Zahnengstand bedingt die approximale Kavität nur indirekt einsehbar war"
+- Wangen-/Zungenmuskeltonus: "Sehr zeitaufwendige Präparation, da wegen des hohen Wangen-/Zungenmuskeltonus die Arbeit häufig unterbrochen werden musste, um die Arbeitsinstrumente neu zu positionieren"
+- Tiefe kariöse Läsion: "Hoher Zeitaufwand, da durch vermehrten Substanzabtrag bei tiefen kariösen Läsionen zum Erhalt der vitalen Pulpa mit reduzierter Tourenzahl der Instrumente gearbeitet werden musste"
+- Parodontal vorgeschädigtes Gebiss: "Doppelter Zeitaufwand bei der Rekonstruktion des Kontaktpunktes zur Sicherung der Zwischenraumpflege bei parodontal vorgeschädigtem Gebiss"
+- Alte Kompositfüllung: "Erhöhter Zeitaufwand wegen schwieriger Entfernung der defekten Kompositfüllung: Dentin/Kompositgrenze undeutlich"
+- Matrizenlegung: "Erschwerte Matrizenlegung wegen unter sich gehendem Kavitätenboden: Nutzung doppelter Verkeilung der Matrize mit Individualisierung der Matrize, dessen Verdichtung mit der Zuhilfenahme eines Heidemannspatels (dazu zweite Assistenz notwendig)"
+- Gingivitis/Immunsuppression: "Häufige Unterbrechungen beim Konditionieren wegen erhöhter und wiederkehrender Blutung: Der Patient leidet an einer starken Gingivitis. Hyperplastische Gingiva mit erhöhter Blutungsneigung aufgrund der Immunsuppression"
+- Kavitätenpräparation bei Komposit: "Deutlicher zeitlicher Mehraufwand bei der Kavitätenpräparation: Die Entfernung alten Kompositmaterials erfolgte mit mehrfacher Unterbrechung, um den Übergang zwischen Zahnhartsubstanz und Kompositmaterial darzustellen. Nur so konnte eine substanzschonende Arbeit gewährleistet werden."
+
+BEGRÜNDUNGSBEISPIELE – CHIRURGIE (detailliert):
+- Kieferhöhle: "Erheblich erschwerter Verschluss der eröffneten Kieferhöhle. Das OP-Gebiet war schwierig zu erreichen und konnte nur indirekt eingesehen werden."
+- Vernarbungen: "Sehr schwieriger Wundverschluss aufgrund starker Vernarbungen durch Voroperationen"
+- Schleimhautbänder: "Die besondere Schwierigkeit und der daraus resultierende extreme Zeitaufwand lag bei der äußerst erschwerten Freistellung des Behandlungsfeldes mittels besonders komplizierter Schnitttechnik bei stark erhöhtem Muskeltonus."
+- Wundrevision: "Besondere Schwierigkeit bei der Behandlung der sehr großen Wunde; nach der vorangegangenen Operation stark eingeschränkte Mundöffnung. Bedingt durch die extrem eingeschränkte Sicht auf das Behandlungsfeld war ein zusätzlicher, weit über dem Durchschnitt liegender Zeitaufwand erforderlich."
+
+=== GOZ-BEGRÜNDUNGEN: WURZELKANALBEHANDLUNGEN (WKB) ===
+
+BEGRÜNDUNGSVORSCHLÄGE MIT BEHANDLUNGSZEITEN (Praxisstundensatz 400€):
+GOZ 2330 (2:08 bei 2,3 / 3:15 bei 3,5):
+- "Überdurchschnittlicher Zeitaufwand aufgrund sorgfältiger Präparation und Isolierung der betroffenen Zahnhartsubstanz zum Schutz des empfindlichen Dentinbereiches. Zusätzliche Arbeitsschritte bei Applikation und Aushärtung in mehreren Behandlungsschritten."
+- "Besonders erschwerte Umstände durch das Vorliegen einer tiefen kariösen Läsion nahe der Pulpa. Zur Vermeidung von Pulpairritationen erfolgte die sorgfältige Applikation des Überkappungsmateriales unter aseptischen Bedingungen."
+- "Überdurchschnittlicher Schwierigkeitsgrad aufgrund der sehr dünnen verbleibenden Dentinschicht. Besonders vorsichtiges Vorgehen unter Vermeidung von Druck auf die pulpanahen Strukturen."
+
+GOZ 2340 (3:53 / 5:54):
+- "Überdurchschnittlicher Zeitaufwand und Schwierigkeitsgrad aufgrund erschwerter Sicht durch atypische Pulpenverhältnisse und erschwerter Applikation."
+- "Besonders erschwerte Umstände aufgrund der ausgedehnten Karies. Fraktioniertes Exkavieren zum Schutz/Erhalt des hypersensiblen Dentins notwendig."
+- "Überdurchschnittlicher Zeitaufwand aufgrund ungünstig gelegener und sichtbarer Kavität, schwieriger Trockenlegung und damit erschwerte Applikation."
+
+GOZ 2350 (5:38 / 8:34):
+- "Überdurchschnittlicher Zeitaufwand aufgrund der schlecht einsehbaren Kavität, zusätzliche Entfernung eines Dentikels bei ungünstig gelegener Zahnregion."
+- "Besonders erschwerte Umstände aufgrund der multiplen Blutstillung im stark entzündeten Pulpengewebe."
+- "Überdurchschnittlicher Zeitaufwand aufgrund von schlechter Anästhesiewirkung aufgrund der stark entzündeten Pulpa und hoher Schmerzempfindlichkeit."
+
+GOZ 2360 (2:08 / 3:15):
+- "Überdurchschnittlicher Zeitaufwand aufgrund von Abzweigungen im Kanalverlauf, schwierige Exstirpation der Pulpa durch den tiefen Zerstörungsgrad des Zahnes und des entzündeten umliegenden Weichgewebes."
+- "Besonders erschwerte Umstände aufgrund erschwerter Sicht durch schwierig erreichbare Zahnregion, schwierig auffindbare und stark entzündete Kanaleingänge."
+- "Überdurchschnittlicher Zeitaufwand: multiple Blutstillung des Pulpengewebes, dadurch erschwerte Sicht, erschwerte Exstirpation durch voluminöse Pulpa."
+
+GOZ 2380 (3:06 / 4:44):
+- "Überdurchschnittlicher Zeitaufwand aufgrund eingeschränkter Compliance und nicht abgeschlossenem Wurzelwachstum."
+- "Besonders erschwerte Umstände aufgrund aufwendiger Diagnoseerhebung bei traumatisiertem Zahn (z. B. nach Sturz) und erschwerter Sicht bei eingeschränkter Mundöffnung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund von Sichtbehinderungen im Behandlungsfeld durch starke Pulpablutung und lang andauerndem Einwirken auf die Behandlungsbereitschaft des Patienten."
+
+GOZ 2390 (1:16 / 1:55):
+- "Überdurchschnittlicher Zeitaufwand durch Trepanation durch eine vorhandene Krone mit außergewöhnlicher Schichtdicke und Materialhärte."
+- "Besonders erschwerte Umstände aufgrund hochakuter Beschwerden und starker Schmerzempfindlichkeit bei verringerter Anästhesiewirkung."
+- "Überdurchschnittlicher Zeitaufwand bei mehreren Trepanationsöffnungen am mehrwurzeligen Zahn, aufwendige Vorpräparation einer Zugangskavität."
+
+GOZ 2400 (1:21 / 2:04):
+- "Überdurchschnittlicher Zeitaufwand aufgrund von Blutungen im Wurzelkanal und dadurch erschwerte Sicht."
+- "Besonders erschwerte Umstände aufgrund erschwerter Messung(en) bei stark gebogenen und abgewinkelten Wurzelkanälen."
+- "Überdurchschnittlicher Zeitaufwand aufgrund mehr als zweimaliger Längenbestimmung in einer Sitzung."
+
+GOZ 2410 (7:36 / 11:34):
+- "Überdurchschnittlicher Schwierigkeitsgrad bei der Wurzelkanalaufbereitung aufgrund der komplexen Wurzelanatomie mit mehrfach verästelten Kanälen sowie der extrem engen Kanalstrukturen."
+- "Besonders erschwerte Umstände bei der Wurzelkanalaufbereitung durch das Vorliegen einer massiven Entzündung im apikalen Bereich. Zusätzlich wurden aseptische Maßnahmen zur Vermeidung der Ausbreitung der Infektion durchgeführt."
+- "Überdurchschnittlicher Zeitaufwand aufgrund der komplexen Anatomie des Kanalsystems. Aufgrund der starken Krümmung war eine vorsichtige und schrittweise Arbeitsweise erforderlich."
+
+GOZ 2420 (1:21 / 2:04):
+- "Überdurchschnittlicher Zeitaufwand durch Mehrfachspülung unter Verwendung von Vergrößerungshilfen zur Erfassung der anatomischen Gesamtsituation."
+- "Besonders erschwerte Umstände aufgrund enger Wurzelkanäle bei zeitgleichem Vorliegen von Stufenbildungen. Dadurch erschwertes Erreichen der Kavität."
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Mitschrift des Spülprotokolls."
+
+GOZ 2430 (3:58 / 6:01):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Trocknung der Kavität zum Einbringen des Medikamentes, besonders vorsichtiges Vorgehen aufgrund des akuten Schmerzzustandes."
+- "Besonders erschwerte Umstände aufgrund des ungünstigen Zugangs zur Kavität und Mitbehandlung vorhandener Nebenkanäle."
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Trocknung des Wurzelkanals und erschwerter Sicht."
+
+GOZ 2440 (5:00 / 7:37):
+- "Überdurchschnittlicher Schwierigkeitsgrad und Zeitaufwand wegen besonders aufwendiger Wurzelfülltechnik in lateraler/vertikaler Kondensation und tiefer, sehr schwer einsehbarer Kavität bei eingeschränkter Mundöffnung."
+- "Besonders erschwerte Umstände aufgrund schwieriger Trockenlegung des schwer zugänglichen Wurzelkanals (Verengung)."
+- "Überdurchschnittlicher Zeitaufwand des schwierig zu erreichenden Apex bei überlanger Wurzel und dadurch erschwerter Abfüllung des Wurzelkanals."
+
+=== GOZ-BEGRÜNDUNGEN: ZAHNENTFERNUNGEN UND KLEINE CHIRURGIE ===
+
+GOZ 3000 (1:21 / 2:04):
+- "Überdurchschnittlicher Zeitaufwand aufgrund eingeschränkter Mundöffnung und starker Schwellung des umliegenden Gewebes." (häufig bei Milchzähnen)
+- "Besonders erschwerte Umstände aufgrund des akut entzündeten Zahngebietes. Dadurch stark verringerte Anästhesiewirkung und erschwerte Umstände bei der Entfernung des Zahnes."
+- "Überdurchschnittlicher Zeitaufwand aufgrund eingeschränkter Sicht durch extrem starken Lippen- und Wangendruck." (häufig bei Kindern oder älteren Patienten)
+
+GOZ 3010 (2:08 / 3:15):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Entfernung des Zahnes in Teilstücken bei bereits vorgeschädigten Zahnwänden."
+- "Besonders erschwerte Umstände aufgrund eingeschränkter Sicht durch starken Speichelfluss und nachlassender Mundöffnung bei langer Behandlungsdauer."
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Abklärung der extensiven Anamnese mit Haus-/MKG-/etc.-Arzt und schwierig zu erreichendem OP-Gebiet."
+
+GOZ 3020 (5:14 / 7:58):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Entfernung des stark verwachsenen Granulationsgewebes. Besonders vorsichtiges Vorgehen, erschwerte Sicht und multiple Blutstillung."
+- "Besonders erschwerte Umstände aufgrund aufwendiger plastischer Schnittführung."
+- "Überdurchschnittlicher Zeitaufwand wegen ausführlicher Beratung zur Förderung des Heilungsverlaufs und weiterer Wundbetreuung (Abwarten des Blutungsstillstandes)."
+
+GOZ 3030 (6:47 / 10:20):
+- "Überdurchschnittlicher Schwierigkeitsgrad und Zeitaufwand aufgrund erschwerter Sicht, eingeschränkter Mundöffnung und multipler Blutstillung bei vorsichtigem Vorgehen, da Gefahr der Verletzung benachbarter Strukturen (z. B. Kieferhöhle, Tuber, N. mandibularis)."
+- "Besonders erschwerte Umstände aufgrund starker Sickerblutung durch Einnahme von Gerinnungshemmern und vorsichtigen Vorgehens bei geschwächter Substanz des Knochens."
+- "Überdurchschnittlicher Zeitaufwand wegen umfangreicher Entfernung von nekrotischem Gewebe mit anschließender, umfangreicher Wundversorgung."
+
+GOZ 3040/3045 (10:29/14:53 bzw. 15:57/22:39):
+- "Überdurchschnittlicher Zeitaufwand aufgrund besonders starker und dichter Knochenkompakta, schwierige Schmerzausschaltung bei entzündetem Gebiet, aufwendige Entfernung von Granulationsgewebe mit besonders aufwendiger Nahttechnik."
+- "Besonders erschwerte Umstände aufgrund aufwendiger Zerteilung des Zahnes und Entfernung der Segmente in Teilstücken."
+- "Überdurchschnittlicher Zeitaufwand aufgrund besonders vorsichtigen Vorgehens zur Vermeidung von Schäden an Gefäß- und Nervstrukturen bei extensiver Anamnese des Patienten."
+
+GOZ 3050/3060 (2:09/3:15 bzw. 2:43/4:08):
+- "Überdurchschnittlicher Zeitaufwand aufgrund eingeschränkter Mundöffnung nach chirurgischem Eingriff und dadurch erschwerte Offenhaltung des OP-Gebietes."
+- "Besonders erschwerte Umstände aufgrund erschwerter Sicht auf das OP-Gebiet bei starker Sickerblutung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund Anwendung zusätzlicher Maßnahmen (z. B. Ozon, Laser, Elektrotom)."
+
+GOZ 3070/3080 (0:52/1:20 bzw. 2:55/4:26):
+- "Überdurchschnittlicher Zeitaufwand aufgrund des stark entzündeten Gebietes, schwierige Exzision durch reduzierte Anästhesiewirkung."
+- "Besonders erschwerte Umstände aufgrund besonders erschwerter Sicht durch umfangreiche Gewebeentfernung im hinteren Molarenbereich bei dentitio difficilis."
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger plastischer Schnittführung und Nahttechnik im Frontzahnbereich."
+
+GOZ 3090 (7:11 / 10:55):
+- "Überdurchschnittlicher Zeitaufwand aufgrund des erschwerten Zugangs bei stark geschwollenem umliegendem Weichgewebe."
+- "Besonders erschwerte Umstände aufgrund bestehender Gefahr benachbarte Strukturen zu verletzen, zusätzlich erschwerende Umstände durch stark erhöhte Muskelspannung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund komplizierter Lappenbildung und minimalinvasivem OP-Verfahren bei fragiler Mukosa."
+
+GOZ 3110/3120 WSR (8:56/13:35):
+- "Überdurchschnittlicher Zeitaufwand aufgrund extrem stark gebogener Wurzel und umfangreicher Lappenbildung bei sehr flacher vestibulärer Umschlagsfalte."
+- "Besonders erschwerte Umstände aufgrund einer Perforation im OP-Gebiet bei Nähe zur Kieferhöhle (OK) / Nervnähe (UK) und sehr dünner Knochensubstanz."
+- "Überdurchschnittlicher Zeitaufwand durch zusätzliche und besonders aufwendige Entfernung von Granulations- und Zystengewebe sowie Entfernung von überschüssigem Wurzelfüllmaterial."
+
+GOZ 3120 WSR Seitenzahn (11:15 / 17:08):
+- "Überdurchschnittlicher Zeitaufwand aufgrund ankylotischer Verbindungen zum Knochen, langer Wurzeln und aufwendiger Nahttechnik."
+- "Besonders erschwerte Umstände aufgrund erhöhter Fraktur-/Bruchgefahr des Zahnes, dadurch besonders vorsichtiges Vorgehen erforderlich."
+- "Überdurchschnittlicher Zeitaufwand aufgrund wiederholter Blutstillung, dadurch erschwerter Sicht. Zusätzlich war eine umfangreiche Lappenbildung notwendig."
+
+=== GOZ-BEGRÜNDUNGEN: PAR-LEISTUNGEN ===
+
+GOZ 4000 (3:06 / 4:44):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Befunderhebung im stark entzündlichen Gebiet und besonders tiefer, schwer zu erreichender Zahnfleischtaschen."
+- "Besonders erschwerte Umstände aufgrund erforderlicher zusätzlicher diagnostischer Aufzeichnung, z. B. Messung an mehreren Zahnflächen (Vielpunktmessung), Furkationsbefall sowie zusätzlicher Dokumentation der Allgemein-, Familien- und speziellen Vorgeschichte, der Abrasionen, Schliffflächen und Rezessionen."
+- "Überdurchschnittlicher Zeitaufwand bei der Erstellung des Parodontalstatus wegen Bewegungseinschränkung des Kiefergelenks und erschwerter Freistellung des Behandlungsfeldes bei erhöhter Muskelspannung."
+
+GOZ 4005 (1:33 / 2:22):
+- "Überdurchschnittlicher Zeitaufwand aufgrund starker Sulcusblutungen beim Messen und stark entzündeten Parodontaltaschen."
+- "Besonders erschwerte Umstände aufgrund schwieriger Messung/Befunderhebung bei Zahnengstand und Schachtelstellung der Zähne."
+- "Überdurchschnittlicher Zeitaufwand aufgrund besonders aufwendiger Vielpunktmessung an den Indexzähnen."
+
+GOZ 4020 (0:52 / 1:20):
+- "Überdurchschnittlicher Zeitaufwand aufgrund umfangreicher Behandlung des gesamten Gebisses bei generalisierter Mundschleimhauterkrankung."
+- "Besonders erschwerte Umstände aufgrund sehr schwieriger Applikation des Medikaments durch extrem starken Speichelfluss."
+
+GOZ 4025 (0:17 / 0:27):
+- "Überdurchschnittlicher Zeitaufwand aufgrund starker Speichelsekretion und Einbringen des Medikamentes an mehreren Stellen des Zahnes."
+- "Besonders erschwerte Umstände aufgrund erschwerter Sicht im stark entzündeten Gebiet, dadurch wurde das Einbringen des Medikaments stark erschwert."
+
+GOZ 4030 (0:41 / 1:02):
+- "Überdurchschnittlicher Zeitaufwand wegen mehrerer Maßnahmen in einer Kieferhälfte/einem Frontzahnbereich."
+- "Besonders erschwerte Umstände aufgrund von Entfernung mehrerer scharfer Zahnkanten am selben festsitzenden Zahnersatz."
+
+GOZ 4050/4055 (0:12/0:15 bzw. 0:18/0:23):
+- "Überdurchschnittlicher Zeitaufwand aufgrund extrem hartnäckiger Beläge und starker Verfärbungen durch Kaffee/Tee."
+- "Besonders erschwerte Umstände aufgrund besonders vorsichtigem Vorgehen bei Hypersensibilität und erschwerter Entfernung der Beläge bei verschachtelter Zahnstellung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund erschwerter Entfernung der harten und weichen Zahnbeläge aufgrund Multibandbebänderung/KFO-Apparatur/Retainer."
+
+GOZ 4070/4075 (1:56/2:31 bzw. 2:57/3:50):
+- "Überdurchschnittlicher Zeitaufwand aufgrund tiefreichender Zahnfleischtaschen und multipler Kürrettage."
+- "Besonders erschwerte Umstände aufgrund erschwerter Sicht durch besonders starke Sulcusblutungen, eine multiple Blutstillung war erforderlich."
+- "Überdurchschnittlicher Zeitaufwand aufgrund besonders starker Konkrementablagerungen und schwieriger Entfernung der Konkremente."
+
+GOZ 4080 (0:52 / 1:20):
+- "Überdurchschnittlicher Zeitaufwand aufgrund hoher Schmerzempfindlichkeit des Patienten und komplizierter Gingivarandgestaltung."
+- "Besonders erschwerte Umstände aufgrund zusätzlicher Verwendung einer Lupenbrille, erschwerte Sicht durch starke Sickerblutungen bei zusätzlicher Medikamenteneinnahme des Patienten (z. B. Gerinnungshemmer)."
+
+GOZ 4090/4100 (3:30/5:20 bzw. 5:19/8:07):
+- "Überdurchschnittlicher Zeitaufwand aufgrund schwieriger Schnittführungstechnik zum Papillenerhalt und aufwendiger Nahttechnik."
+- "Besonders erschwerte Umstände aufgrund erschwerter Lappenbildung durch starken Lippendruck."
+- "Überdurchschnittlicher Zeitaufwand aufgrund starker Sulcusblutungen und damit einhergehend erschwerte Sicht auf das Operationsfeld."
+
+GOZ 4110 (3:30 / 5:19):
+- "Überdurchschnittlicher Zeitaufwand aufgrund von Sichtbehinderungen durch starke Blutungen und tiefreichender Knochentaschen bei eingeschränkter Mundöffnung."
+- "Besonders erschwerte Umstände aufgrund besonders ausgedehnter Entzündung. Schwieriges Einbringen des Materials bei unzureichender Schmerzausschaltung."
+- "Überdurchschnittlicher Zeitaufwand: Einbringung verschiedener Knochenersatzmaterialien bei erschwerter Applikation im Wurzelbereich (schwierig zu erreichende Bi- oder Trifurkation)."
+
+GOZ 4120 (5:20 / 8:07):
+- "Überdurchschnittlicher Zeitaufwand aufgrund erschwerter Offenhaltung des Behandlungsfeldes, schwierige Lagerung des Patienten und fragiler Mukosa."
+- "Besonders erschwerte Umstände aufgrund schlecht erreichbarer Bifurkation und Bifurkationsdeckung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund von Deckung multipler Rezessionen im gleichen Gebiet."
+
+GOZ 4130 (3:30 / 5:19):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger und lang andauernder Mobilisation des Schleimhautlappens und ungünstiger Perioststruktur."
+- "Besonders erschwerte Umstände aufgrund von Zahnrotationen und dadurch erschwerte Sicht auf das Behandlungsfeld sowie schwieriger Lappenbildung."
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Nachversorgung der Entnahmestelle mit zusätzlicher Lappenbildung und dem Einbringen von alloplastischem Material."
+
+GOZ 4133 (17:04 / 25:59):
+- "Überdurchschnittlicher Zeitaufwand aufgrund starker Sickerblutungen nach zusätzlicher Entfernung von Schleimhautwucherungen."
+- "Besonders erschwerte Umstände aufgrund von verschachtelter Zahnstellung im OP-Gebiet und zusätzlichem instrumentellen Aufwand bei der Entnahme."
+- "Überdurchschnittlicher Zeitaufwand aufgrund schwer zugänglicher Region, erschwerter Sicht und vernarbter Schleimhaut durch Voroperationen."
+
+GOZ 4136 (3:53 / 5:54):
+- "Überdurchschnittlicher Zeitaufwand aufgrund stark erschwerter Tunnelierung der Furkation des dreiwurzeligen Zahnes und ungünstiger Anatomie."
+- "Besonders erschwerte Umstände aufgrund des stark erschwerten Zugangs zum Behandlungsfeld im hinteren Molarenbereich und zusätzlich sehr tiefer Furkation."
+
+GOZ 4138 (4:16 / 6:30):
+- "Überdurchschnittlicher Zeitaufwand aufgrund schwieriger Fixierung der Membran bei starken Blutungen und erschwerter Sicht."
+- "Besonders erschwerte Umstände aufgrund schwer zu erreichender OP-Region, erschwerte Fixierung beim Einbringen von mehreren Membranen im gleichen Gebiet."
+
+GOZ 4150 (0:08 / 0:12):
+- "Überdurchschnittlicher Zeitaufwand aufgrund aufwendiger Durchführung multipler Nachbehandlungsmaßnahmen."
+- "Besonders erschwerte Umstände aufgrund starker Sulcusblutungen bei noch aktiver Gingivitis und dadurch erschwerte Sicht und hohe Empfindlichkeit."
+
+=== DOKUMENTATION – VOLLSTÄNDIGE LEITFÄDEN ===
+
+WAS IST ZWINGEND ZU DOKUMENTIEREN (Patientenrechtegesetz §630f+h):
+- Anamnese, Diagnosen, Untersuchungen, Untersuchungsergebnisse, Befunde
+- Therapien und ihre Wirkungen, Eingriffe und ihre Wirkungen
+- Einwilligungen und Aufklärungen
+- Nicht dokumentiert = Leistung gilt als NICHT erbracht (§630h Abs.3)!
+- Dokumentation darf NICHT einfach gelöscht/geschwärzt werden – Änderungen müssen erkennbar sein
+- Digitale Dokumentation hat gleiche Anforderungen wie handschriftliche
+
+EINSICHTSRECHT PATIENT:
+- Unverzügliche Einsicht in vollständige Akte auf Verlangen (§630g BGB)
+- Kopien auf Kosten des Patienten: erste 50 Seiten je 50 Cent, jede weitere 15 Cent
+- Schwärzungen NUR für interne/organisatorische Vermerke auf der KOPIE erlaubt (z.B. "Termin versäumt")
+- NICHT schwärzen: Behandlungsnotizen, Verdachtsdiagnosen, Therapieempfehlungen (z.B. "Zahn 46 bei Verlust → Krone statt Füllung")
+
+DOKUMENTATIONSLEITFADEN – BERATUNGEN/UNTERSUCHUNGEN:
+- Ä1 Beratung: Thema/Inhalt, Dauer, Art (telefonisch/persönlich), Schwierigkeiten (Verständnisprobleme), Uhrzeit bei wiederholtem Ansatz pro Tag
+- Ä3 Eingehende Beratung: wie Ä1 + Mindestdauer 10 Minuten dokumentieren
+- Ä4 Fremdanamnese: Name der Bezugsperson, Verwandtschaftsverhältnis, Thema, Dauer, Schwierigkeiten
+- Ä5 Symptombezogene Untersuchung: untersuchter Zahn/Region, Symptom, Schwierigkeit und Zeitaufwand
+- Ä6 Vollständige Untersuchung: welches Organsystem, Befunde (Mundhöhle/Zunge/Kiefergelenke/Zahnstatus), Dauer, Schwierigkeiten
+
+AUFKLÄRUNGSDOKUMENTATION:
+- Nur approbierter Zahnarzt darf über medizinische Sachverhalte aufklären
+- Aufklärung muss rechtzeitig erfolgen (ausreichende Überlegungszeit für Patienten)
+- Keine Aufklärung im Behandlungsstuhl
+- Bei Minderjährigen: immer Erziehungsberechtigte aufklären
+- Bei Anderssprachigen: ggf. Dolmetscher
+- Bei Eingriffen: angemessene Zeitspanne zwischen Aufklärung und Eingriff
+
+DOKUMENTATIONSLEITFADEN – PROPHYLAXE:
+- 1000 (min. 25 Min.): Von wem erbracht, Zeitdauer (auch bei Aufteilung auf Sitzungen), Mundhygiene-Indizes, Anfärben, praktische Unterweisung, Art/Menge Materialien
+- 1010 (min. 15 Min.): Von wem erbracht, Zeitdauer, Ergebnis der Kontrolle, weitere Unterweisungen
+- 1020: Von wem erbracht, Zähne, Art/Menge Material, Trockenlegungsmaßnahmen, Indikation
+- 1040 PZR: Von wem erbracht, supragingivale Beläge, Reinigung Zwischenräume, Biofilm, Politur, Fluoridierung, Füllungen poliert?, Zahnersatz gereinigt?, übermäßige Blutung?, Schmerzempfindlichkeit?, Anästhesie?, Implantate?, subgingivale Konkremente?
+
+DOKUMENTATIONSLEITFADEN – FÜLLUNGEN:
+GOZ 2050/2060 etc.: Art/Anzahl Anästhesien, Anästhetikum, Füllungsmaterial, Matrize angelegt?, Hilfsmittel, Kofferdam, besondere Maßnahmen (separiert/Keil), Kariesdetektor, Unterfüllung mit welchem Material, Lage der Füllung, Farbe, Politur
+GOZ 2060/2080/2100/2120 zusätzlich: Mehrschichttechnik, Mehrfarbtechnik
+GOZ 2150/2160/2170 (Inlays): Lage, Material (Edelmetall/Keramik/CEREC), Abformmaterial, individueller Löffel, provisorische Versorgung, Form der Eingliederung (zementiert/adhäsiv), Silanisierung
+GOZ 2180 Aufbaufüllung: Kariesdetektor, Kofferdam, Material, adhäsive Befestigung, Umfang/Lage, besondere Maßnahmen
+
+DOKUMENTATIONSLEITFADEN – EINZELKRONEN (2200 ff.):
+Mindestdokumentation: Art/Anzahl Anästhesien, Anästhetikum, Art der Präparation, Art der Krone/Veneers, Individualisierung Implantataufbau, besondere Maßnahmen (separiert/Keil), Kofferdam, flüssiger Kofferdam, Farbe, individueller Löffel, Abformmaterial Art/Menge, Bissnahme Material, provisorische Versorgung, Einproben, Art der Eingliederung (Zementierung/adhäsiv/Verschraubung), bei Verschraubung: Abdeckung Schraubenkanal, Silanisierung/Konditionierung, FAL/FTL-Maßnahmen, Nachkontrollen
+WICHTIG: FAL/FTL = KEINE Relationsbestimmung, separat berechenbar (GOZ 8000 ff.)
+WICHTIG: Adhäsive Eingliederung → zusätzlich GOZ 2197 | Individueller Löffel aus Labor → zusätzlich GOZ 5170
+
+DOKUMENTATIONSLEITFADEN – HAUTLAPPENPLASTIKEN:
+Was muss zwingend dokumentiert werden:
+1. Region des Hautlappens (exakt)
+2. Indikation zur Bildung des Hautlappens
+3. Art des Hautlappens (Schwenklappen, Spaltlappen, Rotationslappen, Mukosalappen → löst Ä2382 aus!)
+Berechnungseinheiten unterscheiden sich je nach GOZ/GOÄ-Position (je Hautlappen / je Kieferhälfte / je OP-Gebiet / für 2 nebeneinanderliegende Zähne)
+
+ÜBERSICHT HAUTLAPPENPLASTIKEN:
+- GOZ 3100 (Plastische Deckung mit Periostschlitzung, je OP-Gebiet): 1,0-fach 15,19€ / 2,3-fach 34,93€ / 3,5-fach 53,15€ | Periostschlitzung ist ZWINGEND; ohne Periostschlitzung → Ä2381
+- GOZ 4120 (Gestielter Schleimhautlappen, je KH/FZB): 1,0-fach 15,47€ / 2,3-fach 35,57€ / 3,5-fach 54,13€ | aus Parodontologie, meist Rezessionsdeckung
+- GOZ 3240 (Vestibulumplastik kleineren Umfangs, bis 2 nebeneinanderliegende Zähne): 1,0-fach 30,93€ / 2,3-fach 71,15€ / 3,5-fach 108,27€
+- GOÄ Ä2675 (Partielle Vestibulumplastik, ab 3 nebeneinanderliegende Zähne): 2,3-fach 113,94€ / 3,5-fach 173,39€
+- GOÄ Ä2381 (Einfache Hautlappenplastik): 2,3-fach 49,60€ / 3,5-fach 75,48€ | eindirektionale Maßnahmen
+- GOÄ Ä2382 (Schwierige Hautlappenplastik): 2,3-fach 99,07€ / 3,5-fach 150,76€ | Split-Flap, Lateralverschiebung, Rotationslappen etc.
+OP-Zuschläge Ä442/443 je nach Hauptleistung; keine weiteren OP-Zuschläge (auch nicht GOZ) neben GOÄ-Zuschlägen!
+
+=== DOKUMENTATION – FUNKTIONSANALYSE/FUNKTIONSTHERAPIE ===
+
+HÄUFIGER FEHLER: Nur "Gesichtsbogen" dokumentieren → reicht nicht!
+- Aus "Gesichtsbogen" ist NICHT erkennbar, ob arbiträre oder kinematische Scharnierachsenbestimmung
+- Das ist entscheidend für die Folgeleistungen und die Wahl des Articulators!
+
+UNTERSCHIED ARBITRÄR VS. KINEMATISCH:
+- GOZ 8020 Arbiträre Scharnierachsenbestimmung (Gesichtsbogen mit Mittelwerten → halbindividueller Artikulator): 1,0-fach 16,87€ / 2,3-fach 38,81€ / 3,5-fach 59,05€
+- GOZ 8030 Kinematische Scharnierachsenbestimmung (individuelle Ermittlung Referenzpunkte → volladjustierbarer Artikulator): 1,0-fach 30,93€ / 2,3-fach 71,15€ / 3,5-fach 108,27€
+GOZ 8030 erfordert: kinematische Bestimmung, definitives Markieren Referenzpunkte, Anlegen Übertragungsbogen, Koordinieren mit Artikulator. Registrate sind mit GOZ 8010/8050/8060 abgegolten. Labortechnische Montage = gesondert berechnungsfähig.
+
+=== ENDODONTIE – VOLLSTÄNDIGE DOCUMENTATION & ABRECHNUNG ===
+
+HONORARVERLUST DURCH SCHLECHTE DOKUMENTATION – PRAXISFALL:
+Mangelhafte Dokumentation → 563,15€ | Korrekte Dokumentation → 1.002,91€ → Unterschied: 439,76€!
+Häufigste Fehler:
+- Anzahl Wurzelkanäle NICHT dokumentiert (bei Molar GOZ 2360/2410/2400/2420/2440 je Kanal!)
+- Kofferdam (GOZ 2040) vergessen
+- Konsiliarische Erörterung (GOÄ Ä60/181) vergessen
+- Kronentrenner-Materialkosten nicht erfasst (Unzumutbarkeitsgrenze beachten: ab 75% Materialkosten bezogen auf Honorar!)
+- Art der Befestigung temporärer Verschluss nicht dokumentiert (bei adhäsiv: GOZ 2197 zusätzlich!)
+- Anzahl der Röntgenprojektionen (GOÄ Ä5000 je Projektion = dreimal wenn 3 Projektionen nötig!)
+- Nr. 2030 nur einmal angesetzt obwohl 2x möglich (je einmal für Präparieren + einmal für Füllen)
+- Behandlungsdauer bei Ä3 nicht erfasst → nur Ä1 statt Ä3 möglich (Minderhonorar 9,38€)
+
+ENDODONTISCHE REVISION:
+GKV-Patient – Voraussetzungen für Kassenleistung (G-BA Richtlinie B.III.9.4):
+- Röntgenologisch erkennbare nicht randständige oder undichte Wurzelfüllung
+- Erhalt geschlossene Zahnreihe ODER Vermeidung einseitiger Freiendsituation ODER Erhalt funktionstüchtiger Zahnersatz
+- Bei mehrwurzeligen Zähnen: ALLE Kanäle revidieren!
+- Revision der WF am selben Zahn im selben Quartal → NICHT nach BEMA; in manchen KZVen Revision frühestens nach 6 Monaten
+Wenn G-BA-Kriterien NICHT erfüllt → gesamte Wurzelbehandlung privat nach GOZ (§8 Abs.7 BMV-Z)
+
+ZUSÄTZLICH BERECHNUNGSFÄHIGE LEISTUNGEN BEI REVISION:
+BEMA: 31 (Trep1), 32 (WK je Kanal), 34 (Med), 35 (WF je Kanal)
+GOZ (privat vereinbaren): 2400 (elektr. Längenbestimmung je Kanal), 2420 (physikalisch-chemische Methoden je Kanal)
+Analog §6 Abs.1 GOZ: Entfernung alten Wurzelfüllmaterials je Kanal, Verschluss Perforation/via falsa, Präendodontischer Aufbau, Entfernen fraktionierter Instrumente/intrakanalärer Fremdkörper, antimikrobielle photodynamische Therapie, Laserdekontamination, endodontische Stabilisierung
+
+ENTFERNUNG ALTER WURZELFÜLLUNG:
+Nicht Leistungsinhalt von GOZ 2410! = selbstständige analoge Leistung §6 Abs.1 GOZ. Beschluss Nr.62 des Beratungsforums PKV/Beihilfe: PKV/Beihilfe hält GOZ 2300a je Kanal für angemessen.
+
+WIEDERHOLTE KRONENABNAHME/-WIEDERBEFESTIGUNG BEI WKB:
+- Krone provisorisch befestigt und nächste Sitzung wieder entfernt → GOZ 2290 NICHT berechnungsfähig!
+- GOZ 2310 Wiedereingliederung = nur bei definitiver langer Tragedauer (temporäre Wiederbefestigung → NICHT nach 2310)
+- Mehraufwand über §5 Abs.2 GOZ (Steigerungsfaktor der übrigen Gebühren) abbilden
+- Notdienst: temporäre Wiederbefestigung → analog §6 Abs.1 GOZ (Empfehlung BZÄK: z.B. 2050a oder 2070a)
+
+ENTFERNUNG WURZELSTIFT BEI GKV-PATIENT:
+- BEMA: nur "ekr" für abgebrochenen Stift
+- Nicht abgebrochener Stift → GOZ 2300 privat vereinbaren (§8 Abs.7 BMV-Z)
+
+INVASIVE ZERVIKALE RESORPTION (ICR):
+- Aggressive Form externer Resorption, betrifft zervikale Wurzelregion; kann Pulpa einbeziehen
+- Früherkennung: "pink spot" im Zervikalbereich (stark vaskularisiertes Resorptionsgewebe)
+- Sensibilitätstest meist positiv (wichtiger Unterschied zur Pulpanekrose!)
+- Klein: chirurgischer Zugang + direkte Überkappung + adhäsive Restauration
+- Mit Pulpabeteiligung: Wurzelkanalbehandlung + Defektversorgung
+- Wichtige Korrektur: Verschluss der ICR mit KOMPOSIT (nicht MTA!); bei Eröffnung des Defekts: SUPRAGINGIVAL entfernen
+- Abrechnung: Lappenoperation (GOZ 4090), Trepanation (GOZ 2390), Vitalexstirpation (GOZ 2360), Ultraschallspülung (GOZ 2420), externer Verschluss analog §6 Abs.1 GOZ, schwierige Hautlappenplastik (GOÄ Ä2382), OP-Zuschläge Ä440+Ä443 (NUR einmal/Tag, NICHT neben GOZ 0500+0110!)
+
+APEXIFIKATION:
+- Weder in GOZ noch GOÄ beschrieben → analog §6 Abs.1 GOZ berechnen
+- In getrennter Sitzung zur Wurzelkanalfüllung
+- OP-Mikroskop: in Analogposition einpreisen (kein separater GOZ 0110)!
+
+PRÄENDODONTISCHER AUFBAU ZIRKULÄR:
+Nicht im GKV-Sachleistungskatalog → immer Privatleistung (analog §6 Abs.1 GOZ)!
+Vorteile: Frakturprävention, Kontaminationsschutz, Regressvermeidung, Grundlage späterer Aufbaufüllung
+Beratung: Patient muss Nutzen/Kosten/Alternative (Extraktion) kennen – Patientenrechtegesetz!
+WICHTIG: Bei endodontischer Behandlung → wenn danach Extraktion → REGRESSRISIKO! KI der KK erkennt Zusammenhang WK/WF + Extraktion!
+Kalkulation: Nr. 2120 GOZ (23 Min für 99€) oft zu unwirtschaftlich → Blick auf 2150-2170 (Inlay-Positionen) empfohlen
+Begleitleistungen vereinbaren: GOZ 2030 (Präparation + Füllen), 2040 (Kofferdam), 0080/0090/0100 (Anästhesien), 4050/4055 (Beläge), 2197 (adhäsive Befestigung), Kariesdetektor analog
+Wenn Endbetrag zu hoch → Faktor kürzen, NICHT die GOZ-Positionen streichen!
+
+KRONENKANALAUFBAU AUS KUNSTSTOFF:
+Weder in GOZ noch GOÄ → analog §6 Abs.1 GOZ. Hohen Materialverbrauch, mehrfache Schichtung UND adhäsive Befestigung in Kalkulation einberechnen!
+
+=== PRÄPROTHETISCHE CHIRURGIE – GKV-ABRECHNUNG ===
+
+ABRECHNUNGSPOSITIONEN:
+- BEMA 57 (SMS) Beseitigen Schleimhautbänder/Muskelansätze/Schlotterkamm: 48 Pkt | je Sitzung, je KH oder Frontzahn
+  NICHT enthält: Korrektur Lippenbändchen Diastema (BEMA 61), Behandlung Rezessionen, Beseitigung Epulis (BEMA 50), Mundboden-/Vestibulumplastiken nach BEMA 59 in selber Sitzung
+- BEMA 58 (KnR) Knochenresektion Alveolarfortsatz: 48 Pkt | als selbstständige Leistung; NICHT im zeitlichen Zusammenhang mit Extraktion/Osteotomie; bei ausgeheiltem Kiefer
+- BEMA 59 (Pla2) Mundboden-/Vestibulumplastik: 120 Pkt | Schleimhauttransplantation NICHT Leistungsinhalt!
+- BEMA 60 (Pla3) Tuberplastik einseitig: 80 Pkt | KnR neben Pla3 ist zulässig!
+- BEMA 62 (Alv) Alveolotomie: 36 Pkt | bei Extraktion in gleicher Sitzung: nur wenn zusammenhängendes Gebiet ≥4 Zähne; in gesonderter Sitzung: auch unter 4 Zähne ok; über 8 Zähne: 2x abrechenbar (Gebiet muss nicht zusammenhängend sein)
+
+WICHTIGE REGELN:
+- Ä1 NICHT neben BEMA 01 in selber Sitzung (01 enthält Beratung)
+- BEMA 38 (N) Nachbehandlung: Desinfektion/Spülung/Tamponade/Nahtentfernung → JA | Reine Nachkontrolle ohne diese Leistungen → NEIN
+- Primäre Wundversorgung/Naht ist LEISTUNGSINHALT von X1, X2, 47a, 47b, 48, SMS → NICHT gesondert!
+- KnR im zeitlichen Zusammenhang mit Extraktion/Osteotomie → NICHT berechenbar
+
+VERBANDSPLATTE:
+- Abrechnung: GOÄ Ä2700 je Kiefer, Anpassung: Ä2702 | Nicht genehmigungspflichtig!
+- Indikationen: palatinal retinierte Zähne OK, Mund-Antrum-Verbindung bei Gerinnungsstörung, Papillomatose, Schlotterkammexzision, Exostosen, Vestibulumplastik mit sek. Epithelisation, Schleimhaut-/Bindegewebstransplantation, Patienten mit medikamentöser Blutungsneigung
+- Labor: BEL II 0010 Modelle, 4020 Verbandsplatte, 3800 je Halteelement (Klammer)
+- Änderung der Verbandsplatte: Ä2702 je Kiefer; KEINE separate Berechnung reiner Kontrollsitzungen
+
+VESTIBULUMPLASTIKEN MIT LASER:
+- 2 Regionen (je bis zu 2 Zähne, z.B. 14/15 und 26/27): 2x GOZ 3240 + 2x GOZ 0080 + 4x GOZ 0090 + 1x GOZ 0510 + 1x GOZ 0120
+- Kleinere Vestibulumplastik (bis 2 Zähne) → GOZ 3240 | Größere (ab 3 nebeneinanderliegende Zähne) → GOÄ Ä2675
+
+NICHT-CHIRURGISCHE KRONENVERLÄNGERUNG:
+Bei tief zerstörten Zähnen: forcierte Extrusion oder Magnetextrusion als Alternative zur chirurgischen Kronenverlängerung
+Beide Methoden nach §6 Abs.1 GOZ analog abrechnen!
+Forcierte Extrusion (Extrusionshantelstegsystem mit Gummizug): GOZ 0065 od. analog Abformung, GOZ 4050/4055/4070/4075 Reinigung, Analog Eingliedern Hantel/Steg, Analog Kontrolle/Austausch Gummiringe, Analog Entfernen Konstruktion, GOZ 2197 + GOZ 2195 + Analog Aufbau
+Magnetextrusion: analog, je nach Aufwand der einzelnen Schritte → Leistungsketten transparant aufschlüsseln!
+Analogleistungen immer einzeln aufführen (nicht zusammenfassen) für bessere Transparenz und PKV-Erstattung.
+
+=== LESERFORUM – HÄUFIGE PRAXISFRAGEN 2024/2025 ===
+
+ALLGEMEINES / GOZ:
+- Faktorsteigerung bei Analogleistungen möglich? JA – §5 Abs.2 GOZ gilt auch für Analogleistungen. Faktor bis 3,5 ohne Vereinbarung, darüber §2 Abs.1+2 GOZ. Bei Überschreitung 2,3-fach: Begründung auf Rechnung. Regel: bei Analogleistungen reicht i.d.R. 2,3-fach; höhere Material-/Laborkosten → separat ausweisen
+- Zahnsteinentfernung an Retainer: Faktorsteigerung der GOZ 4050/4055 mit Begründung "Retainer" – NICHT extra analogberechnen
+- Zahnformkorrektur (ästhetisch): Analog §6 Abs.1 GOZ; bei rein ästhetisch: zwingend Verlangensleistung §2 Abs.3 GOZ VOR Behandlung vereinbaren
+- Verschluss via falsa: Analog §6 Abs.1 GOZ (z.B. 3120a); GOZ 0110 (Mikroskop) ist NUR Zuschlag zu bestimmten GOZ-Positionen → in Analogkalkulation einpreisen oder höherwertige Position wählen
+- Nahtmaterial PKV beanstandet: PKV hat UNRECHT! In GOZ-Abschnitten D, E, K darf atraumatisches Nahtmaterial zusätzlich berechnet werden; kein Zusammenhang mit OP-Zuschlägen
+- Bakteriologischer Schnelltest Papierstäbchen: GOÄ Nr. 298 (Entnahme + Aufbereitung je Entnahmestelle inkl. Material). Auswertung durch Zahnarzt selbst: analog §6 Abs.1; Auswertung Labor: direkt vom Labor abgerechnet
+
+ENDODONTIE:
+- Entfernung Wurzelstift bei GKV vor Endo-Revision: GOZ 2300 privat vereinbaren (§8 Abs.7 BMV-Z) – nur BEMA "ekr" für abgebrochenen Stift!
+- Krone nach privater WKB noch Kassenzuschuss? I.d.R. JA wenn WF die Richtlinienkriterien erfüllt (bis Apex, bioverträgliches Material, vollständig ausgefüllt, gute Prognose). Ausschlaggebend: Befund bei HKP-Erstellung, nicht Abrechnungsvorgeschichte. Sicherheitshalber bei KZV nachfragen!
+- Adhäsive Wurzelfüllung GOZ 2197 je Kanal? JA – BZÄK-Kommentar: je selbstständigen Arbeitsgang einer adhäsiven Befestigung berechnungsfähig
+- Adhäsiver Verschluss nach "med" bei GKV: JA – nach Vereinbarung §8 Abs.7 BMV-Z; GOZ 2020 + 2197. Nr. 2197 immer zusätzlich möglich (nicht im BEMA)
+- Subgingivale antibakterielle Lokalapplikation am Implantat: GOZ 4025 nur je ZAHN → bei Implantat: analog §6 Abs.1 GOZ (Materialkosten einkalkulieren!)
+
+PROTHETIK / ZAHNERSATZ:
+- Gleitender Härtefall: Versicherte die Einkommensgrenze nur leicht überschreiten erhalten einkommensabhängigen Zuschlag (2024: Grenze 1.414€ Bruttomonatseinkommen). Für Praxis keine Auswirkung – HKP wird wie genehmigt abgerechnet. Maßgeblich: Bruttoeinkommen im Monat VOR Eingliederung. KK rechnet nach Rechnungsvorlage ab.
+- Unterfütterung Interimsprothese (nach mehreren Monaten Wartezeit): Bei medizinischer Begründung → BEMA 100d + FZ 6.6; sonst → Privatleistung GOZ 5280 + Material/Labor
+- Digitale Abformung bei Härtefall: Verliert Regelversorgungsstatus → gleichartige Versorgung (halber FZ); Härtefall muss vor Behandlung über Eigenanteil aufgeklärt werden (Unterschrift!)
+- Konventionelle + digitale Abformung nebeneinander: JA wenn unterschiedliche Indikationen (GOZ 0050/0060 für Diagnose/Planung + GOZ 0065 für Zahnersatzherstellung = 2 separate Arbeitsschritte)
+- IOS Scannen Umschlagfalte: NICHT gesondert berechenbar → erhöhten Zeitaufwand über §5 Abs.2 GOZ abbilden
+- Funktionsabdrücke Totalprothese mit alter Prothese: GKV → BEMA 98b oder 98c; GOZ → 5180/5190 + Material
+- Socket Preservation: Auffüllen Knochenersatzmaterial → analog §6 Abs.1; autologer Knochen aus OP-Gebiet → GOZ 9090; Mischung → GOZ 9090 + analog; Eigenknochen aus anderem OP-Gebiet → zusätzlich GOZ 9140
+- Entfernung Implantat: GOZ 3000; bei Osteotomie: GOZ 3030; GKV → Privatvereinbarung §8 Abs.7 BMV-Z
+
+PAR / IMPLANTOLOGIE:
+- PAR am Implantatpfeiler Hybridbrücke: Natürlicher Pfeilerzahn → BEMA AITa/b (Kassenpat.) oder analog 3010a/4138a (Privatpat.). Implantatpfeiler (Periimplantitis geschlossen) → keine Kassenleistung → §8 Abs.7 BMV-Z + analog GOZ 3010a (Beschluss Nr.60 Beratungsforum)
+- Schleimhautentnahme Gaumen bei Implantatfreilegung: GOZ 4130 enthält ENTNAHME + TRANSPLANTATION. Wenn operative Unterminierung + plastische Deckung Entnahmestelle → GOÄ Ä2386. OHNE Unterminierung/plastische Deckung → GOZ 4130. Anzahl richtet sich nach Anzahl Transplantate. Verbandsplatte: gesondert GOÄ Ä2700.
+- Scan bei Implantation für individuelle Heilkappen: Vor Implantation 4x GOZ 0065; nach Implantation 1x GOZ 0065 + PC-Auswertung analog §6 Abs.1 + Übermittlung Scandaten §9 GOZ. Freilegung: GOZ 9040 (enthält Austausch Verschluss- gegen Heilkappe). Hautlappenplastik für Emergenzprofil: ggf. GOÄ Ä2381/Ä2382 + OP-Zuschlag
+
+BUNDESWEHR:
+- Inlay bei Bundeswehrangehörigem: Mehrkostenvereinbarung. Wiedereingliederung Inlay: GOZ 2310 + 2197 (da Wiedereingliederung nicht im BEMA → rein privat nach GOZ)
+- Gefräster Zirkonstift: löst FZ 1.5 aus; Abrechnung analog §6 Abs.1 GOZ (z.B. GOZ 2190a) da nicht in GOZ
+
+FACETTE / KRONE:
+- Erneuerung Facette direktadhäsiv bei GKV: nur vestibuläre Verblendung innerhalb Verblendgrenzen → BEMA 24b (Regelversorgung); mit GOZ 2197 → gleichartige Versorgung. Vollverblendung oder außerhalb Grenzen: gleichartig GOZ 2320 + 2197
+- Adhäsive Befestigung Kinderkrone: JA, GOZ 2197 zusätzlich; bei GKV-Kind: Vereinbarung §8 Abs.7 BMV-Z mit Eltern
+- Snap on Smile: provisorische herausnehmbare Versorgung ohne Präparation; analog abrechnen; Festzuschuss: bei KK nachfragen/HKP einreichen
+
+HEMISEKTION / WURZELAMPUTATION:
+- Extraktion distale Wurzel Zahn 46 inkl. Zahnkronenanteil (Hemisektion): GOZ 3130 + OP-Zuschlag GOZ 0500
+- Entfernung nur Wurzel (Wurzelamputation), kompletter Zahnkronenanteil bleibt: analog §6 Abs.1 GOZ; kein separater OP-Zuschlag möglich
+
+LESERFORUM – 2024 DIVERSE:
+- Inlay Dialyse-Patient: BEMA 13e-g; zweiflächiges Inlay GOZ 2160 abzgl. BEMA 13f (MKV nach §28 Abs.2 SGB V) + GOZ 2270 + ggf. 2197/2040/2030 + Material/Labor
+- Erstattung Entfernung alter Wurzelfüllung PKV: Analog §6 Abs.1 GOZ (Beschluss Nr.62 Beratungsforum); PKV-/Beihilfe-Empfehlung: GOZ 2300a je Kanal als angemessen
+- P.R.G.F. bei Implantation: analog §6 Abs.1 GOZ; PKV erstattet i.d.R. NICHT; Aufklärung und ggf. Verlangensleistung §2 Abs.3 GOZ vereinbaren; Musterschreiben an Patient empfehlen
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
