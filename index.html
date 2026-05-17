@@ -3,893 +3,1340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DentBill KI</title>
+<title>DentBill KI – Abrechnungsplattform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
-*{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --bg:#0f1117;--bg2:#161920;--bg3:#1e2229;--bg4:#252b34;
-  --border:#2a3040;--border2:#333d50;
-  --teal:#00c9a7;--teal2:#00a98a;--teal-dim:rgba(0,201,167,0.12);--teal-glow:rgba(0,201,167,0.06);
-  --amber:#f59e0b;--amber-dim:rgba(245,158,11,0.12);
-  --red:#ef4444;--red-dim:rgba(239,68,68,0.12);
-  --purple:#6366f1;--purple-dim:rgba(99,102,241,0.12);
-  --text:#e8eaf0;--text2:#8892a4;--text3:#4a5568;
-  --font:'DM Sans',sans-serif;--mono:'DM Mono',monospace;
+:root {
+  --teal: #0d9488;
+  --teal-light: #ccfbf1;
+  --teal-dark: #0f766e;
+  --indigo: #4f46e5;
+  --indigo-light: #e0e7ff;
+  --amber: #d97706;
+  --amber-light: #fef3c7;
+  --green: #16a34a;
+  --green-light: #dcfce7;
+  --red: #dc2626;
+  --red-light: #fee2e2;
+  --sky: #0284c7;
+  --pink: #db2777;
+  --purple: #9333ea;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --sidebar-w: 260px;
+  --radius: 12px;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
 }
-html,body{height:100%;font-family:var(--font);background:var(--bg);color:var(--text);font-size:14px}
-
-/* LOGIN */
-#login-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:1rem}
-.login-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:2rem;width:100%;max-width:380px}
-.login-logo .lname{font-size:22px;font-weight:600;color:var(--teal);margin-bottom:4px}
-.login-logo .lsub{font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:1.6rem}
-.tabs-row{display:flex;background:var(--bg3);border-radius:8px;padding:3px;margin-bottom:1.4rem}
-.tab-pill{flex:1;padding:7px;text-align:center;font-size:12px;border-radius:6px;cursor:pointer;color:var(--text2);border:none;background:none;font-family:var(--font);transition:all .15s}
-.tab-pill.active{background:var(--teal);color:#0f1117;font-weight:500}
-.field{margin-bottom:.9rem}
-.field label{font-size:12px;color:var(--text2);display:block;margin-bottom:5px}
-.field input,.field select,.field textarea{width:100%;padding:9px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--font);font-size:13px;outline:none;transition:border .15s}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal)}
-.field textarea{resize:vertical;min-height:80px}
-.code-hint{font-size:10px;color:var(--text3);margin-top:3px}
-.btn-primary{width:100%;padding:10px;background:var(--teal);border:none;border-radius:8px;color:#0f1117;font-size:14px;font-weight:500;cursor:pointer;font-family:var(--font);transition:background .15s}
-.btn-primary:hover{background:var(--teal2)}
-.alert{border-radius:8px;padding:8px 12px;font-size:12px;margin-top:10px;display:none}
-.alert.error{background:var(--red-dim);border:1px solid rgba(239,68,68,.3);color:var(--red)}
-.alert.success{background:var(--teal-glow);border:1px solid rgba(0,201,167,.3);color:var(--teal)}
-
-/* APP */
-#app-screen{display:none;height:100vh;flex-direction:row}
-.sidebar{width:215px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;height:100vh;flex-shrink:0}
-.s-logo{padding:16px 14px 12px;border-bottom:1px solid var(--border)}
-.s-logo .lname{font-size:14px;font-weight:600;color:var(--teal)}
-.s-logo .lsub{font-size:10px;color:var(--text3);font-family:var(--mono);margin-top:2px}
-.nav{flex:1;padding:8px;display:flex;flex-direction:column;gap:1px;overflow-y:auto}
-.nav-sep{height:1px;background:var(--border);margin:5px 2px}
-.nb{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;border:none;background:none;color:var(--text2);font-family:var(--font);font-size:13px;cursor:pointer;text-align:left;width:100%;transition:all .15s}
-.nb:hover{background:var(--bg3);color:var(--text)}
-.nb.active{background:var(--teal-dim);color:var(--teal)}
-.nb svg{width:15px;height:15px;flex-shrink:0;opacity:.7}
-.nb.active svg{opacity:1}
-.nb.admin-nav{color:var(--text3)}
-.nb.admin-nav:hover{color:var(--amber)}
-.nb.admin-nav.active{background:var(--amber-dim);color:var(--amber)}
-.s-bottom{padding:10px;border-top:1px solid var(--border)}
-.u-row{display:flex;align-items:center;gap:8px}
-.av{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--teal),#005f7a);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:#fff;flex-shrink:0}
-.uname{font-size:12px;font-weight:500;color:var(--text)}
-.urole{font-size:10px;color:var(--text3)}
-.btn-logout{margin-top:8px;width:100%;padding:5px;background:none;border:1px solid var(--border);border-radius:6px;color:var(--text3);font-size:11px;cursor:pointer;font-family:var(--font);transition:all .15s}
-.btn-logout:hover{border-color:var(--red);color:var(--red)}
-
-.main{flex:1;display:flex;flex-direction:column;min-width:0;height:100vh;overflow:hidden}
-.panel{display:none;flex:1;flex-direction:column;overflow:hidden}
-.panel.active{display:flex}
-
-/* CHAT */
-.chat-bar{padding:12px 18px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.chat-bar h2{font-size:14px;font-weight:500}
-.chat-bar p{font-size:11px;color:var(--text3);margin-top:1px}
-.badge{background:var(--teal-dim);border:1px solid rgba(0,201,167,.2);color:var(--teal);font-size:10px;font-family:var(--mono);padding:3px 8px;border-radius:20px}
-.msgs{flex:1;overflow-y:auto;padding:14px 18px;display:flex;flex-direction:column;gap:10px}
-.msgs::-webkit-scrollbar{width:3px}.msgs::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-.msg{display:flex;gap:8px;animation:fu .2s ease}
-@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
-.msg.user{flex-direction:row-reverse}
-.mav{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600;flex-shrink:0;margin-top:2px}
-.mav.ai{background:linear-gradient(135deg,var(--teal),#005f7a);color:#fff}
-.mav.us{background:linear-gradient(135deg,#6366f1,#4338ca);color:#fff}
-.bub{max-width:84%;padding:9px 13px;border-radius:10px;font-size:13px;line-height:1.7}
-.msg.ai .bub{background:var(--bg3);border:1px solid var(--border);border-top-left-radius:3px}
-.msg.user .bub{background:linear-gradient(135deg,var(--teal2),#007a60);color:#fff;border-top-right-radius:3px}
-.bub strong{color:var(--teal);font-weight:500}
-.bub code{background:var(--bg4);padding:1px 5px;border-radius:4px;font-family:var(--mono);font-size:11px;color:var(--amber)}
-.src{font-size:10px;color:var(--text3);margin-top:4px}
-.thinking{display:flex;align-items:center;gap:5px;padding:9px 13px;background:var(--bg3);border:1px solid var(--border);border-radius:10px;width:fit-content}
-.dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:bl 1.2s infinite}
-.dot:nth-child(2){animation-delay:.2s}.dot:nth-child(3){animation-delay:.4s}
-@keyframes bl{0%,80%,100%{opacity:.2}40%{opacity:1}}
-.chips{padding:0 18px 8px;display:flex;gap:6px;flex-wrap:wrap;flex-shrink:0}
-.chip{background:var(--bg3);border:1px solid var(--border);color:var(--text2);border-radius:20px;padding:4px 11px;font-size:11px;cursor:pointer;transition:all .15s;font-family:var(--font)}
-.chip:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-dim)}
-.inp-area{padding:10px 18px 14px;border-top:1px solid var(--border);flex-shrink:0}
-.fprev{display:none;align-items:center;gap:6px;background:var(--amber-dim);border:1px solid rgba(245,158,11,.25);border-radius:6px;padding:5px 10px;font-size:11px;color:var(--amber);margin-bottom:7px}
-.inp-wrap{display:flex;align-items:flex-end;gap:8px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:8px 10px;transition:border .15s}
-.inp-wrap:focus-within{border-color:var(--teal)}
-#chat-ta{flex:1;background:none;border:none;color:var(--text);font-family:var(--font);font-size:13px;resize:none;height:36px;max-height:100px;outline:none;line-height:1.6}
-#chat-ta::placeholder{color:var(--text3)}
-.btn-att{background:none;border:none;color:var(--text3);cursor:pointer;padding:4px;border-radius:6px;display:flex;transition:color .15s}
-.btn-att:hover{color:var(--teal)}
-.btn-send{background:var(--teal);border:none;border-radius:8px;padding:7px 11px;color:#0f1117;cursor:pointer;display:flex;transition:background .15s}
-.btn-send:hover{background:var(--teal2)}
-#file-input{display:none}
-
-/* GENERIC PANEL */
-.ph{padding:12px 18px 10px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.ph h2{font-size:14px;font-weight:500}
-.ph p{font-size:11px;color:var(--text3);margin-top:1px}
-.pb{flex:1;overflow-y:auto;padding:14px 18px}
-.pb::-webkit-scrollbar{width:3px}.pb::-webkit-scrollbar-thumb{background:var(--border2);border-radius:2px}
-.info-box{background:var(--teal-glow);border:1px solid rgba(0,201,167,.15);border-radius:8px;padding:10px 13px;font-size:12px;color:var(--text2);margin-bottom:12px;line-height:1.6}
-.info-box strong{color:var(--teal)}
-.cat-label{font-size:10px;font-weight:500;color:var(--text3);text-transform:uppercase;letter-spacing:.8px;margin:14px 0 7px}
-
-/* BUTTONS */
-.btn-sm{background:var(--teal);border:none;border-radius:8px;padding:6px 14px;color:#0f1117;font-size:12px;font-weight:500;cursor:pointer;font-family:var(--font);display:inline-flex;align-items:center;gap:5px;transition:background .15s}
-.btn-sm:hover{background:var(--teal2)}
-.btn-sm.amber{background:var(--amber);color:#0f1117}
-.btn-sm.amber:hover{background:#d97706}
-.btn-sm.red{background:var(--red);color:#fff}
-.btn-sm.red:hover{background:#dc2626}
-.btn-sm.ghost{background:none;border:1px solid var(--border);color:var(--text2)}
-.btn-sm.ghost:hover{border-color:var(--teal);color:var(--teal)}
-
-/* ROWS */
-.row{display:flex;align-items:center;gap:10px;padding:9px 11px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:5px;transition:border .15s}
-.row:hover{border-color:var(--border2)}
-.row-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;color:#fff}
-.row-title{font-size:13px;color:var(--text);font-weight:500}
-.row-meta{font-size:11px;color:var(--text3)}
-.row-actions{display:flex;gap:5px;margin-left:auto}
-.pill{font-size:10px;padding:2px 8px;border-radius:20px}
-.pill.teal{background:var(--teal-dim);color:var(--teal)}
-.pill.purple{background:var(--purple-dim);color:var(--purple)}
-.pill.amber{background:var(--amber-dim);color:var(--amber)}
-.pill.red{background:var(--red-dim);color:var(--red)}
-
-/* ADMIN */
-.admin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:16px}
-.cat-card{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:12px;cursor:pointer;transition:all .15s;position:relative}
-.cat-card:hover{border-color:var(--border2);transform:translateY(-1px)}
-.cat-card .cc-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;margin-bottom:8px}
-.cat-card .cc-label{font-size:13px;font-weight:500;color:var(--text);margin-bottom:3px}
-.cat-card .cc-desc{font-size:11px;color:var(--text3);line-height:1.4}
-.cat-card .cc-actions{display:flex;gap:5px;margin-top:8px}
-.search-bar{display:flex;gap:8px;margin-bottom:12px}
-.search-bar input{flex:1;padding:8px 12px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--font);font-size:13px;outline:none;transition:border .15s}
-.search-bar input:focus{border-color:var(--teal)}
-
-/* MODAL */
-.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;align-items:center;justify-content:center;padding:1rem}
-.modal-bg.open{display:flex}
-.modal{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:1.5rem;width:100%;max-width:460px;max-height:90vh;overflow-y:auto}
-.modal h3{font-size:15px;font-weight:500;margin-bottom:1.2rem;color:var(--text)}
-.modal-actions{display:flex;gap:8px;margin-top:1.2rem;justify-content:flex-end}
-
-/* TAGS INPUT */
-.tags-wrap{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
-.tag{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:2px 8px;font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px}
-.tag button{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;line-height:1;padding:0}
-
-/* KV GENERATOR */
-.kv-output{background:var(--bg4);border:1px solid var(--border2);border-radius:8px;padding:12px 14px;font-family:var(--mono);font-size:12px;line-height:1.8;white-space:pre-wrap;color:var(--text);margin-top:10px}
-.kv-btn-row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
-.kv-chip{background:var(--bg3);border:1px solid var(--border);color:var(--text2);border-radius:20px;padding:5px 13px;font-size:12px;cursor:pointer;transition:all .15s;font-family:var(--font)}
-.kv-chip:hover{border-color:var(--teal);color:var(--teal);background:var(--teal-dim)}
-
-@media(max-width:600px){
-  .sidebar{width:50px}.s-logo .lsub,.nb span,.s-bottom .uname,.s-bottom .urole{display:none}
-  .nb{justify-content:center;padding:10px}.s-logo{padding:12px 8px}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
+/* ── LOGIN ─────────────────────────────── */
+#loginScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  position: fixed; inset: 0; z-index: 1000;
+}
+.login-card {
+  background: white;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 380px;
+  box-shadow: var(--shadow-lg);
+}
+.login-logo {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.login-logo-icon {
+  width: 56px; height: 56px;
+  background: linear-gradient(135deg, var(--teal), var(--indigo));
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.login-logo h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  color: var(--text);
+}
+.login-logo p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.login-card label { display: block; font-size: 13px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px; }
+.login-card input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color .2s;
+  margin-bottom: 16px;
+}
+.login-card input:focus { border-color: var(--teal); }
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity .2s, transform .1s;
+}
+.btn-primary:hover { opacity: .92; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.login-err { color: var(--red); font-size: 13px; margin-top: 12px; text-align: center; display: none; }
+.login-register { text-align: center; margin-top: 20px; font-size: 13px; color: var(--text-muted); }
+.login-register a { color: var(--teal); text-decoration: none; font-weight: 500; cursor: pointer; }
+
+/* ── APP SHELL ─────────────────────────── */
+#app { display: none; height: 100vh; }
+.app-layout { display: flex; height: 100vh; }
+
+/* ── SIDEBAR ─────────────────────────── */
+.sidebar {
+  width: var(--sidebar-w);
+  background: #0f172a;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar-header {
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.sidebar-brand {
+  display: flex; align-items: center; gap: 10px;
+}
+.sidebar-brand-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--teal), var(--indigo));
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px;
+}
+.sidebar-brand-text strong {
+  display: block; font-size: 14px; font-weight: 600; color: white;
+  font-family: 'DM Serif Display', serif;
+}
+.sidebar-brand-text span { font-size: 11px; color: rgba(255,255,255,.4); }
+
+.sidebar-user {
+  margin: 12px 10px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,.05);
+  border-radius: 10px;
+  display: flex; align-items: center; gap: 10px;
+}
+.sidebar-avatar {
+  width: 32px; height: 32px;
+  background: linear-gradient(135deg, var(--teal), var(--indigo));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 600; color: white;
+}
+.sidebar-user-info strong { display: block; font-size: 12px; color: white; }
+.sidebar-user-info span { font-size: 11px; color: rgba(255,255,255,.4); }
+
+.sidebar-nav { padding: 8px 10px; flex: 1; }
+.nav-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.3);
+  padding: 12px 8px 6px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: rgba(255,255,255,.55);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .15s;
+  margin-bottom: 2px;
+}
+.nav-item:hover { background: rgba(255,255,255,.07); color: rgba(255,255,255,.85); }
+.nav-item.active { background: rgba(13,148,136,.25); color: #5eead4; }
+.nav-item .nav-icon { font-size: 15px; width: 20px; text-align: center; }
+
+.sidebar-footer { padding: 12px 10px; border-top: 1px solid rgba(255,255,255,.08); }
+.logout-btn {
+  display: flex; align-items: center; gap: 10px;
+  padding: 9px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  color: rgba(255,255,255,.4);
+  font-size: 13px; font-weight: 500;
+  transition: all .15s;
+  width: 100%; border: none; background: none; font-family: inherit;
+}
+.logout-btn:hover { background: rgba(220,38,38,.15); color: #fca5a5; }
+
+/* ── MAIN CONTENT ─────────────────────── */
+.main-content { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+
+/* ── PANELS ─────────────────────────── */
+.panel { display: none; flex: 1; flex-direction: column; height: 100%; }
+.panel.active { display: flex; }
+
+/* ── CHAT PANEL ─────────────────────── */
+.chat-header {
+  padding: 16px 24px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.chat-avatar {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, var(--teal), var(--indigo));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px;
+}
+.chat-header-info strong { font-size: 15px; color: var(--text); }
+.chat-header-info span { font-size: 12px; color: var(--text-muted); display: block; }
+.chat-status { width: 8px; height: 8px; background: var(--green); border-radius: 50%; margin-left: auto; }
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  scroll-behavior: smooth;
+}
+.chat-messages::-webkit-scrollbar { width: 5px; }
+.chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+.welcome-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 24px;
+  border: 1px solid var(--border);
+  max-width: 520px;
+}
+.welcome-card h2 { font-family: 'DM Serif Display', serif; font-size: 20px; margin-bottom: 8px; }
+.welcome-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+.welcome-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chip {
+  background: var(--teal-light);
+  color: var(--teal-dark);
+  border: 1px solid rgba(13,148,136,.2);
+  padding: 6px 12px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+}
+.chip:hover { background: var(--teal); color: white; }
+
+.msg {
+  display: flex;
+  gap: 10px;
+  max-width: 82%;
+  animation: fadeUp .25s ease;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.msg.user { flex-direction: row-reverse; margin-left: auto; }
+.msg-avatar {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600;
+}
+.msg.lisa .msg-avatar { background: linear-gradient(135deg, var(--teal), var(--indigo)); color: white; }
+.msg.user .msg-avatar { background: var(--indigo-light); color: var(--indigo); }
+
+.msg-bubble {
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.msg.lisa .msg-bubble {
+  background: white;
+  border: 1px solid var(--border);
+  border-top-left-radius: 4px;
+  box-shadow: var(--shadow);
+}
+.msg.user .msg-bubble {
+  background: linear-gradient(135deg, var(--teal), var(--teal-dark));
+  color: white;
+  border-top-right-radius: 4px;
+}
+.msg-bubble strong { font-weight: 600; }
+.msg-bubble code {
+  background: rgba(13,148,136,.1);
+  color: var(--teal-dark);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 12px;
+}
+.msg.user .msg-bubble code { background: rgba(255,255,255,.2); color: white; }
+.msg-time { font-size: 11px; color: var(--text-muted); margin-top: 4px; padding: 0 4px; }
+.msg.user .msg-time { text-align: right; }
+
+.typing-indicator {
+  display: flex; gap: 4px; align-items: center;
+  padding: 14px 18px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  border-top-left-radius: 4px;
+  width: fit-content;
+  box-shadow: var(--shadow);
+}
+.typing-dot {
+  width: 7px; height: 7px;
+  background: var(--teal);
+  border-radius: 50%;
+  animation: bounce 1.2s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: .2s; }
+.typing-dot:nth-child(3) { animation-delay: .4s; }
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(.7); opacity: .5; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+.chat-input-area {
+  padding: 16px 24px;
+  background: white;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.chat-input-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 10px 14px;
+  transition: border-color .2s;
+}
+.chat-input-row:focus-within { border-color: var(--teal); }
+#chatInput {
+  flex: 1;
+  border: none;
+  background: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+  max-height: 120px;
+  min-height: 22px;
+  line-height: 1.5;
+}
+#chatInput::placeholder { color: var(--text-muted); }
+.send-btn {
+  width: 36px; height: 36px;
+  background: var(--teal);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: background .15s, transform .1s;
+}
+.send-btn:hover { background: var(--teal-dark); transform: scale(1.05); }
+.send-btn:disabled { background: var(--border); cursor: not-allowed; transform: none; }
+.chat-hint { font-size: 11px; color: var(--text-muted); margin-top: 8px; text-align: center; }
+
+/* ── KV PANEL ─────────────────────────── */
+.kv-layout { display: flex; height: 100%; }
+.kv-chat { flex: 1; display: flex; flex-direction: column; border-right: 1px solid var(--border); }
+.kv-preview { width: 340px; flex-shrink: 0; background: white; overflow-y: auto; }
+.kv-preview-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px; font-weight: 600; color: var(--text-muted);
+  display: flex; align-items: center; gap: 8px;
+}
+.kv-preview-content { padding: 20px; }
+.kv-empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+}
+.kv-empty-state .icon { font-size: 36px; margin-bottom: 12px; }
+.kv-empty-state p { font-size: 13px; }
+.kv-doc {
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+}
+.kv-doc-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 16px;
+  border-bottom: 2px solid var(--teal);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.kv-actions { padding: 12px 20px; border-top: 1px solid var(--border); }
+.btn-outline {
+  width: 100%; padding: 9px;
+  border: 1.5px solid var(--border);
+  background: none;
+  border-radius: 9px;
+  font-size: 13px; font-weight: 500;
+  cursor: pointer; font-family: inherit;
+  color: var(--text-muted);
+  transition: all .15s;
+}
+.btn-outline:hover { border-color: var(--teal); color: var(--teal); }
+
+/* ── KNOWLEDGE PANEL ─────────────────── */
+.knowledge-header {
+  padding: 20px 24px 16px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.knowledge-header h2 { font-family: 'DM Serif Display', serif; font-size: 20px; }
+.knowledge-header p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+.knowledge-toolbar {
+  display: flex; gap: 10px; margin-top: 14px;
+}
+.search-input {
+  flex: 1; padding: 9px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  font-size: 13px; font-family: inherit;
+  outline: none;
+  transition: border-color .2s;
+}
+.search-input:focus { border-color: var(--teal); }
+.btn-add {
+  padding: 9px 16px;
+  background: var(--teal);
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 13px; font-weight: 500;
+  cursor: pointer; font-family: inherit;
+  display: flex; align-items: center; gap: 6px;
+  transition: background .15s;
+}
+.btn-add:hover { background: var(--teal-dark); }
+
+.category-tabs {
+  display: flex; gap: 6px;
+  overflow-x: auto;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border);
+  background: white;
+  flex-shrink: 0;
+}
+.category-tabs::-webkit-scrollbar { height: 0; }
+.cat-tab {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 12px; font-weight: 500;
+  white-space: nowrap;
+  border: 1.5px solid transparent;
+  transition: all .15s;
+  color: var(--text-muted);
+  background: var(--bg);
+}
+.cat-tab:hover { border-color: var(--border); }
+.cat-tab.active { color: white; border-color: transparent; }
+.cat-badge {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 700;
+  color: white;
+}
+
+.knowledge-grid {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+  align-content: start;
+}
+.knowledge-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  transition: all .15s;
+  position: relative;
+}
+.knowledge-card:hover { border-color: var(--teal); box-shadow: var(--shadow); transform: translateY(-1px); }
+.knowledge-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+.knowledge-card-title { font-size: 13px; font-weight: 600; color: var(--text); line-height: 1.4; }
+.knowledge-card-cat {
+  font-size: 10px; font-weight: 600;
+  padding: 2px 8px; border-radius: 99px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.knowledge-card-content { font-size: 12px; color: var(--text-muted); line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-clamp: 3; -webkit-box-orient: vertical; }
+.knowledge-card-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.tag { font-size: 11px; padding: 2px 7px; background: var(--bg); border: 1px solid var(--border); border-radius: 99px; color: var(--text-muted); }
+.knowledge-card-footer { margin-top: 10px; font-size: 11px; color: var(--text-muted); display: flex; justify-content: space-between; }
+.card-actions { display: flex; gap: 6px; }
+.icon-btn {
+  width: 26px; height: 26px; border: none; background: var(--bg);
+  border-radius: 6px; cursor: pointer; font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); transition: all .15s;
+}
+.icon-btn:hover { background: var(--red-light); color: var(--red); }
+.icon-btn.edit:hover { background: var(--indigo-light); color: var(--indigo); }
+
+/* ── MODAL ─────────────────────────── */
+.modal-bg {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.4);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 999; display: none;
+  backdrop-filter: blur(2px);
+}
+.modal-bg.open { display: flex; }
+.modal {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  width: 520px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  animation: modalIn .2s ease;
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: scale(.96) translateY(-8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+.modal h3 { font-family: 'DM Serif Display', serif; font-size: 18px; margin-bottom: 20px; }
+.modal label { display: block; font-size: 12px; font-weight: 500; color: var(--text-muted); margin-bottom: 6px; }
+.modal input, .modal textarea, .modal select {
+  width: 100%; padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 9px;
+  font-size: 13px; font-family: inherit;
+  outline: none; margin-bottom: 14px;
+  transition: border-color .2s;
+}
+.modal input:focus, .modal textarea:focus, .modal select:focus { border-color: var(--teal); }
+.modal textarea { min-height: 120px; resize: vertical; }
+.modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 4px; }
+.btn-cancel {
+  padding: 9px 18px;
+  border: 1.5px solid var(--border);
+  background: none; border-radius: 9px;
+  font-size: 13px; font-family: inherit;
+  cursor: pointer; color: var(--text-muted);
+  transition: all .15s;
+}
+.btn-cancel:hover { border-color: var(--text-muted); }
+.btn-save {
+  padding: 9px 18px;
+  background: var(--teal); color: white;
+  border: none; border-radius: 9px;
+  font-size: 13px; font-weight: 600;
+  font-family: inherit; cursor: pointer;
+  transition: background .15s;
+}
+.btn-save:hover { background: var(--teal-dark); }
+
+/* ── UPLOADS PANEL ─────────────────── */
+.uploads-header {
+  padding: 20px 24px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.uploads-header h2 { font-family: 'DM Serif Display', serif; font-size: 20px; }
+.upload-zone {
+  margin: 20px 24px;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  text-align: center;
+  transition: all .2s;
+  cursor: pointer;
+}
+.upload-zone:hover, .upload-zone.dragover { border-color: var(--teal); background: var(--teal-light); }
+.upload-zone-icon { font-size: 32px; margin-bottom: 10px; }
+.upload-zone p { font-size: 14px; color: var(--text-muted); }
+.upload-zone strong { color: var(--teal); }
+.uploads-list { padding: 0 24px; }
+.upload-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+.upload-icon { font-size: 24px; }
+.upload-info { flex: 1; }
+.upload-info strong { display: block; font-size: 13px; }
+.upload-info span { font-size: 11px; color: var(--text-muted); }
+.upload-cat {
+  font-size: 11px; padding: 3px 10px;
+  background: var(--teal-light); color: var(--teal-dark);
+  border-radius: 99px;
+}
+
+/* ── ADMIN PANEL ─────────────────── */
+.admin-header {
+  padding: 20px 24px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.admin-header h2 { font-family: 'DM Serif Display', serif; font-size: 20px; }
+.admin-content { padding: 20px 24px; }
+.admin-section { background: white; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; overflow: hidden; }
+.admin-section-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px; font-weight: 600;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.admin-table { width: 100%; border-collapse: collapse; }
+.admin-table th { font-size: 11px; font-weight: 600; color: var(--text-muted); text-align: left; padding: 10px 18px; background: var(--bg); }
+.admin-table td { padding: 12px 18px; border-top: 1px solid var(--border); font-size: 13px; }
+.role-badge {
+  font-size: 11px; padding: 2px 10px;
+  border-radius: 99px; font-weight: 600;
+}
+.role-badge.admin { background: var(--amber-light); color: var(--amber); }
+.role-badge.user { background: var(--teal-light); color: var(--teal-dark); }
+.del-btn {
+  padding: 4px 10px; border: 1.5px solid var(--border);
+  background: none; border-radius: 6px; font-size: 11px;
+  cursor: pointer; font-family: inherit; color: var(--text-muted);
+  transition: all .15s;
+}
+.del-btn:hover { border-color: var(--red); color: var(--red); background: var(--red-light); }
+
+/* ── REGISTER PANEL ─────────────────── */
+.register-form {
+  max-width: 400px; margin: 0 auto; padding: 32px 24px;
+  background: white; border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* ── TOAST ─────────────────────────── */
+#toast {
+  position: fixed; bottom: 24px; right: 24px;
+  background: #1e293b; color: white;
+  padding: 12px 18px; border-radius: 10px;
+  font-size: 13px; z-index: 9999;
+  opacity: 0; transform: translateY(8px);
+  transition: all .25s; pointer-events: none;
+}
+#toast.show { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
 
-<!-- LOGIN -->
-<div id="login-screen">
+<!-- LOGIN SCREEN -->
+<div id="loginScreen">
   <div class="login-card">
     <div class="login-logo">
-      <div class="lname">DentBill KI</div>
-      <div class="lsub">Abrechnungs-Assistent</div>
+      <div class="login-logo-icon">🦷</div>
+      <h1>DentBill KI</h1>
+      <p>Intelligente Abrechnungsplattform</p>
     </div>
-    <div class="tabs-row">
-      <button class="tab-pill active" onclick="authTab('login',this)">Anmelden</button>
-      <button class="tab-pill" onclick="authTab('register',this)">Registrieren</button>
+    <label for="loginUser">Benutzername</label>
+    <input type="text" id="loginUser" placeholder="z.B. elena" autocomplete="username">
+    <label for="loginPass">Passwort</label>
+    <input type="password" id="loginPass" placeholder="••••••••" autocomplete="current-password">
+    <button class="btn-primary" onclick="doLogin()">Anmelden →</button>
+    <div class="login-err" id="loginErr"></div>
+    <div class="login-register">
+      Noch kein Konto? <a onclick="showRegister()">Registrieren</a>
     </div>
-    <div id="auth-login">
-      <div class="field"><label>Benutzername</label><input id="l-user" type="text" placeholder="Benutzername" onkeydown="if(event.key==='Enter')doLogin()"></div>
-      <div class="field"><label>Passwort</label><input id="l-pass" type="password" placeholder="Passwort" onkeydown="if(event.key==='Enter')doLogin()"></div>
-      <button class="btn-primary" onclick="doLogin()">Anmelden</button>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="modal-bg" id="registerModal">
+  <div class="modal" style="max-width:400px">
+    <h3>Konto erstellen</h3>
+    <label>Benutzername</label>
+    <input type="text" id="regUser" placeholder="benutzername">
+    <label>Name</label>
+    <input type="text" id="regName" placeholder="Vorname Nachname">
+    <label>Passwort</label>
+    <input type="password" id="regPass" placeholder="••••••••">
+    <label>Admin-Code</label>
+    <input type="text" id="regCode" placeholder="Von deiner Praxisleitung">
+    <div id="regErr" style="color:var(--red);font-size:13px;margin-bottom:10px;display:none"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('registerModal')">Abbrechen</button>
+      <button class="btn-save" onclick="doRegister()">Registrieren</button>
     </div>
-    <div id="auth-register" style="display:none">
-      <div class="field"><label>Ihr Name</label><input id="r-name" type="text" placeholder="Vollständiger Name"></div>
-      <div class="field"><label>Benutzername</label><input id="r-user" type="text" placeholder="Wählen Sie einen Benutzernamen"></div>
-      <div class="field"><label>Passwort</label><input id="r-pass" type="password" placeholder="Mindestens 6 Zeichen"></div>
-      <div class="field"><label>Zugangscode</label><input id="r-code" type="text" placeholder="Code von der Plattform-Inhaberin"><div class="code-hint">Den Zugangscode erhalten Sie nach Abo-Abschluss.</div></div>
-      <button class="btn-primary" onclick="doRegister()">Konto erstellen</button>
-    </div>
-    <div class="alert error" id="auth-err"></div>
-    <div class="alert success" id="auth-ok"></div>
   </div>
 </div>
 
 <!-- APP -->
-<div id="app-screen">
-  <div class="sidebar">
-    <div class="s-logo">
-      <div class="lname">DentBill KI</div>
-      <div class="lsub">Pro Abonnement</div>
-    </div>
-    <div class="nav">
-      <button class="nb active" onclick="showPanel('chat',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
-        <span>KI-Chat</span>
-      </button>
-      <button class="nb" onclick="showPanel('kv',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13zM9 13h6v1H9zm0 2h6v1H9zm0-4h2v1H9z"/></svg>
-        <span>KV-Generator</span>
-      </button>
-      <button class="nb" onclick="showPanel('knowledge',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        <span>Wissenssuche</span>
-      </button>
-      <button class="nb" onclick="showPanel('community',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-        <span>Community</span>
-      </button>
-      <div class="nav-sep" id="admin-sep" style="display:none"></div>
-      <button class="nb admin-nav" id="nav-admin-cats" style="display:none" onclick="showPanel('admin-cats',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-        <span>Kategorien</span>
-      </button>
-      <button class="nb admin-nav" id="nav-admin-know" style="display:none" onclick="showPanel('admin-know',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm-1 7V3.5L18.5 9H13zM8 13h8v1H8zm0 2h5v1H8zm0-4h2v1H8z"/></svg>
-        <span>Wissensbasis</span>
-      </button>
-      <button class="nb admin-nav" id="nav-admin-users" style="display:none" onclick="showPanel('admin-users',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3a3 3 0 110 6 3 3 0 010-6zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08s5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z"/></svg>
-        <span>Nutzer</span>
-      </button>
-      <button class="nb" onclick="showPanel('upload',this)">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/></svg>
-        <span>Hochladen</span>
-      </button>
-    </div>
-    <div class="s-bottom">
-      <div class="u-row">
-        <div class="av" id="app-av">?</div>
-        <div><div class="uname" id="app-name">–</div><div class="urole" id="app-role">Nutzer</div></div>
-      </div>
-      <button class="btn-logout" onclick="doLogout()">Abmelden</button>
-    </div>
-  </div>
+<div id="app">
+  <div class="app-layout">
 
-  <div class="main">
-
-    <!-- CHAT -->
-    <div id="panel-chat" class="panel active">
-      <div class="chat-bar">
-        <div><h2>Abrechnungs-Assistent</h2><p>BEMA · GOZ · Festzuschüsse · Labor · Gewährleistung</p></div>
-        <div class="badge">claude-sonnet</div>
-      </div>
-      <div class="msgs" id="msgs">
-        <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Hallo! Ich bin Ihr persönlicher Abrechnungs-Assistent.<br><br>Fragen Sie mich alles – keine Frage ist zu einfach:<br>• <strong>„Erzähl mir alles über BEMA 1040"</strong><br>• <strong>„Gibt es Gewährleistung auf Zahnhalsfüllungen?"</strong><br>• <strong>„Kann ich neben PZR noch Zahnstein abrechnen?"</strong><br>• <strong>Bild/Dokument hochladen → Abrechnungsvorschlag</strong></div><div class="src">BEMA 2024 · GOZ 2012 · BEL II · Festzuschuss-Richtlinien</div></div></div>
-      </div>
-      <div class="chips">
-        <span class="chip" onclick="sendQ('Erzähl mir alles über die Abrechnungsnummer 1040')">BEMA 1040 alles</span>
-        <span class="chip" onclick="sendQ('Wie rechne ich eine Prothesenreparatur ab?')">Prothesenreparatur</span>
-        <span class="chip" onclick="sendQ('Gibt es Gewährleistung auf Zahnhalsfüllungen?')">Gewährleistung?</span>
-        <span class="chip" onclick="sendQ('Kann ich Zahnstein (1040) neben der PZR abrechnen?')">PZR + 1040?</span>
-        <span class="chip" onclick="sendQ('Ist eine MU innerhalb von 3 Monaten nach Protheseneinsetzen möglich?')">MU nach Prothese?</span>
-        <span class="chip" onclick="sendQ('Was ist der Unterschied zwischen Regelversorgung und gleichartiger Versorgung beim Festzuschuss?')">Festzuschuss erklärt</span>
-      </div>
-      <div class="inp-area">
-        <div class="fprev" id="fprev">
-          <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/></svg>
-          <span id="fname">Datei</span>
-          <button onclick="clearFile()" style="background:none;border:none;color:var(--amber);cursor:pointer;font-size:15px;margin-left:4px">×</button>
-        </div>
-        <div class="inp-wrap">
-          <textarea id="chat-ta" placeholder="Ihre Frage... (Enter = Senden, Shift+Enter = Zeilenumbruch)" onkeydown="handleKey(event)" oninput="autoR(this)"></textarea>
-          <div style="display:flex;align-items:center;gap:5px">
-            <label class="btn-att" title="Bild/PDF anhängen">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
-              <input type="file" id="file-input" accept="image/*,.pdf" onchange="handleFile(this)">
-            </label>
-            <button class="btn-send" onclick="sendMsg()"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg></button>
+    <!-- SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-brand">
+          <div class="sidebar-brand-icon">🦷</div>
+          <div class="sidebar-brand-text">
+            <strong>DentBill KI</strong>
+            <span>Abrechnungsplattform</span>
           </div>
         </div>
-        <div style="font-size:10px;color:var(--text3);margin-top:4px;text-align:center">📎 Bilder & PDFs anhängen · Enter zum Senden</div>
       </div>
-    </div>
-
-    <!-- KV-GENERATOR -->
-    <div id="panel-kv" class="panel">
-      <div class="chat-bar">
-        <div><h2>📋 KV-Generator</h2><p>Kostenvoranschlag für jede Behandlung – geführtes Gespräch</p></div>
-        <div class="badge">KI-gestützt</div>
-      </div>
-      <div class="msgs" id="kv-msgs">
-        <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Hallo! Ich erstelle für Sie einen Kostenvoranschlag. 📋<br><br>Nennen Sie mir einfach die gewünschte Behandlung – ich stelle dann die richtigen Fragen:<br><br>• <strong>„Krone auf Zahn 36"</strong><br>• <strong>„Aligner Oberkiefer"</strong><br>• <strong>„Totalprothese UK"</strong><br>• <strong>„Wurzelbehandlung + Aufbau"</strong><br>• <strong>„Implantat mit Krone"</strong><br>• <strong>„Inlay Zahn 16"</strong></div></div></div>
-      </div>
-      <div class="chips" id="kv-chips">
-        <span class="kv-chip" onclick="sendKV('Krone')">👑 Krone</span>
-        <span class="kv-chip" onclick="sendKV('Aligner-Therapie')">😁 Aligner</span>
-        <span class="kv-chip" onclick="sendKV('Totalprothese')">🦷 Prothese</span>
-        <span class="kv-chip" onclick="sendKV('Wurzelbehandlung')">🔧 WB + Aufbau</span>
-        <span class="kv-chip" onclick="sendKV('Implantat mit Krone')">🔩 Implantat</span>
-        <span class="kv-chip" onclick="sendKV('Inlay')">💎 Inlay</span>
-        <span class="kv-chip" onclick="sendKV('PZR Prophylaxe')">🧹 PZR</span>
-        <span class="kv-chip" onclick="sendKV('Zahnersatz Festzuschuss')">📊 Festzuschuss KV</span>
-      </div>
-      <div class="inp-area">
-        <div class="inp-wrap">
-          <textarea id="kv-ta" placeholder="Behandlung eingeben... z.B. 'Brücke 3-gliedrig UK' (Enter = Senden)" onkeydown="handleKvKey(event)" oninput="autoR(this)"></textarea>
-          <button class="btn-send" onclick="sendKvMsg()">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>
-          </button>
-        </div>
-        <div style="display:flex;gap:8px;margin-top:8px">
-          <button class="btn-sm ghost" onclick="resetKV()" style="font-size:11px;padding:4px 10px">🔄 Neuer KV</button>
-          <button class="btn-sm" onclick="copyKV()" style="font-size:11px;padding:4px 10px">📋 KV kopieren</button>
+      <div class="sidebar-user">
+        <div class="sidebar-avatar" id="sidebarInitial">?</div>
+        <div class="sidebar-user-info">
+          <strong id="sidebarName">Laden…</strong>
+          <span id="sidebarRole">–</span>
         </div>
       </div>
-    </div>
-
-    <!-- WISSENSSUCHE -->
-    <div id="panel-knowledge" class="panel">
-      <div class="ph"><div><h2>Wissenssuche</h2><p>Durchsuchen Sie alle Kategorien und Einträge</p></div></div>
-      <div class="pb">
-        <div class="search-bar">
-          <input id="know-search" placeholder="Suchen... z.B. 1040, Prothese, Gewährleistung" oninput="searchKnowledge()">
+      <div class="sidebar-nav">
+        <div class="nav-label">Hauptmenü</div>
+        <div class="nav-item active" onclick="showPanel('chat')">
+          <span class="nav-icon">💬</span> Lisa – Abrechnung
         </div>
-        <div id="know-cats" class="admin-grid"></div>
-        <div id="know-results"></div>
-      </div>
-    </div>
-
-    <!-- COMMUNITY -->
-    <div id="panel-community" class="panel">
-      <div class="ph"><div><h2>Community-Wissen</h2><p>Von Nutzerinnen geteilte Dokumente</p></div>
-        <button class="btn-sm" onclick="showPanel('upload',document.querySelectorAll('.nb')[3])">+ Beitragen</button>
-      </div>
-      <div class="pb">
-        <div class="info-box"><strong>So wächst die Plattform:</strong> Jede Praxis kann eigene Abrechnungsbeispiele und Sonderfälle teilen. Der Assistent nutzt diese Informationen für alle Nutzerinnen.</div>
-        <div id="community-list"></div>
-      </div>
-    </div>
-
-    <!-- UPLOAD -->
-    <div id="panel-upload" class="panel">
-      <div class="ph"><div><h2>Dokument hochladen</h2><p>Teilen Sie Ihr Wissen mit der Community</p></div></div>
-      <div class="pb">
-        <div class="info-box"><strong>Rechtlich sicher:</strong> Nur fachliche Inhalte werden genutzt – Logos und Firmennamen werden vom KI-System ignoriert.</div>
-        <div class="field"><label>Titel</label><input id="up-title" type="text" placeholder="z.B. Prothesenreparatur – Sonderfall beides in einer Sitzung"></div>
-        <div class="field"><label>Kategorie</label>
-          <select id="up-cat"><option>BEMA</option><option>GOZ</option><option>Festzuschuss</option><option>Labor / BEL II</option><option>Gewährleistung</option><option>Prothetik</option><option>Chirurgie</option><option>Prophylaxe</option><option>Fortbildungs-Skript</option><option>Sonstiges</option></select>
+        <div class="nav-item" onclick="showPanel('kv')">
+          <span class="nav-icon">📋</span> Kostenvoranschlag
         </div>
-        <div class="field"><label>Datei</label>
-          <input type="file" id="up-file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" onchange="document.getElementById('up-fname').textContent=this.files[0]?.name||''">
-          <div id="up-fname" style="font-size:11px;color:var(--text3);margin-top:4px"></div>
+        <div class="nav-label">Wissen</div>
+        <div class="nav-item" onclick="showPanel('knowledge')">
+          <span class="nav-icon">📚</span> Wissensdatenbank
         </div>
-        <button class="btn-sm" onclick="doUpload()">Hochladen & Teilen</button>
-        <div id="up-msg" style="font-size:12px;color:var(--teal);margin-top:10px;display:none">✓ Erfolgreich hochgeladen!</div>
-      </div>
-    </div>
-
-    <!-- ADMIN: KATEGORIEN -->
-    <div id="panel-admin-cats" class="panel">
-      <div class="ph"><div><h2>⚙️ Kategorien verwalten</h2><p>Fachbereiche hinzufügen, bearbeiten, löschen</p></div>
-        <button class="btn-sm amber" onclick="openCatModal()">+ Neue Kategorie</button>
-      </div>
-      <div class="pb">
-        <div class="info-box">Kategorien entsprechen den <strong>Fachbereichen</strong> wie bei Daisy (BEMA, GOZ, Chirurgie etc.). Du kannst beliebig viele anlegen.</div>
-        <div id="admin-cats-grid" class="admin-grid"></div>
-      </div>
-    </div>
-
-    <!-- ADMIN: WISSENSBASIS -->
-    <div id="panel-admin-know" class="panel">
-      <div class="ph"><div><h2>⚙️ Wissensbasis verwalten</h2><p>Inhalte hinzufügen, bearbeiten, löschen</p></div>
-        <button class="btn-sm amber" onclick="openKnowModal()">+ Neuer Eintrag</button>
-      </div>
-      <div class="pb">
-        <div class="info-box">Hier fügst du <strong>dein Wissen</strong> ein: Abrechnungsregeln, Kombinierbarkeit, Sonderfälle, Tipps aus Fortbildungen. Die KI nutzt diese Einträge als Vorrangs-Wissen.</div>
-        <div class="search-bar"><input id="adm-know-search" placeholder="Einträge durchsuchen..." oninput="loadAdminKnow()"></div>
-        <div class="field" style="margin-bottom:10px">
-          <select id="adm-know-cat-filter" onchange="loadAdminKnow()">
-            <option value="">Alle Kategorien</option>
-          </select>
+        <div class="nav-item" onclick="showPanel('uploads')">
+          <span class="nav-icon">📁</span> Dokumente
         </div>
-        <div id="admin-know-list"></div>
+        <div class="nav-label admin-only" style="display:none">Administration</div>
+        <div class="nav-item admin-only" style="display:none" onclick="showPanel('admin')">
+          <span class="nav-icon">⚙️</span> Verwaltung
+        </div>
       </div>
-    </div>
-
-    <!-- ADMIN: NUTZER -->
-    <div id="panel-admin-users" class="panel">
-      <div class="ph"><div><h2>⚙️ Nutzer verwalten</h2><p>Abonnenten und ihre Rollen</p></div></div>
-      <div class="pb">
-        <div class="info-box">Hier siehst du alle registrierten Nutzerinnen. Du kannst Rollen ändern oder Zugänge sperren. Der <strong>Zugangscode</strong> für neue Registrierungen: <code style="color:var(--amber);font-family:var(--mono)" id="admin-code-display">–</code></div>
-        <div id="admin-users-list"></div>
+      <div class="sidebar-footer">
+        <button class="logout-btn" onclick="doLogout()">
+          <span>🚪</span> Abmelden
+        </button>
       </div>
-    </div>
+    </nav>
 
+    <!-- MAIN -->
+    <div class="main-content">
+
+      <!-- CHAT PANEL -->
+      <div class="panel active" id="panelChat">
+        <div class="chat-header">
+          <div class="chat-avatar">🤖</div>
+          <div class="chat-header-info">
+            <strong>Lisa – Ihre Abrechnungsexpertin</strong>
+            <span>Powered by Claude Sonnet · 15 Jahre Erfahrung in der ZMV-Abrechnung</span>
+          </div>
+          <div class="chat-status"></div>
+          <button class="btn-outline" style="width:auto;padding:6px 12px;margin-left:8px;font-size:12px" onclick="clearChat()">🗑 Neu</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="welcome-card">
+            <h2>Hallo! Ich bin Lisa 👋</h2>
+            <p>Ich helfe Ihnen bei allen Abrechnungsfragen – BEMA, GOZ, Festzuschüsse, Laborrechnung und mehr. Stellen Sie mir einfach Ihre Frage, ich frage nach wenn ich mehr Infos brauche!</p>
+            <div class="welcome-chips">
+              <div class="chip" onclick="askChip('Wie rechne ich eine Unterfütterung ab?')">Unterfütterung abrechnen</div>
+              <div class="chip" onclick="askChip('Patient hat eine gebrochene Prothese – was kann ich abrechnen?')">Gebrochene Prothese</div>
+              <div class="chip" onclick="askChip('Kann ich Zahnstein neben PZR abrechnen?')">Zahnstein + PZR</div>
+              <div class="chip" onclick="askChip('Was ist der Unterschied MKV und Privatvereinbarung?')">MKV vs. Privatvereinbarung</div>
+              <div class="chip" onclick="askChip('Wie hoch ist der GOZ Punktwert 2026?')">GOZ Punktwert 2026</div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <div class="chat-input-row">
+            <textarea id="chatInput" placeholder="Ihre Frage an Lisa…" rows="1" onkeydown="handleKey(event,'chat')" oninput="autoResize(this)"></textarea>
+            <button class="send-btn" id="sendBtn" onclick="sendChat()">➤</button>
+          </div>
+          <div class="chat-hint">Enter = Senden · Shift+Enter = Neue Zeile</div>
+        </div>
+      </div>
+
+      <!-- KV PANEL -->
+      <div class="panel" id="panelKv">
+        <div class="kv-layout">
+          <div class="kv-chat">
+            <div class="chat-header">
+              <div class="chat-avatar" style="background:linear-gradient(135deg,var(--indigo),var(--purple))">📋</div>
+              <div class="chat-header-info">
+                <strong>Kostenvoranschlag erstellen</strong>
+                <span>Beschreiben Sie die Behandlung – Lisa erstellt den KV</span>
+              </div>
+              <button class="btn-outline" style="width:auto;padding:6px 12px;margin-left:auto;font-size:12px" onclick="clearKv()">🗑 Neu</button>
+            </div>
+            <div class="chat-messages" id="kvMessages">
+              <div class="welcome-card">
+                <h2>KV erstellen 📋</h2>
+                <p>Nennen Sie die Behandlung (z.B. "Krone", "Aligner", "Totalprothese") und ich stelle Ihnen gezielte Fragen um einen vollständigen Kostenvoranschlag zu erstellen.</p>
+                <div class="welcome-chips">
+                  <div class="chip" onclick="askKvChip('Keramikkrone')">Keramikkrone</div>
+                  <div class="chip" onclick="askKvChip('Totalprothese')">Totalprothese</div>
+                  <div class="chip" onclick="askKvChip('Aligner')">Aligner</div>
+                  <div class="chip" onclick="askKvChip('Zahnimplantat')">Implantat</div>
+                  <div class="chip" onclick="askKvChip('Wurzelbehandlung')">Wurzelbehandlung</div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-input-area">
+              <div class="chat-input-row">
+                <textarea id="kvInput" placeholder="Behandlung beschreiben…" rows="1" onkeydown="handleKey(event,'kv')" oninput="autoResize(this)"></textarea>
+                <button class="send-btn" id="kvSendBtn" onclick="sendKv()">➤</button>
+              </div>
+            </div>
+          </div>
+          <div class="kv-preview">
+            <div class="kv-preview-header">📄 Vorschau KV</div>
+            <div id="kvPreviewContent">
+              <div class="kv-empty-state">
+                <div class="icon">📋</div>
+                <p>Der fertige KV erscheint hier zur Vorschau</p>
+              </div>
+            </div>
+            <div class="kv-actions" id="kvActions" style="display:none">
+              <button class="btn-outline" onclick="copyKv()">📋 KV kopieren</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KNOWLEDGE PANEL -->
+      <div class="panel" id="panelKnowledge">
+        <div class="knowledge-header">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <div>
+              <h2>Wissensdatenbank</h2>
+              <p>BEMA, GOZ, Richtlinien und praxisinterne Einträge</p>
+            </div>
+            <button class="btn-add admin-only" id="addKnowledgeBtn" onclick="openAddKnowledge()" style="display:none">+ Neuer Eintrag</button>
+          </div>
+          <div class="knowledge-toolbar" style="margin-top:12px">
+            <input class="search-input" type="text" placeholder="🔍 Suche nach Stichwort, GOZ-Nummer, Thema…" oninput="filterKnowledge(this.value)">
+          </div>
+        </div>
+        <div class="category-tabs" id="categoryTabs"></div>
+        <div class="knowledge-grid" id="knowledgeGrid"></div>
+      </div>
+
+      <!-- UPLOADS PANEL -->
+      <div class="panel" id="panelUploads">
+        <div class="uploads-header">
+          <h2>Dokumente & Dateien</h2>
+          <p style="font-size:13px;color:var(--text-muted);margin-top:2px">Laden Sie Richtlinien, Rundschreiben und Dokumente hoch</p>
+        </div>
+        <div class="upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()" ondragover="this.classList.add('dragover');event.preventDefault()" ondragleave="this.classList.remove('dragover')" ondrop="handleDrop(event)">
+          <div class="upload-zone-icon">📂</div>
+          <p><strong>Datei auswählen</strong> oder hierher ziehen</p>
+          <p style="font-size:12px;margin-top:6px">PDF, Word, bis 15 MB</p>
+        </div>
+        <input type="file" id="fileInput" style="display:none" onchange="uploadFile(this)">
+        <div class="uploads-list" id="uploadsList"></div>
+      </div>
+
+      <!-- ADMIN PANEL -->
+      <div class="panel" id="panelAdmin">
+        <div class="admin-header">
+          <h2>Verwaltung</h2>
+        </div>
+        <div class="admin-content">
+          <div class="admin-section">
+            <div class="admin-section-header">
+              Benutzer
+              <button class="btn-add" style="font-size:12px;padding:6px 12px" onclick="loadUsers()">↻ Aktualisieren</button>
+            </div>
+            <table class="admin-table">
+              <thead><tr><th>Name</th><th>Benutzername</th><th>Rolle</th><th></th></tr></thead>
+              <tbody id="usersTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /main-content -->
   </div>
 </div>
 
-<!-- MODAL: KATEGORIE -->
-<div class="modal-bg" id="modal-cat">
+<!-- KNOWLEDGE MODAL -->
+<div class="modal-bg" id="knowledgeModal">
   <div class="modal">
-    <h3 id="modal-cat-title">Neue Kategorie</h3>
-    <div class="field"><label>Name der Kategorie</label><input id="cat-label" type="text" placeholder="z.B. Implantologie"></div>
-    <div class="field"><label>Beschreibung</label><input id="cat-desc" type="text" placeholder="Kurze Beschreibung des Fachbereichs"></div>
-    <div class="field"><label>Farbe</label><input id="cat-color" type="color" value="#00c9a7" style="height:36px;width:80px;cursor:pointer"></div>
-    <div class="field"><label>Buchstaben-Icon</label><input id="cat-icon" type="text" placeholder="z.B. I" maxlength="2" style="width:80px"></div>
-    <input type="hidden" id="cat-edit-id">
+    <h3 id="knowledgeModalTitle">Neuer Eintrag</h3>
+    <label>Kategorie</label>
+    <select id="kCat"></select>
+    <label>Titel</label>
+    <input type="text" id="kTitle" placeholder="z.B. GOZ 2197 – Adhäsive Befestigung">
+    <label>Inhalt</label>
+    <textarea id="kContent" placeholder="Abrechnungsregeln, Punkte, Hinweise…" style="min-height:160px"></textarea>
+    <label>Tags (Komma-getrennt)</label>
+    <input type="text" id="kTags" placeholder="z.B. goz, 2197, adhäsiv">
     <div class="modal-actions">
-      <button class="btn-sm ghost" onclick="closeModals()">Abbrechen</button>
-      <button class="btn-sm amber" onclick="saveCat()">Speichern</button>
+      <button class="btn-cancel" onclick="closeModal('knowledgeModal')">Abbrechen</button>
+      <button class="btn-save" onclick="saveKnowledge()">Speichern</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL: WISSENSEINTRAG -->
-<div class="modal-bg" id="modal-know">
-  <div class="modal">
-    <h3 id="modal-know-title">Neuer Wissenseintrag</h3>
-    <div class="field"><label>Kategorie</label><select id="know-cat-sel"></select></div>
-    <div class="field"><label>Titel</label><input id="know-title" type="text" placeholder="z.B. BEMA 98a – Parodontalbehandlung"></div>
-    <div class="field"><label>Inhalt (Wissen, Regeln, Tipps)</label><textarea id="know-content" placeholder="Erkläre hier ausführlich: was wird abgerechnet, welche Punkte, was ist kombinierbar, welche Fristen gibt es, häufige Fehler..."></textarea></div>
-    <div class="field"><label>Tags (für Suche, kommagetrennt)</label><input id="know-tags" type="text" placeholder="z.B. 98a, parodontitis, par, upa"></div>
-    <input type="hidden" id="know-edit-id">
-    <div class="modal-actions">
-      <button class="btn-sm ghost" onclick="closeModals()">Abbrechen</button>
-      <button class="btn-sm amber" onclick="saveKnow()">Speichern</button>
-    </div>
-  </div>
-</div>
+<!-- TOAST -->
+<div id="toast"></div>
 
 <script>
-let token = localStorage.getItem('db_token');
-let me = null;
+// ── STATE ────────────────────────────────
+let token = localStorage.getItem('token');
+let user = null;
+let categories = [];
+let knowledge = [];
 let chatHistory = [];
-let attachedFile = null;
-let attachedB64 = null;
-let allCategories = [];
-let currentEditCat = null;
-let currentEditKnow = null;
+let kvHistory = [];
+let currentCat = 'all';
+let editingKId = null;
+let lastKvText = '';
 
-async function api(path, opts={}) {
-  const r = await fetch(path, { headers: { 'Content-Type':'application/json', 'x-session-token': token||'' }, ...opts });
+// ── INIT ─────────────────────────────────
+window.onload = async () => {
+  if (token) {
+    try {
+      const me = await api('/api/me');
+      user = me;
+      showApp();
+    } catch { token = null; localStorage.removeItem('token'); }
+  }
+};
+
+async function api(url, method='GET', body=null) {
+  const opts = { method, headers: { 'Content-Type': 'application/json' } };
+  if (token) opts.headers['x-session-token'] = token;
+  if (body) opts.body = JSON.stringify(body);
+  const r = await fetch(url, opts);
+  if (!r.ok) throw await r.json();
   return r.json();
 }
 
-// AUTH
-function authTab(tab, btn) {
-  document.getElementById('auth-login').style.display = tab==='login'?'':'none';
-  document.getElementById('auth-register').style.display = tab==='register'?'':'none';
-  document.querySelectorAll('.tab-pill').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  hideAlerts();
-}
-function showErr(msg) { const el=document.getElementById('auth-err'); el.textContent=msg; el.style.display='block'; }
-function showOk(msg) { const el=document.getElementById('auth-ok'); el.textContent=msg; el.style.display='block'; }
-function hideAlerts() { document.getElementById('auth-err').style.display='none'; document.getElementById('auth-ok').style.display='none'; }
-
+// ── LOGIN ────────────────────────────────
 async function doLogin() {
-  hideAlerts();
-  const username=document.getElementById('l-user').value.trim(), password=document.getElementById('l-pass').value;
-  if (!username||!password) return showErr('Bitte alle Felder ausfüllen');
-  const d = await api('/api/login',{method:'POST',body:JSON.stringify({username,password})});
-  if (d.error) return showErr(d.error);
-  token=d.token; me={name:d.name,role:d.role,username};
-  localStorage.setItem('db_token',token); localStorage.setItem('db_name',d.name); localStorage.setItem('db_role',d.role);
-  initApp();
+  const username = document.getElementById('loginUser').value.trim();
+  const password = document.getElementById('loginPass').value;
+  const err = document.getElementById('loginErr');
+  err.style.display = 'none';
+  try {
+    const res = await api('/api/login', 'POST', { username, password });
+    token = res.token;
+    localStorage.setItem('token', token);
+    user = { username, name: res.name, role: res.role };
+    showApp();
+  } catch (e) {
+    err.textContent = e.error || 'Anmeldung fehlgeschlagen';
+    err.style.display = 'block';
+  }
 }
-
-async function doRegister() {
-  hideAlerts();
-  const name=document.getElementById('r-name').value.trim(), username=document.getElementById('r-user').value.trim(),
-        password=document.getElementById('r-pass').value, adminCode=document.getElementById('r-code').value.trim();
-  if (!name||!username||!password||!adminCode) return showErr('Bitte alle Felder ausfüllen');
-  if (password.length<6) return showErr('Passwort muss mindestens 6 Zeichen haben');
-  const d = await api('/api/register',{method:'POST',body:JSON.stringify({name,username,password,adminCode})});
-  if (d.error) return showErr(d.error);
-  showOk('✓ Konto erstellt! Bitte jetzt anmelden.');
-  authTab('login', document.querySelectorAll('.tab-pill')[0]);
-}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && document.getElementById('loginScreen').style.display !== 'none') doLogin();
+});
 
 async function doLogout() {
-  try { await api('/api/logout',{method:'POST'}); } catch {}
-  localStorage.clear(); token=null; me=null; chatHistory=[];
-  document.getElementById('login-screen').style.display='flex';
-  document.getElementById('app-screen').style.display='none';
+  try { await api('/api/logout', 'POST'); } catch {}
+  token = null; user = null; chatHistory = []; kvHistory = [];
+  localStorage.removeItem('token');
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('loginScreen').style.display = 'flex';
 }
 
-async function initApp() {
-  document.getElementById('login-screen').style.display='none';
-  document.getElementById('app-screen').style.display='flex';
-  const name = me?.name || localStorage.getItem('db_name') || '?';
-  const role = me?.role || localStorage.getItem('db_role') || 'user';
-  document.getElementById('app-name').textContent = name;
-  document.getElementById('app-av').textContent = name.charAt(0).toUpperCase();
-  document.getElementById('app-role').textContent = role==='admin' ? '👑 Admin' : 'Pro · 29€/Mo';
+function showRegister() { document.getElementById('registerModal').classList.add('open'); }
 
-  // Show admin nav
-  if (role==='admin') {
-    ['admin-sep','nav-admin-cats','nav-admin-know','nav-admin-users'].forEach(id => {
-      const el=document.getElementById(id); if(el) el.style.display='';
-    });
-    document.getElementById('admin-code-display').textContent = '(in Render Env: ADMIN_CODE)';
-  }
-
-  allCategories = await api('/api/categories');
-  loadKnowledgePanel();
-  loadCommunity();
-}
-
-// PANELS
-function showPanel(id, btn) {
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
-  document.getElementById('panel-'+id).classList.add('active');
-  if (btn) btn.classList.add('active');
-  if (id==='admin-cats') loadAdminCats();
-  if (id==='admin-know') { loadAdminKnow(); populateCatSelects(); }
-  if (id==='admin-users') loadAdminUsers();
-  if (id==='knowledge') loadKnowledgePanel();
-  if (id==='community') loadCommunity();
-}
-
-// CHAT
-function handleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMsg();} }
-function autoR(el) { el.style.height='36px'; el.style.height=Math.min(el.scrollHeight,100)+'px'; }
-function handleFile(input) {
-  const file=input.files[0]; if(!file) return;
-  attachedFile=file;
-  document.getElementById('fname').textContent=file.name;
-  document.getElementById('fprev').style.display='flex';
-  const r=new FileReader(); r.onload=e=>{attachedB64=e.target.result.split(',')[1];}; r.readAsDataURL(file);
-}
-function clearFile() { attachedFile=null; attachedB64=null; document.getElementById('fprev').style.display='none'; document.getElementById('file-input').value=''; }
-function sendQ(q) { document.getElementById('chat-ta').value=q; sendMsg(); }
-
-function addMsg(role, html, src) {
-  const msgs=document.getElementById('msgs');
-  const d=document.createElement('div'); d.className='msg '+(role==='user'?'user':'ai');
-  const initials=role==='user'?(me?.name||'SIE').charAt(0).toUpperCase():'KI';
-  const avClass=role==='user'?'us':'ai';
-  d.innerHTML=`<div class="mav ${avClass}">${initials}</div><div><div class="bub">${html}</div>${src?'<div class="src">BEMA 2024 · GOZ · Festzuschüsse · BEL II</div>':''}</div>`;
-  msgs.appendChild(d); msgs.scrollTop=msgs.scrollHeight;
-}
-
-async function sendMsg() {
-  const ta=document.getElementById('chat-ta');
-  const text=ta.value.trim();
-  if(!text&&!attachedFile) return;
-  ta.value=''; ta.style.height='36px';
-  let html=text.replace(/\n/g,'<br>');
-  if(attachedFile) html+=(text?'<br>':'')+`<code>📎 ${attachedFile.name}</code>`;
-  addMsg('user',html,false);
-
-  let content;
-  if(attachedFile&&attachedB64){
-    const isImg=attachedFile.type.startsWith('image/');
-    const prompt=text||(isImg?'Analysiere dieses Bild und mache Abrechnungsvorschläge.':'Analysiere dieses Dokument und mache Abrechnungsvorschläge.');
-    content=isImg
-      ?[{type:'image',source:{type:'base64',media_type:attachedFile.type,data:attachedB64}},{type:'text',text:prompt}]
-      :[{type:'document',source:{type:'base64',media_type:'application/pdf',data:attachedB64}},{type:'text',text:prompt}];
-  } else { content=text; }
-
-  chatHistory.push({role:'user',content}); clearFile();
-
-  const msgs=document.getElementById('msgs');
-  const th=document.createElement('div'); th.className='msg ai';
-  th.innerHTML=`<div class="mav ai">KI</div><div class="thinking"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>`;
-  msgs.appendChild(th); msgs.scrollTop=msgs.scrollHeight;
-
+async function doRegister() {
+  const username = document.getElementById('regUser').value.trim();
+  const name = document.getElementById('regName').value.trim();
+  const password = document.getElementById('regPass').value;
+  const adminCode = document.getElementById('regCode').value;
+  const err = document.getElementById('regErr');
   try {
-    const d=await api('/api/chat',{method:'POST',body:JSON.stringify({messages:chatHistory})});
-    th.remove();
-    const reply=d.content?.map(b=>b.text||'').join('')||d.error||'Keine Antwort.';
-    const fmt=reply.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\n/g,'<br>');
-    addMsg('ai',fmt,true);
-    chatHistory.push({role:'assistant',content:reply});
-  } catch { th.remove(); addMsg('ai','Verbindungsfehler.',false); }
+    await api('/api/register', 'POST', { username, name, password, adminCode });
+    closeModal('registerModal');
+    toast('Konto erstellt – bitte anmelden');
+  } catch(e) { err.textContent = e.error || 'Fehler'; err.style.display = 'block'; }
 }
 
-// KNOWLEDGE PANEL
-async function loadKnowledgePanel() {
-  const cats=await api('/api/categories');
-  allCategories=cats;
-  const grid=document.getElementById('know-cats');
-  grid.innerHTML=cats.map(c=>`
-    <div class="cat-card" onclick="filterKnowledge('${c.id}','${c.label}')">
-      <div class="cc-icon" style="background:${c.color}">${c.icon||c.label.charAt(0)}</div>
-      <div class="cc-label">${c.label}</div>
-      <div class="cc-desc">${c.desc||''}</div>
-    </div>`).join('');
-  searchKnowledge();
+// ── APP INIT ─────────────────────────────
+async function showApp() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  document.getElementById('sidebarName').textContent = user.name;
+  document.getElementById('sidebarRole').textContent = user.role === 'admin' ? '👑 Administrator' : '👤 Mitarbeiter';
+  document.getElementById('sidebarInitial').textContent = user.name[0].toUpperCase();
+  if (user.role === 'admin') {
+    document.querySelectorAll('.admin-only').forEach(el => el.style.display = '');
+  }
+  await loadCategories();
+  await loadKnowledge();
+  await loadUploads();
+  if (user.role === 'admin') loadUsers();
 }
 
-async function filterKnowledge(catId, label) {
-  document.getElementById('know-search').value=label;
-  const items=await api(`/api/knowledge?categoryId=${catId}`);
-  renderKnowResults(items);
+// ── PANEL NAVIGATION ─────────────────────
+function showPanel(id) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('panel' + id.charAt(0).toUpperCase() + id.slice(1)).classList.add('active');
+  event.currentTarget.classList.add('active');
 }
 
-async function searchKnowledge() {
-  const q=document.getElementById('know-search').value.trim();
-  const items=await api(`/api/knowledge${q?`?q=${encodeURIComponent(q)}`:''}`);
-  renderKnowResults(items);
-}
+// ── CHAT ─────────────────────────────────
+function clearChat() { chatHistory = []; document.getElementById('chatMessages').innerHTML = ''; }
 
-function renderKnowResults(items) {
-  const el=document.getElementById('know-results');
-  if(!items.length){el.innerHTML='<div style="color:var(--text3);font-size:12px;margin-top:10px">Keine Einträge gefunden.</div>';return;}
-  el.innerHTML=items.map(i=>{
-    const cat=allCategories.find(c=>c.id===i.categoryId);
-    return `<div class="row" style="cursor:pointer" onclick="sendQ('Erzähl mir alles über: ${i.title.replace(/'/g,"\\'")}')">
-      <div class="row-icon" style="background:${cat?.color||'#444'}">${cat?.icon||'?'}</div>
-      <div style="flex:1"><div class="row-title">${i.title}</div><div class="row-meta">${cat?.label||''} · ${i.date}</div></div>
-      <span class="pill teal">Im Chat öffnen</span>
+function handleKey(e, type) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); type === 'kv' ? sendKv() : sendChat(); }
+}
+function autoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+}
+function askChip(q) { document.getElementById('chatInput').value = q; sendChat(); }
+function askKvChip(q) { document.getElementById('kvInput').value = q; sendKv(); }
+
+function addMsg(container, role, text) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  const avatar = role === 'lisa' ? '🤖' : user.name[0].toUpperCase();
+  const time = new Date().toLocaleTimeString('de-DE', { hour:'2-digit', minute:'2-digit' });
+  div.innerHTML = `
+    <div class="msg-avatar">${avatar}</div>
+    <div>
+      <div class="msg-bubble">${formatMsg(text)}</div>
+      <div class="msg-time">${time}</div>
     </div>`;
-  }).join('');
+  document.getElementById(container).appendChild(div);
+  document.getElementById(container).scrollTop = 99999;
+  return div;
 }
 
-// COMMUNITY
-async function loadCommunity() {
-  const docs=await api('/api/uploads');
-  const el=document.getElementById('community-list');
-  if(!docs.length){el.innerHTML='<div style="color:var(--text3);font-size:12px">Noch keine Community-Beiträge.</div>';return;}
-  el.innerHTML=docs.map(d=>`
-    <div class="row" style="cursor:pointer" onclick="sendQ('Informiere mich über das Thema: ${d.title.replace(/'/g,"\\'")}')">
-      <div class="row-icon" style="background:var(--purple)">D</div>
-      <div style="flex:1"><div class="row-title">${d.title}</div><div class="row-meta">${d.category} · ${d.uploader} · ${d.date}</div></div>
-      <span class="pill purple">Community</span>
-    </div>`).join('');
-}
-
-// UPLOAD
-async function doUpload() {
-  const title=document.getElementById('up-title').value.trim();
-  const cat=document.getElementById('up-cat').value;
-  const file=document.getElementById('up-file').files[0];
-  if(!title||!file){alert('Bitte Titel und Datei angeben');return;}
-  const fd=new FormData(); fd.append('file',file); fd.append('title',title); fd.append('category',cat);
-  const r=await fetch('/api/upload',{method:'POST',headers:{'x-session-token':token},body:fd});
-  if(r.ok){
-    document.getElementById('up-msg').style.display='block';
-    document.getElementById('up-title').value='';
-    document.getElementById('up-file').value='';
-    document.getElementById('up-fname').textContent='';
-  }
-}
-
-// ADMIN: CATEGORIES
-async function loadAdminCats() {
-  const cats=await api('/api/categories');
-  allCategories=cats;
-  document.getElementById('admin-cats-grid').innerHTML=cats.map(c=>`
-    <div class="cat-card">
-      <div class="cc-icon" style="background:${c.color}">${c.icon||c.label.charAt(0)}</div>
-      <div class="cc-label">${c.label}</div>
-      <div class="cc-desc">${c.desc||''}</div>
-      <div class="cc-actions">
-        <button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="openCatModal('${c.id}','${c.label.replace(/'/g,"\\'")}','${(c.desc||'').replace(/'/g,"\\'")}','${c.color}','${c.icon||''}')">Bearbeiten</button>
-        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteCat('${c.id}')">Löschen</button>
-      </div>
-    </div>`).join('');
-}
-
-function openCatModal(id,label,desc,color,icon) {
-  currentEditCat=id||null;
-  document.getElementById('modal-cat-title').textContent=id?'Kategorie bearbeiten':'Neue Kategorie';
-  document.getElementById('cat-label').value=label||'';
-  document.getElementById('cat-desc').value=desc||'';
-  document.getElementById('cat-color').value=color||'#00c9a7';
-  document.getElementById('cat-icon').value=icon||'';
-  document.getElementById('cat-edit-id').value=id||'';
-  document.getElementById('modal-cat').classList.add('open');
-}
-
-async function saveCat() {
-  const body={ label:document.getElementById('cat-label').value.trim(), desc:document.getElementById('cat-desc').value.trim(), color:document.getElementById('cat-color').value, icon:document.getElementById('cat-icon').value.trim() };
-  if(!body.label) return alert('Bitte Name eingeben');
-  if(currentEditCat) await api(`/api/categories/${currentEditCat}`,{method:'PUT',body:JSON.stringify(body)});
-  else await api('/api/categories',{method:'POST',body:JSON.stringify(body)});
-  closeModals(); loadAdminCats();
-}
-
-async function deleteCat(id) {
-  if(!confirm('Kategorie wirklich löschen?')) return;
-  await api(`/api/categories/${id}`,{method:'DELETE'});
-  loadAdminCats();
-}
-
-// ADMIN: KNOWLEDGE
-async function populateCatSelects() {
-  const cats=await api('/api/categories');
-  allCategories=cats;
-  const opts=cats.map(c=>`<option value="${c.id}">${c.label}</option>`).join('');
-  document.getElementById('know-cat-sel').innerHTML=opts;
-  document.getElementById('adm-know-cat-filter').innerHTML='<option value="">Alle Kategorien</option>'+opts;
-}
-
-async function loadAdminKnow() {
-  const q=document.getElementById('adm-know-search')?.value.trim()||'';
-  const catId=document.getElementById('adm-know-cat-filter')?.value||'';
-  let url='/api/knowledge?'; if(catId) url+=`categoryId=${catId}&`; if(q) url+=`q=${encodeURIComponent(q)}`;
-  const items=await api(url);
-  const el=document.getElementById('admin-know-list');
-  if(!items.length){el.innerHTML='<div style="color:var(--text3);font-size:12px">Keine Einträge. Legen Sie den ersten Eintrag an!</div>';return;}
-  el.innerHTML=items.map(i=>{
-    const cat=allCategories.find(c=>c.id===i.categoryId);
-    return `<div class="row">
-      <div class="row-icon" style="background:${cat?.color||'#444'}">${cat?.icon||'?'}</div>
-      <div style="flex:1"><div class="row-title">${i.title}</div><div class="row-meta">${cat?.label||''} · ${(i.tags||[]).join(', ')} · ${i.date}</div></div>
-      <div class="row-actions">
-        <button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="openKnowModal('${i.id}')">Bearbeiten</button>
-        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteKnow('${i.id}')">Löschen</button>
-      </div>
-    </div>`;
-  }).join('');
-}
-
-function openKnowModal(editId) {
-  currentEditKnow=editId||null;
-  document.getElementById('modal-know-title').textContent=editId?'Eintrag bearbeiten':'Neuer Wissenseintrag';
-  if(editId){
-    api('/api/knowledge').then(items=>{
-      const i=items.find(x=>x.id===editId);
-      if(i){
-        document.getElementById('know-cat-sel').value=i.categoryId||'';
-        document.getElementById('know-title').value=i.title||'';
-        document.getElementById('know-content').value=i.content||'';
-        document.getElementById('know-tags').value=(i.tags||[]).join(', ');
-        document.getElementById('know-edit-id').value=i.id;
-      }
-    });
-  } else {
-    document.getElementById('know-title').value='';
-    document.getElementById('know-content').value='';
-    document.getElementById('know-tags').value='';
-    document.getElementById('know-edit-id').value='';
-  }
-  document.getElementById('modal-know').classList.add('open');
-}
-
-async function saveKnow() {
-  const body={
-    categoryId: document.getElementById('know-cat-sel').value,
-    title: document.getElementById('know-title').value.trim(),
-    content: document.getElementById('know-content').value.trim(),
-    tags: document.getElementById('know-tags').value.split(',').map(t=>t.trim()).filter(Boolean)
-  };
-  if(!body.title||!body.content) return alert('Bitte Titel und Inhalt eingeben');
-  if(currentEditKnow) await api(`/api/knowledge/${currentEditKnow}`,{method:'PUT',body:JSON.stringify(body)});
-  else await api('/api/knowledge',{method:'POST',body:JSON.stringify(body)});
-  closeModals(); loadAdminKnow();
-}
-
-async function deleteKnow(id) {
-  if(!confirm('Eintrag wirklich löschen?')) return;
-  await api(`/api/knowledge/${id}`,{method:'DELETE'});
-  loadAdminKnow();
-}
-
-// ADMIN: USERS
-async function loadAdminUsers() {
-  const users=await api('/api/users');
-  document.getElementById('admin-users-list').innerHTML=users.map(u=>`
-    <div class="row">
-      <div class="av" style="width:30px;height:30px;flex-shrink:0">${u.name.charAt(0).toUpperCase()}</div>
-      <div style="flex:1"><div class="row-title">${u.name}</div><div class="row-meta">@${u.username}</div></div>
-      <span class="pill ${u.role==='admin'?'amber':'teal'}">${u.role==='admin'?'Admin':'Nutzer'}</span>
-      <div class="row-actions">
-        ${u.role!=='admin'?`<button class="btn-sm ghost" style="font-size:11px;padding:3px 8px" onclick="makeAdmin('${u.username}')">Admin machen</button>`:''}
-        <button class="btn-sm red" style="font-size:11px;padding:3px 8px" onclick="deleteUser('${u.username}')">Löschen</button>
-      </div>
-    </div>`).join('');
-}
-
-async function makeAdmin(username) {
-  await api(`/api/users/${username}/role`,{method:'PUT',body:JSON.stringify({role:'admin'})});
-  loadAdminUsers();
-}
-
-async function deleteUser(username) {
-  if(!confirm(`Nutzer @${username} wirklich löschen?`)) return;
-  await api(`/api/users/${username}`,{method:'DELETE'});
-  loadAdminUsers();
-}
-
-function closeModals() {
-  document.querySelectorAll('.modal-bg').forEach(m=>m.classList.remove('open'));
-}
-document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)closeModals();}));
-
-// KV-GENERATOR
-let kvHistory = [];
-let lastKvText = '';
-
-function handleKvKey(e) {
-  if(e.key==='Enter' && !e.shiftKey){e.preventDefault();sendKvMsg();}
-}
-
-function sendKV(text) {
-  document.getElementById('kv-ta').value = text;
-  sendKvMsg();
-}
-
-async function sendKvMsg() {
-  const ta = document.getElementById('kv-ta');
-  const text = ta.value.trim();
-  if(!text) return;
-  ta.value = ''; ta.style.height = '36px';
-
-  kvHistory.push({ role: 'user', content: text });
-  appendKvMsg('user', text);
-
-  const think = document.createElement('div');
-  think.className = 'msg ai';
-  think.innerHTML = '<div class="mav ai">KI</div><div class="thinking"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>';
-  document.getElementById('kv-msgs').appendChild(think);
-  scrollKv();
-
-  try {
-    const r = await api('/api/kv', {
-      method: 'POST',
-      body: JSON.stringify({ messages: kvHistory })
-    });
-    think.remove();
-    const reply = r.content?.[0]?.text || 'Fehler beim Laden.';
-    kvHistory.push({ role: 'assistant', content: reply });
-    lastKvText = reply;
-    appendKvMsg('ai', reply);
-  } catch(e) {
-    think.remove();
-    appendKvMsg('ai', '⚠️ Verbindungsfehler. Bitte erneut versuchen.');
-  }
-}
-
-function appendKvMsg(role, text) {
-  const el = document.createElement('div');
-  el.className = `msg ${role}`;
-  const avClass = role === 'ai' ? 'ai' : 'us';
-  const avText = role === 'ai' ? 'KI' : (me?.name?.charAt(0)||'U');
-  const formatted = formatKvText(text);
-  el.innerHTML = `<div class="mav ${avClass}">${avText}</div><div><div class="bub">${formatted}</div></div>`;
-  document.getElementById('kv-msgs').appendChild(el);
-  scrollKv();
-}
-
-function formatKvText(text) {
+function formatMsg(text) {
   return text
-    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
-    .replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')
-    .replace(/═+/g, s => `<span style="color:var(--teal);opacity:.5">${s}</span>`)
-    .replace(/─+/g, s => `<span style="color:var(--border2)">${s}</span>`)
-    .replace(/📋|💡|⚠️|✅|❗/g, m => m)
-    .replace(/\n/g,'<br>');
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>')
+    .replace(/^#{1,3} (.+)$/gm, '<strong style="display:block;margin-top:8px;margin-bottom:2px">$1</strong>')
+    .replace(/✓|✅/g, '<span style="color:var(--green)">✓</span>')
+    .replace(/❌|⛔/g, '<span style="color:var(--red)">✗</span>')
+    .replace(/⚠️/g, '<span style="color:var(--amber)">⚠</span>')
+    .replace(/\n/g, '<br>');
 }
 
-function scrollKv() {
-  const m = document.getElementById('kv-msgs');
-  m.scrollTop = m.scrollHeight;
+function showTyping(container) {
+  const div = document.createElement('div');
+  div.className = 'msg lisa'; div.id = 'typing-' + container;
+  div.innerHTML = `<div class="msg-avatar">🤖</div><div class="typing-indicator"><div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div></div>`;
+  document.getElementById(container).appendChild(div);
+  document.getElementById(container).scrollTop = 99999;
+}
+function hideTyping(container) {
+  const el = document.getElementById('typing-' + container);
+  if (el) el.remove();
 }
 
-function resetKV() {
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = ''; input.style.height = 'auto';
+  document.getElementById('sendBtn').disabled = true;
+  addMsg('chatMessages', 'user', text);
+  chatHistory.push({ role: 'user', content: text });
+  showTyping('chatMessages');
+  try {
+    const res = await api('/api/chat', 'POST', { messages: chatHistory });
+    hideTyping('chatMessages');
+    const reply = res.content[0].text;
+    chatHistory.push({ role: 'assistant', content: reply });
+    addMsg('chatMessages', 'lisa', reply);
+  } catch(e) {
+    hideTyping('chatMessages');
+    addMsg('chatMessages', 'lisa', '❌ Fehler: ' + (e.error || 'Verbindungsproblem'));
+  }
+  document.getElementById('sendBtn').disabled = false;
+  input.focus();
+}
+
+// ── KV ───────────────────────────────────
+function clearKv() {
   kvHistory = [];
+  document.getElementById('kvMessages').innerHTML = '';
+  document.getElementById('kvPreviewContent').innerHTML = '<div class="kv-empty-state"><div class="icon">📋</div><p>Der fertige KV erscheint hier</p></div>';
+  document.getElementById('kvActions').style.display = 'none';
   lastKvText = '';
-  document.getElementById('kv-msgs').innerHTML = `
-    <div class="msg ai"><div class="mav ai">KI</div><div><div class="bub">Neuer KV – Nennen Sie mir die Behandlung! 📋<br><br>• <strong>„Krone auf Zahn 36"</strong><br>• <strong>„Aligner Oberkiefer"</strong><br>• <strong>„Totalprothese UK"</strong><br>• <strong>„Wurzelbehandlung + Aufbau"</strong><br>• <strong>„Implantat mit Krone"</strong></div></div></div>`;
 }
 
-function copyKV() {
-  if(!lastKvText) { alert('Noch kein KV vorhanden.'); return; }
-  navigator.clipboard.writeText(lastKvText).then(() => {
-    const btn = event.target;
-    btn.textContent = '✓ Kopiert!';
-    setTimeout(() => btn.textContent = '📋 KV kopieren', 2000);
+async function sendKv() {
+  const input = document.getElementById('kvInput');
+  const text = input.value.trim();
+  if (!text) return;
+  input.value = ''; input.style.height = 'auto';
+  document.getElementById('kvSendBtn').disabled = true;
+  addMsg('kvMessages', 'user', text);
+  kvHistory.push({ role: 'user', content: text });
+  showTyping('kvMessages');
+  try {
+    const res = await api('/api/kv', 'POST', { messages: kvHistory });
+    hideTyping('kvMessages');
+    const reply = res.content[0].text;
+    kvHistory.push({ role: 'assistant', content: reply });
+    addMsg('kvMessages', 'lisa', reply);
+    if (reply.includes('KOSTENVORANSCHLAG') || reply.includes('EIGENANTEIL') || reply.includes('═══')) {
+      showKvPreview(reply);
+    }
+  } catch(e) {
+    hideTyping('kvMessages');
+    addMsg('kvMessages', 'lisa', '❌ ' + (e.error || 'Fehler'));
+  }
+  document.getElementById('kvSendBtn').disabled = false;
+  input.focus();
+}
+
+function showKvPreview(text) {
+  lastKvText = text;
+  const html = '<div class="kv-doc"><div class="kv-doc-title">📋 Kostenvoranschlag</div>' + 
+    text.replace(/═+/g, '<hr style="border:none;border-top:2px solid var(--teal);margin:8px 0">').replace(/─+/g, '<hr style="border:none;border-top:1px solid var(--border);margin:6px 0">').replace(/\n/g, '<br>') + '</div>';
+  document.getElementById('kvPreviewContent').innerHTML = html;
+  document.getElementById('kvActions').style.display = 'block';
+}
+
+function copyKv() {
+  navigator.clipboard.writeText(lastKvText);
+  toast('KV in die Zwischenablage kopiert!');
+}
+
+// ── KNOWLEDGE ────────────────────────────
+async function loadCategories() {
+  categories = await api('/api/categories');
+  renderCategoryTabs();
+  renderCategorySelect();
+}
+async function loadKnowledge(cat='', q='') {
+  const url = '/api/knowledge' + (cat || q ? '?' : '') + (cat ? 'categoryId='+cat : '') + (cat && q ? '&' : '') + (q ? 'q='+encodeURIComponent(q) : '');
+  knowledge = await api(url);
+  renderKnowledgeGrid();
+}
+
+function renderCategoryTabs() {
+  const tabs = document.getElementById('categoryTabs');
+  tabs.innerHTML = `<div class="cat-tab active" onclick="selectCat('',this)">Alle</div>`;
+  categories.forEach(c => {
+    const t = document.createElement('div');
+    t.className = 'cat-tab';
+    t.style.cssText = `--cc:${c.color}`;
+    t.innerHTML = `<span class="cat-badge" style="background:${c.color}">${c.icon}</span>${c.label}`;
+    t.onclick = function() { selectCat(c.id, this); };
+    tabs.appendChild(t);
   });
 }
+function selectCat(id, el) {
+  document.querySelectorAll('.cat-tab').forEach(t => { t.classList.remove('active'); t.style.background = ''; t.style.color = ''; t.style.borderColor = ''; });
+  const cat = categories.find(c => c.id === id);
+  el.classList.add('active');
+  if (cat) { el.style.background = cat.color; el.style.color = 'white'; el.style.borderColor = cat.color; }
+  currentCat = id;
+  loadKnowledge(id);
+}
+function filterKnowledge(q) {
+  loadKnowledge(currentCat, q);
+}
 
-// INIT
-if(token) {
-  me={ name: localStorage.getItem('db_name')||'Nutzer', role: localStorage.getItem('db_role')||'user' };
-  initApp();
+function renderKnowledgeGrid() {
+  const grid = document.getElementById('knowledgeGrid');
+  if (!knowledge.length) {
+    grid.innerHTML = '<div style="color:var(--text-muted);font-size:14px;grid-column:1/-1;padding:32px;text-align:center">Keine Einträge gefunden</div>';
+    return;
+  }
+  grid.innerHTML = knowledge.map(k => {
+    const cat = categories.find(c => c.id === k.categoryId);
+    const tags = (k.tags||[]).map(t => `<span class="tag">${t}</span>`).join('');
+    const adminBtns = user?.role === 'admin' ? `
+      <div class="card-actions">
+        <button class="icon-btn edit" onclick="editKnowledge('${k.id}',event)" title="Bearbeiten">✏️</button>
+        <button class="icon-btn" onclick="deleteKnowledge('${k.id}',event)" title="Löschen">🗑</button>
+      </div>` : '';
+    return `<div class="knowledge-card">
+      <div class="knowledge-card-header">
+        <div class="knowledge-card-title">${k.title}</div>
+        ${cat ? `<span class="knowledge-card-cat" style="background:${cat.color}22;color:${cat.color}">${cat.label}</span>` : ''}
+      </div>
+      <div class="knowledge-card-content">${k.content}</div>
+      ${tags ? `<div class="knowledge-card-tags">${tags}</div>` : ''}
+      <div class="knowledge-card-footer">
+        <span>${k.date || ''}</span>
+        ${adminBtns}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderCategorySelect() {
+  const sel = document.getElementById('kCat');
+  sel.innerHTML = categories.map(c => `<option value="${c.id}">${c.label}</option>`).join('');
+}
+
+function openAddKnowledge() {
+  editingKId = null;
+  document.getElementById('knowledgeModalTitle').textContent = 'Neuer Eintrag';
+  ['kTitle','kContent','kTags'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('knowledgeModal').classList.add('open');
+}
+function editKnowledge(id, e) {
+  e.stopPropagation();
+  const k = knowledge.find(x => x.id === id);
+  if (!k) return;
+  editingKId = id;
+  document.getElementById('knowledgeModalTitle').textContent = 'Eintrag bearbeiten';
+  document.getElementById('kCat').value = k.categoryId;
+  document.getElementById('kTitle').value = k.title;
+  document.getElementById('kContent').value = k.content;
+  document.getElementById('kTags').value = (k.tags||[]).join(', ');
+  document.getElementById('knowledgeModal').classList.add('open');
+}
+async function saveKnowledge() {
+  const data = {
+    categoryId: document.getElementById('kCat').value,
+    title: document.getElementById('kTitle').value,
+    content: document.getElementById('kContent').value,
+    tags: document.getElementById('kTags').value.split(',').map(t=>t.trim()).filter(Boolean)
+  };
+  if (!data.title || !data.content) return toast('Titel und Inhalt erforderlich');
+  try {
+    if (editingKId) await api('/api/knowledge/'+editingKId,'PUT',data);
+    else await api('/api/knowledge','POST',data);
+    closeModal('knowledgeModal');
+    await loadKnowledge(currentCat);
+    toast(editingKId ? 'Eintrag aktualisiert' : 'Eintrag gespeichert');
+  } catch(e) { toast('Fehler beim Speichern'); }
+}
+async function deleteKnowledge(id, e) {
+  e.stopPropagation();
+  if (!confirm('Eintrag löschen?')) return;
+  await api('/api/knowledge/'+id,'DELETE');
+  await loadKnowledge(currentCat);
+  toast('Eintrag gelöscht');
+}
+
+// ── UPLOADS ─────────────────────────────
+async function loadUploads() {
+  try {
+    const uploads = await api('/api/uploads');
+    const list = document.getElementById('uploadsList');
+    list.innerHTML = uploads.reverse().map(u => `
+      <div class="upload-item">
+        <div class="upload-icon">📄</div>
+        <div class="upload-info">
+          <strong>${u.title || u.originalname}</strong>
+          <span>Hochgeladen von ${u.uploader} · ${u.date}</span>
+        </div>
+        <span class="upload-cat">${u.category || 'Allgemein'}</span>
+      </div>`).join('') || '<p style="color:var(--text-muted);font-size:14px;padding:12px 0">Noch keine Dateien hochgeladen</p>';
+  } catch {}
+}
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('uploadZone').classList.remove('dragover');
+  const file = e.dataTransfer.files[0];
+  if (file) doUpload(file);
+}
+function uploadFile(input) {
+  if (input.files[0]) doUpload(input.files[0]);
+}
+async function doUpload(file) {
+  const form = new FormData();
+  form.append('file', file);
+  form.append('title', file.name);
+  form.append('category', 'Allgemein');
+  try {
+    const r = await fetch('/api/upload', { method:'POST', headers:{'x-session-token':token}, body:form });
+    if (r.ok) { toast('Datei hochgeladen!'); loadUploads(); }
+    else toast('Upload fehlgeschlagen');
+  } catch { toast('Fehler beim Upload'); }
+}
+
+// ── ADMIN ────────────────────────────────
+async function loadUsers() {
+  try {
+    const users = await api('/api/users');
+    document.getElementById('usersTable').innerHTML = users.map(u => `
+      <tr>
+        <td><strong>${u.name}</strong></td>
+        <td style="color:var(--text-muted)">@${u.username}</td>
+        <td><span class="role-badge ${u.role}">${u.role === 'admin' ? '👑 Admin' : '👤 Mitarbeiter'}</span></td>
+        <td>${u.username !== user.username ? `<button class="del-btn" onclick="deleteUser('${u.username}')">Entfernen</button>` : ''}</td>
+      </tr>`).join('');
+  } catch {}
+}
+async function deleteUser(username) {
+  if (!confirm(`Benutzer "${username}" entfernen?`)) return;
+  await api('/api/users/'+username,'DELETE');
+  loadUsers(); toast('Benutzer entfernt');
+}
+
+// ── UTILS ────────────────────────────────
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('.modal-bg').forEach(m => m.addEventListener('click', e => { if(e.target===m) m.classList.remove('open'); }));
+
+let toastTimer;
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
 }
 </script>
 </body>
