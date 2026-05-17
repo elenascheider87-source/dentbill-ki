@@ -2142,6 +2142,258 @@ LESERFORUM – 2024 DIVERSE:
 - Erstattung Entfernung alter Wurzelfüllung PKV: Analog §6 Abs.1 GOZ (Beschluss Nr.62 Beratungsforum); PKV-/Beihilfe-Empfehlung: GOZ 2300a je Kanal als angemessen
 - P.R.G.F. bei Implantation: analog §6 Abs.1 GOZ; PKV erstattet i.d.R. NICHT; Aufklärung und ggf. Verlangensleistung §2 Abs.3 GOZ vereinbaren; Musterschreiben an Patient empfehlen
 
+=== MUSTERSCHREIBEN & KOSTENERSTATTUNG – PKV, BEIHILFE, LABOR (PA Privatliquidation aktuell) ===
+
+--- AUSKUNFTSERSUCHEN DER VERSICHERUNG AN DEN ZAHNARZT ---
+Rechtliche Grundlage: Versicherung darf Auskünfte und Unterlagen anfordern zur Prüfung der Leistungspflicht. Der Patient ist zur Auskunft verpflichtet – verweigert er sie, muss die Versicherung nicht zahlen.
+Schweigepflicht-Entbindung: Wendet sich die PKV direkt an den Zahnarzt, muss der Zahnarzt sich FALLBEZOGEN und SCHRIFTLICH von der Schweigepflicht entbinden lassen. Generelle Entbindung vor Versicherungsbeginn reicht NICHT aus!
+Leistungen herausgeben: Erst nach schriftlicher, fallbezogener Entbindung. Unterlagen gehen NUR an den Beratungszahnarzt, NICHT an die Geschäftsstelle.
+Vergütung: Da es sich nicht um Ausübung der Zahnheilkunde handelt, KEINE GOZ/GOÄ-Abrechnung möglich. Aufwendungen (Porto, Kopierkosten, Zeitaufwand) sind nach §§612, 670 BGB zu vergüten – entweder von PKV oder vom Patienten.
+Musterschreiben-Hinweis: Zahnarzt sollte vorab schriftlich klären: (1) Schweigepflicht-Entbindung, (2) Kostenerstattung der Aufwendungen, (3) Übersendung NUR an Beratungszahnarzt.
+
+--- ERSTATTUNG VON LABORKOSTEN – SACHKOSTENLISTEN ---
+Sachkostenlisten: PKV darf Laborkosten NUR auf Basis von Sachkostenlisten kürzen, wenn diese Vertragsbestandteil des Versicherungstarifs sind!
+BGH-Urteil 12.03.2003 (Az. IV ZR 278/01): Tatsächlich berechnete angemessene zahntechnische Laborkosten sind als Heilbehandlungsaufwendungen zu erstatten, sofern medizinisch notwendig und kein auffälliges Missverhältnis.
+Abschließend-Prüfung: Enthält das Preis- und Leistungsverzeichnis keinen Hinweis auf Abschließlichkeit, sind nicht aufgeführte medizinisch notwendige Leistungen mit dem tariflichen Prozentsatz zu erstatten (AG Köln 26.06.2014, Az. 118 C 159/14).
+Implantatkronen, vollkeramische Versorgungen sind oft NICHT in Sachkostenlisten enthalten → Anspruch auf prozentuale Erstattung!
+Sachkostenlisten für Altverträge/Bestandskunden: PKV kann Sachkostenlisten NICHT einseitig für Altverträge einführen. Argument der PKV über §203 Abs.3 VVG (Treuhänder-Genehmigung) ist laut Rechtsprechung verfehlt. BEL war NIE Bestandteil von Altverträgen.
+Marktübliches Preisniveau: Maßgeblich für Erstattung ist marktübliches Preisniveau für vergleichbare Leistungen (BGH Az. IV ZR 278/01) – NICHT das BEL der GKV.
+BEL nicht maßgeblich: BEL ist eine mit der Sozialversicherung ausgehandelte Preisliste. Sie gilt NICHT im privatrechtlichen Behandlungsverhältnis und enthält viele privatübliche Leistungen nicht (z.B. Einlagefüllungen aus Keramik/Gold).
+
+--- PATIENTENINFORMATION BEI ERSTATTUNGSPROBLEMEN ---
+Rechtliche Grundlage: Rechtsbeziehung besteht zwischen Zahnarzt und Patient, NICHT zwischen Zahnarzt und Kostenerstatter! Was der Patient erstattet bekommt, regelt dessen Versicherungsvertrag individuell.
+Praxis kann Kürzungen NICHT akzeptieren: Liquidation ist nach GOZ/GOÄ korrekt erstellt. Kürzungen durch PKV/Beihilfe berühren das Honorarverhältnis Zahnarzt-Patient nicht!
+Patient kann Rechnung durch Zahnärztekammer prüfen lassen.
+Analogziffern: GOZ 2012 beschreibt nicht alle Leistungen. Neue Behandlungsmethoden → Analogabrechnung §6 Abs.1 GOZ → häufig zu Erstattungsproblemen.
+Sachkostenlisten: Oft kürzen PKVen Labor auf Basis nicht vereinbarter Listen → Patienten aufklären!
+Beihilfe-Probleme: Beihilfe und GOZ sind zwei verschiedene Rechtssysteme. Begründungsablehnungen durch Beihilfe sind häufig, aber oft nicht rechtmäßig.
+Hinweis Praxis: Praxis kann zum Eigenanteil KEINE Auskunft geben – nur der Kostenerstatter kennt die exakte Erstattungshöhe.
+Tipp: Patienteninformationen auf farbigem Papier – hebt die Bedeutung hervor.
+
+--- BEGRÜNDUNGSABLEHNUNGEN DURCH BEIHILFE (FAKTOR ÜBER 2,3) ---
+Rechtslage: Zahnarzt hat gegenüber der Beihilfestelle KEINERLEI Verpflichtung. Einzig der Patient/Zahlungspflichtige hat Rechte (§10 Abs.3 GOZ).
+Begründung muss für Patient verständlich sein – stichwortartig reicht.
+Auf Verlangen des Patienten muss Zahnarzt erläutern – aber NICHT schriftlich!
+Beihilfestelle darf NICHT einfach kürzen: Bei Zweifeln muss Amts(zahn)arzt oder Zahnärztekammer eingeholt werden. Eigenmächtiges Kürzen ohne Gutachten = "fahrlässige Amtspflichtverletzung" (BGH Az. III ZR 231/10, 13.10.2011).
+Musterschreiben für Patienten: Darauf hinweisen, dass Beihilfe kürzt, ohne Gutachten einzuholen → Mustertext: "Nach Auffassung des Bundesgerichtshofs (Az. III ZR 231/10, 13. Oktober 2011) darf die Beihilfefestsetzungsstelle den Gebührensatz nicht einfach kürzen." → Klingt nach fahrlässiger Amtspflichtverletzung wenn Kürzung ohne Gutachten.
+
+--- ABLEHNUNG VON HONORAREN ÜBER 3,5-FACH (§2 GOZ) ---
+Keine Begründungspflicht bei abweichender Vereinbarung: §2 GOZ erlaubt freie Honorarvereinbarung. Begründungspflicht entfällt grundsätzlich (Rechtsgrund ergibt sich aus Vereinbarung).
+Auf Verlangen: Wenn Patient Begründung für Erstattung gegenüber PKV/Beihilfe benötigt, muss Zahnarzt fiktiven Steigerungssatz mitteilen (§10 Abs.3 GOZ).
+BGH 09.03.2000 (Az. III ZR 356/98): Sieht Tarif keine Beschränkung auf 3,5-fachen Satz vor → PKV grundsätzlich zur Erstattung auch über Rahmen verpflichtet.
+LG Mannheim 30.01.2009 (Az. 1 S 141/05): PKV muss auch Kosten aus Honorarvereinbarung §2 GOZ tragen, wenn AVB keine Beschränkung auf §5-GOZ-Sätze vorsieht.
+Voraussetzung: Honorarvereinbarung formal korrekt nach §2 Abs.2 GOZ erstellt, schriftlich, persönliche Absprache, Hinweis auf mögliche Nichterstattung.
+Keine Einwilligung der PKV notwendig: Erstattungsfähigkeit hängt nicht von PKV-Einverständnis ab.
+
+--- SACHBEARBEITER DARF NICHT ÜBER MEDIZINISCHE NOTWENDIGKEIT ENTSCHEIDEN ---
+Grundsatz: Medizinische Notwendigkeit ist ausschließlich Sache des behandelnden Zahnarztes! (§1 Abs.3 ZHG).
+BGH-Definitionen: Heilbehandlung ist medizinisch notwendig, wenn es nach objektiven medizinischen Befunden und wissenschaftlichen Erkenntnissen vertretbar war (BGH 12.03.2003, Az. IV ZR 278/01; BGH 29.11.1978, Az. IV ZR 175/77).
+Implantatversorgung: Ist nicht mehr Luxus, sondern "state of the art" (LG Stuttgart 07.11.2005, Az. 22 O 210/02).
+PKV-Beweispflicht: Will PKV Leistungspflicht einschränken, ist sie darlegungs- und beweispflichtig (BGH 29.05.1991, Az. IV ZR 151/90)!
+Behandlungsmethode: Bei mehreren medizinisch gleich indizierten Methoden muss Patient zwischen Risiken und Chancen wählen dürfen (BGH 22.09.1987, Az. VI ZR 238/86).
+Kein PKV-Sachbearbeiter ohne Gutachten: Wenn PKV an Behauptung "nicht notwendig" festhält → unabhängigen Sachverständigen über Zahnärztekammer beauftragen lassen.
+
+--- AUSKUNFTSPFLICHT DER VERSICHERUNG ÜBER GUTACHTEN ---
+§202 VVG: Patient hat direktes Einsichtsrecht in alle Gutachten und Stellungnahmen, die PKV zur Prüfung der Leistungspflicht eingeholt hat.
+Verfasser muss erkennbar sein: Name des Gutachters darf NICHT geschwärzt werden (BGH 11.06.2003, Az. IV ZR 418/02).
+Angestellter Zahnarzt als Gutachter: Ist weisungsgebunden → keine eigene Aussagekraft → gilt als Beurteilung des Versicherers selbst.
+Mündliche Beurteilung: Auch hier hat Patient Anspruch auf Aktennotiz mit Begründung und Name des Beraters.
+Wenn Einsichtnahme verweigert wird: Musterschreiben mit Verweis auf §202 VVG und BGH-Urteil Az. IV ZR 418/02 einreichen.
+
+--- DVT-AUFNAHMEN – ERSTATTUNGSPROBLEME ---
+DVT = Digitale Volumentomographie. Abrechnungsziffer: GOÄ Ä5370 (computergesteuerte Tomographie Kopfbereich).
+Medizinische Notwendigkeit: Liegt allein beim Zahnarzt. Nicht gekennzeichnete Leistungen auf der Rechnung gelten als notwendig (§10 Abs.3 GOZ).
+Röntgenverordnung §2c: Unnötige Strahlenexposition ist verboten. Erst konventionell röntgen wenn DVT absehbar nötig = Verstoß gegen Röntgenverordnung!
+PKV-Beweispflicht: Schränkt PKV Leistungspflicht ein → sie ist beweispflichtig dass DVT nicht notwendig war. Sachbearbeiter-Entscheidung allein reicht NICHT.
+
+--- KOSTENÜBERNAHME DER KK BEI GKV-WURZELBEHANDLUNG ---
+Nicht-richtlinienkonforme WKB: Aufklärung des Patienten und schriftliche Dokumentation zwingend erforderlich!
+Wenn GKV-Patient Zahnerhalt trotzdem wünscht: Privatbehandlungsvereinbarung nach §4 Abs.5d BMV-Z / §7 Abs.7 EKV-Z.
+Kostenübernahme GKV: KK behauptet manchmal mündlich, sie übernehme die Kosten → "schwarzen Peter" dem Zahnarzt zuschieben. Lösung: Musterformular mit exaktem Richtlinientext vorlegen (G-BA Richtlinie B.III.9.4) → KK muss schriftlich bestätigen, dass sie übernimmt. Sachbearbeiter wird i.d.R. NICHT bestätigen.
+
+--- ERSTATTUNGSPROBLEME BEI ANTIMIKROBIELLER PHOTODYNAMISCHER THERAPIE (aPDT) ---
+aPDT: Keimzahlreduzierung durch Licht + Photosensibilisator → reaktive Sauerstoffspezies töten Keime.
+Rechtslage: Weder in GOZ noch GOÄ → analog §6 Abs.1 GOZ abrechnen.
+BZÄK: Anerkennt aPDT als analog zu berechnende Leistung (im Katalog selbstständiger zahnärztlicher Leistungen).
+VG Stuttgart 11.03.2013 (Az. 13 K 4202/11 und Az. 13 K 4557/11): Erstattung darf NICHT mit Argument abgelehnt werden, Therapie fehle noch wissenschaftliche Anerkennung.
+Debeka: Erstattet aPDT nicht → widerspricht dem Recht!
+
+--- GOZ-NR. 6090 BEI KIEFERORTHOPÄDIE – HÄUFIG FALSCH ABGELEHNT ---
+3 häufige falsche PKV-Ablehnungsgründe (alle FALSCH!):
+1. Nr. 6090 kann erst ab 18 Jahren abgerechnet werden → FALSCH! Wachstumsphase nicht an Alter gebunden.
+2. Nr. 6090 kann nur insgesamt einmal pro Kiefer abgerechnet werden → FALSCH! Mehrfachansatz möglich (VG Stuttgart 02.09.2013, Az. 3 K 1809/13).
+3. Nr. 6090 ist neben 6060-6080 nicht abrechenbar → FALSCH! Keine Ausschlussregelung vorhanden.
+VG Stuttgart Az. 3 K 1809/13: Bestätigt mehrmaligen Ansatz der GOZ 6090 im Verlauf einer 4-jährigen KFO-Behandlung.
+BZÄK GOZ-Kommentar (Stand 25.04.2014): Wachstumsphase nicht an bestimmtes Alter gebunden. 6090 je Kiefer bis 2x je Sitzung möglich.
+
+--- GOZ-NR. 2197 NEBEN GOZ-NRN. 2060 FF. ---
+Streitpunkt: PKVen behaupten, 2197 sei in 2060 ff. bereits enthalten (§4 Abs.2 S.2 GOZ) → das ist FALSCH.
+AG Bonn 28.07.2014 (Az. 116 C 148/13): 2197 ist weder in 2060 ff. enthalten noch notwendiger Bestandteil. Adhäsive Befestigung nach 2197 = Mehraufwand, der gesondert abrechenbar ist.
+Begründung: GOZ 2060 ff. erfassen nur "Konditionieren" als Vorbereitungsleistung. Die eigentliche adhäsive Befestigung (Rehydrieren, Silanisieren, Primen, Bonden, Lichthärten) ist NICHT Leistungsinhalt von 2060 ff.
+LZK Nordrhein und LZK Baden-Württemberg: Bestätigen Nebeneinanderberechnung.
+Zeitaufwand: Bewertung der 2060 ff. ohne 2197 nicht ausreichend.
+
+--- GOZ-NRN. 9090 UND 9100 NEBENEINANDER ---
+PKV-Argument: Leistungsinhalte teilweise identisch → Doppelabrechnung. Das ist FALSCH.
+Unterschied: 9100 = Aufbau Alveolarfortsatz zur Volumenvermehrung. 9090 = Knochengewinnung, Aufbereitung, Implantation (auch zur Weichteilunterfütterung).
+Kein Ausschluss: Weder 9090 noch 9100 enthalten eine Ausschlussregelung für die Nebeneinanderberechnung.
+AG Iserlohn 01.03.1993 (Az. 40 C 758/92): Enthält Gebührenverzeichnis keine ausdrückliche Regelung, ist jede Gebühr neben jeder anderen berechnungsfähig.
+BGH 13.05.1992 (Az. IV ZR 213/91): Im GOZ-Leistungskatalog aufgeführte Leistungen mit eigenen Beschreibungen sind abrechenbar.
+Zielleistungsprinzip: 9090 und 9100 haben unterschiedliche Ziele und unterschiedliche operative Schritte → §4 Abs.2 GOZ greift NICHT.
+
+--- GOZ-NRN. 1000/1010 NEBEN GOÄ-NR. 1 ---
+PKV-Behauptung: GOÄ Nr. 1 kann neben GOZ 1000/1010 nicht in derselben Sitzung abgerechnet werden. Das ist FALSCH.
+Korrekte Rechtslage: GOZ 1000/1010 schließt Beratungen nach GOÄ Nr. 1 nur aus, wenn diese Prophylaxezwecken dienen. Dient Beratung anderen Zwecken (z.B. konservierend, kieferorthopädisch) → ist GOÄ Nr. 1 neben 1000/1010 abrechenbar!
+Voraussetzung: Andere Zwecke in Rechnung begründen.
+BZÄK bestätigt: GOZ 1000/1010 umfasst nicht die Diagnostik und Therapiebesprechung bei Erkrankungen → diese Leistung kann in derselben Sitzung nach GOÄ Nr. 1 berechnet werden.
+Gleiches gilt für GOZ 4000 und GOZ 8000 neben GOZ 1000/1010 – wenn anderen Zwecken dienend.
+
+=== MATERIALKOSTENBERECHNUNG – GOZ (§4 Abs.3 GOZ) ===
+
+GRUNDREGEL: Mit den GOZ-Gebühren sind die Praxiskosten einschließlich Füllungsmaterial, Sprechstundenbedarf, Instrumente und Lagerhaltung abgegolten – AUSSER das Gebührenverzeichnis sieht gesonderte Berechnung vor!
+Gesonderte Berechnung bei: großer Preisspanne (z.B. Abformmaterialien: einfaches Alginat vs. hochwertiges Silikon), teuren Einmalinstrumenten (z.B. Nickel-Titan-Instrumente GOZ 2410).
+Zumutbarkeitsgrenze: BGH 27.05.2004 (Az. III ZR 264/03) – Materialien dürfen zusätzlich berechnet werden, wenn Anschaffungskosten bereits großen Teil der zahnärztlichen Gebühr aufzehren.
+Formale Pflicht §10 Abs.2 S.6 GOZ: Bei gesondert berechnungsfähigen Kosten müssen Art, Menge und Preis verwendet Materialien angegeben werden.
+Kalkulation: Nettopreis + 19% MwSt = Materialkostenselbstpreis inkl. Verschnitt. Verschnitt MUSS mitberechnet werden! Aufschläge für Lager-/Gestehungskosten sind NICHT zulässig.
+Preise jährlich neu kalkulieren (Herstellerpreise ändern sich zum Jahreswechsel).
+Steuersatz beachten: 7% oder 19% – je nach Material anhand Lieferantenrechnung prüfen.
+
+ÜBERSICHT BERECHNUNGSFÄHIGE MATERIALIEN JE GOZ-POSITION:
+GOZ 0030/0040: Porto (Allg. GOZ-Bestimmungen)
+GOZ 0050/0060: Abformmaterialien + Material-/Laborkosten §9 GOZ
+GOZ 0065: ggf. Versandkosten + Laborkosten §9 GOZ
+GOZ 0090/0100: Anästhetikum (Spritze und Kanüle NICHT extra!)
+GOZ 1020: Fluoridierungsmaterial wenn Zumutbarkeitsgrenze überschritten (BGH 27.05.2004)
+GOZ 1030: Abformmaterialien + Laborkosten §9 GOZ
+GOZ 2010: Fluoridierungsmaterial bei Zumutbarkeitsgrenze
+GOZ 2150/2160/2170: Abformmaterialien + Laborkosten §9 GOZ
+GOZ 2190: Abformmaterialien + Verankerungselemente
+GOZ 2195: Verankerungselemente (Schrauben, Glasfaserstifte)
+GOZ 2200/2210/2220: Abformmaterialien + Material-/Laborkosten §9 GOZ
+GOZ 2410: Einmal verwendbare Nickel-Titan-Instrumente (Allg. Bestimmungen Abschnitt C GOZ)
+GOZ 3000-3160: Atraumatisches Nahtmaterial, einmal verwendbare Explantationsfräsen, Material zum Schutz anatomischer Strukturen, Materialien zur Blutungsförderung/-Verschluss bei hämorrhagischen Diathesen (Allg. Bestimmungen Abschnitt D GOZ)
+GOZ 3140/3160: Zusätzlich Kunststoff, Fasergitter, Ligaturenmaterial (Zumutbarkeitsgrenze)
+GOZ 3190-3310: Atraumatisches Nahtmaterial, Blutungsförderungsmaterialien, Verbandsplatten §9 GOZ, Schutz anatomischer Strukturen
+GOZ 3260: Zusätzlich Kunststoff, Fasergitter, Ligaturenmaterial, Mehrkosten Keramikbrackets
+GOZ 4025: Materialien wie Perio-Chip, Ligosan Paste, Chlorhexamed Gel
+GOZ 4070-4138: Membranen, Blutungsförderungsmaterialien, atraumatisches Nahtmaterial, Knochen-/Knochenersatzmaterialien, regeneratives Material
+GOZ 4110: Einmal verwendbare Knochenkollektoren/-schaber, Knochenersatzmaterialien, Materialien zur Membranfixierung
+GOZ 5000-5080: Abformmaterialien (Allg. Bestimmungen zur GOZ-Gebühr)
+GOZ 5090-5340: Abformmaterialien (Allg. Bestimmungen zur GOZ-Gebühr)
+GOZ 6000: Entwicklungskosten, Vergrößerung, Fotoprint, Datenträger (Zumutbarkeitsgrenze)
+GOZ 6100/6120/6140/6150: Über Standardmaterialien (unprogrammierte Edelstahlbrackets, Attachments, Edelstahlbänder) hinausgehende Materialien; Mehrkosten abziehen!
+GOZ 6160/6170: Abformmaterialien + Materialien die Patient zur einmaligen Verwendung behält
+GOZ 6180/6200/6220/6240-6260: Abformmaterialien, ggf. konfektionierte Mundvorhofplatten, Laborkosten §9 GOZ
+GOZ 7000-7080: Abformmaterialien; GOZ 7070 Kunststoff bei Zumutbarkeitsgrenze
+GOZ 8090: Kunststoffe bei Zumutbarkeitsgrenze
+GOZ 9000/9003/9005: Abformmaterialien, Fixierungselemente
+GOZ 9010/9020: Implantate, Implantatteile, Einmalimplantatfräsen, regeneratives Material, Knochenersatzmaterial, Membranen, Membranfixierungsmaterialien, atraumatisches Nahtmaterial, Explantationsfräsen (Allg. Bestimmungen Abschnitt K GOZ)
+GOZ 9040: Implantatteile, Nahtmaterial
+GOZ 9050/9060: Implantatteile
+GOZ 9090-9170: Blutungsförderungsmaterialien, atraumatisches Nahtmaterial, Knochen-/Knochenersatzmaterial, Einmalkollektoren/-schaber, regeneratives Material (Allg. Bestimmungen Abschnitt K GOZ)
+Praxistipp: Implantate haben unterschiedliche Umsatzsteuersätze → bei Einzelpreisfindung unbedingt beachten!
+Praxistipp: Bei Abformmaterial wie Impregum → 15-20€ je Abdruck; Verschnitt in Kanüle mitberechnen!
+Praxistipp: Bei GOZ 4110 häufig gleichzeitig GOZ 4138 → auch Membrankosten fallen an.
+Praxistipp: Nahtmaterial bei Extraktionen immer zusätzlich abrechenbar wenn genäht wird!
+Praxistipp: Zumutbarkeitsgrenze GOZ 2290 – diamentierter Kronentrenner ca. 15€ bei Einfachsatz 10,12€ → Zumutbarkeitsgrenze überschritten → extra berechenbar.
+
+=== ARGUMENTATIONSHILFEN BEI ERSTATTUNGSPROBLEMEN (SO BIETEN SIE KOSTENERSTATTERN PAROLI) ===
+
+--- WAS WIRD AM HÄUFIGSTEN BEANSTANDET ---
+1. Analogabrechnung (Platz 1) – besonders: präendodontischer Aufbau, Aufbaufüllung Mehrschichttechnik, Full Mouth Desinfektion (FMD), photodynamische Therapie
+2. Begründung bei erhöhtem Steigerungsfaktor (Platz 2)
+3. Laborleistungen/Kürzung Labor (Platz 3)
+4. Adhäsive Befestigung GOZ 2197
+5. Endodontische Leistungen
+
+--- ARGUMENTATION BEI ANALOGABRECHNUNG (§6 ABS.1 GOZ) ---
+Voraussetzungen: Selbstständige Leistung + weder in GOZ noch GOÄ aufgeführt → Analogabrechnung zulässig.
+Häufigstes PKV-Argument: "Es gibt doch eine passende GOZ-Ziffer" → Zahnarzt muss begründen, warum die angegebene GOZ-Ziffer NICHT die erbrachte Leistung abbildet.
+PKV-Argument "nicht nachvollziehbar" oder "Ziffer zu hoch bewertet" → mit Art, Kosten- und Zeitaufwand der Analogleistung begründen.
+GOZ-Nr. 2120a (mehrschichtiger Kronenstumpfaufbau analog): PKV behauptet, GOZ 2180 reiche aus. Aber: Mehrschichttechnik ist in 2180 und 2197 NICHT beschrieben → eigenständige Leistung nach §6 Abs.1 GOZ! AG Schöneburg 05.05.2015 (Az. 18C 65/14): Bestätigt Rechtmäßigkeit.
+Beratungsforum BZÄK/PKV/Beihilfe (2013): 21 Beschlüsse zu streitigen Analogleistungen – insbesondere Endodontie:
+  - Verschluss atypisch weiter apikaler Foramina mit MTA → analog
+  - Verschluss von Perforationen des Wurzelkanalsystems → analog
+  - Entfernung frakturierter Wurzelkanalinstrumente → analog
+  - Entfernung nekrotischen Pulpagewebes vor WK-Aufbereitung → analog
+  - Fotos zu therapeutischen/diagnostischen Zwecken (nicht KFO-Auswertung) → analog
+  - Periimplantitis-Behandlung im offenen Verfahren → analog
+Achtung: Neuere Tarife (z.B. Debeka PNW/PNZ) schließen Analogleistungen aus – dann besteht kein Erstattungsanspruch, nur freiwillige Leistung.
+DKV-Empfehlung PDT (positives Beispiel): 1x GOZ 1000a (2,7-fach) + Anzahl x GOZ 4025a (2,7-fach) + Anzahl x GOZ 4150a (2,7-fach) + Materialkosten.
+Kariesdetektor: AG Dortmund 31.08.2015 (Az. 405 C 3277/14) – bestätigt Analogabrechenbarkeit.
+
+--- ARGUMENTATION BEI KÜRZUNG DES STEIGERUNGSFAKTORS ---
+3-Teile-Formel für Begründungen (immer!):
+Teil 1 - Bestimmung: "Erhöhte Schwierigkeit" / "Erhöhter Zeitaufwand" / "Erschwerte Umstände"
+Teil 2 - Bindewort: "wegen" / "durch" / "aufgrund"
+Teil 3 - Grund: krankheitsbezogen / personenbezogen / leistungsbezogen
+Beispiel korrekt: "Erhöhte Schwierigkeit bei der Aufbereitung des distalen Wurzelkanals wegen atypischer Kanalverzweigungen."
+Begründungen so individuell wie möglich formulieren! Behandlungszeit dokumentieren! Patient während Behandlung über Besonderheiten informieren!
+
+--- ARGUMENTATION BEI LABORKÜRZUNGEN ---
+Individuell abgeschlossene Versicherungstarife haben KEINEN Einfluss auf Rechnungslegung der Praxis.
+BEL nicht maßgeblich: BEL ist GKV-Preisliste und gilt NICHT im Privatbereich. BEL enthält viele privatübliche Leistungen nicht.
+Ab voraussichtlich 1.000€ Laborkosten: Praxis MUSS Kostenvoranschlag über Labor anbieten und auf Verlangen aushändigen.
+Angemessenheit der Laborkosten richtet sich nach Einzelfall, lokalem Preisniveau und Qualität (AG Wuppertal 05.04.2007, Az. 39 C 325/05):
+  - BEB ist nicht bindend für Privatbereich
+  - Maßgeblich: Angemessenheit im Einzelfall = ortsübliche Preise (NICHT andere Bundesländer!)
+  - Qualität darf sich im Preis widerspiegeln (Lupenbrille, Meister, höhere Qualität)
+  - PKV muss BEWEISEN dass ihr angeblicher Stundensatz "angemessen" ist – nicht der Zahnarzt!
+  - BGH Az. IV ZR 151/90: Versicherung ist für Einschränkung beweispflichtig.
+§9 GOZ: Zahnarzt rechnet Laborkosten in tatsächlicher Höhe weiter. Aufgabe: Rechnung vor Weitergabe auf Richtigkeit prüfen.
+
+--- THERAPIEPLAN VOM KOSTENERSTATTER GEKÜRZT ---
+Therapieplan muss VOR Behandlung eingereicht werden (bei Zahnersatz/Implantaten) – sonst finanzielle Einbußen!
+Tarifliche Einschränkungen: Kein Handlungsbedarf – Differenzkosten trägt Patient.
+Nicht-tarifliche Kürzungen: Kurze Stellungnahme des Zahnarztes → zeigt Patient dass Plan korrekt ist.
+Häufigste Kürzungen: Medizinische Notwendigkeit, Faktorsteigerung über 2,3, Analogleistungen, GOZ 2197, weichteilchirurgische Leistungen.
+Behandlungsunterlagen: PKV darf Auskünfte verlangen (§9 Abs.2 MB/KK). Zahnt Patient nicht mit → PKV muss nicht leisten.
+Anfrage schnell beantworten! Kosten für Unterlagen: entweder Patient oder PKV.
+Begründung auf Therapieplan: NICHT erforderlich! Begründung kommt erst nach Behandlung auf die Rechnung.
+
+--- ERSTATTUNGSZUSAGE BESCHLEUNIGEN ---
+§192 Abs.8 VVG: PKV muss innerhalb 4 Wochen Auskunft über Versicherungsschutz erteilen. Bei Dringlichkeit: 2 Wochen.
+Hinweis in HKP aufnehmen: Patient soll fristgerechte Auskunft schon beim Einreichen des HKP anfordern.
+Wenn PKV weitere Unterlagen anfordert → setzt Frist neu in Gang.
+Wenn Unterlagen geliefert: Erneut 4-Wochen-Frist setzen (Praxis "im Namen des Patienten").
+Dringlichkeit: Im HKP vermerken + kurz begründen → kann Bearbeitung beschleunigen.
+Gut dokumentieren: Parodontalstatus, Funktionsstatus, Mundfotos, Modellfotos → hilft bei medizinischer Notwendigkeit.
+PKV bestreitet Umfang (z.B. Anzahl Implantate): Praxis kann Behandlung durchführen – PKV ist beweispflichtig für ihre Einschränkung.
+
+--- GOZ-NR. 6190 (BERATENDES/BELEHRENDES GESPRÄCH) ---
+PKV-Behauptung: 6190 nur im Rahmen KFO berechenbar → FALSCH!
+BZÄK GOZ-Kommentar: Beratendes Gespräch kann sich auf KFO, ABER AUCH auf andere zahnmedizinische Gebiete beziehen.
+Beratungsforum-Beschluss Nr. 18: Auflistung in einem GOZ-Abschnitt bedeutet NICHT, dass Leistung nur im Zusammenhang mit diesem Abschnitt berechenbar ist.
+Ausschlüsse: 6190 NICHT neben GOZ 6030-6080 und NICHT neben GOZ 0010.
+Dokumentation zwingend: Art der schädlichen Gewohnheit, Folgen, Gefährdung des Behandlungserfolgs. "Belehrendes Gespräch wegen Habits" allein reicht NICHT!
+Beispiele für berechenbare Habits: Daumenlutschen, Fingernägelkauen, Bruxismus, Pressen, Knirschen, Kauen auf Mundstücken, Zähne als Werkzeug, Piercing-Dysfunktionen.
+4 Voraussetzungen: Leistung vollständig erbracht + medizinisch notwendig (§1 Abs.2) + nicht Inhalt anderer Leistung (§4 Abs.2) + §10 GOZ eingehalten.
+
+--- GOZ-NR. 2030 (BESONDERE MAßNAHMEN BEIM PRÄPARIEREN/FÜLLEN) ---
+Abrechnungsbestimmung GOZ 2012: Je Sitzung je Kieferhälfte/Frontzahn HÖCHSTENS einmal beim Präparieren + HÖCHSTENS einmal beim Füllen → also maximal 2x je Kieferhälfte/FZB.
+Frühere GOZ: Mehrfachansatz war umstritten. Seit GOZ 2012 klar geregelt.
+Berechnungsfähig für: Separieren, Beseitigen störenden Zahnfleisches (auch elektro-chirurgisch), Stillung Papillenblutung, Formgebungshilfe bei Komposit, Anlegen Retraktionsfäden, Präparationsschutz Nachbarzähne.
+NICHT berechnungsfähig für: Anlegen Matrize bei 2050/2070/2090/2110, Anlegen Kofferdam (GOZ 2040), Exzision Schleimhaut (GOZ 3070), Lichtaushärtung.
+Bei mehreren besonderen Maßnahmen: Erhöhten Aufwand im Steigerungsfaktor §5 Abs.2 GOZ berücksichtigen. Ggf. Honorarvereinbarung §2 GOZ.
+
+--- MEDIZINISCHE NOTWENDIGKEIT FAL/FTL-LEISTUNGEN (GOZ 8000 FF.) ---
+Nur Zahnarzt entscheidet über medizinische Notwendigkeit – nicht PKV-Sachbearbeiter!
+DGZMK: Bereits bei Verdacht auf funktionell bedingte Erkrankungen besteht Indikation für Funktionsanalyse.
+OLG Köln (23.08.2006, Az. 5 U 22/04): Ohne vorausgehende Diagnostik fehlt Therapie medizinische Grundlage → Behandlungsfehler!
+Häufige PKV-Ablehnungsargumente und Gegenwehr:
+  1. "Leistungsbestandteil von Kronen/Brücken" → FALSCH! Nur einfache Relationsbestimmung (Quetschbiss) ist Bestandteil. FAL/FTL sind eigenständige Leistungen.
+  2. "Medizinisch nicht notwendig" → Zahnarzt muss kurz erläutern warum FAL/FTL indiziert war.
+  3. "Nur bei bestimmten Indikationen erstattungsfähig" → Gilt nur für Beihilfe (§15 Abs.3 BBhV): Kiefergelenk-/Muskelerkrankungen, PAR-Behandlung, Aufbissbehelf 7010/7020, umfangreiche KFO, umfangreiche Gebisssanierung (≥8 Seitenzähne).
+BGH 29.05.1991 (Az. IV ZR 151/90): Medizinische Notwendigkeit richtet sich nach objektiven Erkenntnissen. PKV für Einschränkungen beweispflichtig.
+BGH 12.03.2003 (Az. IV ZR 278/01): PKV darf Erstattung nicht unter Kostengesichtspunkten beurteilen.
+
+--- PERIO-FLOW / SUBGINGIVALE BELAGSENTFERNUNG ---
+PZR (GOZ 1040) = NUR supragingivale und gingivale Beläge!
+Subgingivale Belagsentfernung (z.B. Perio-Flow) = NICHT Leistungsinhalt der GOZ 1040!
+BZÄK (Februar 2013): Subgingivale Belagsentfernung ist non-invasive, selbstständige Leistung nach §6 Abs.1 GOZ, die analoger Bewertung bedarf.
+Abrechnung: Analog §6 Abs.1 GOZ (z.B. GOZ 4040a).
+PKV behauptet falsch, es gelte GOZ 1040 → Mustertext: BZÄK-Positionspapier aus Februar 2013 anführen.
+
 === PRAXIS-EIGENE EINTRÄGE ===
 ${dbKnowledge || '(noch keine eigenen Einträge)'}
 
