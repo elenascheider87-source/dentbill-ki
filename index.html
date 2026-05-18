@@ -315,6 +315,31 @@ body {
 .msg-time { font-size: 11px; color: var(--text-muted); margin-top: 4px; padding: 0 4px; }
 .msg.user .msg-time { text-align: right; }
 
+/* Quick-Reply Buttons unter Lisa-Nachrichten */
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 0 4px;
+}
+.qr-btn {
+  background: white;
+  border: 1.5px solid var(--teal);
+  color: var(--teal);
+  border-radius: 99px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all .15s;
+  text-align: left;
+  line-height: 1.4;
+}
+.qr-btn:hover { background: var(--teal); color: white; }
+.qr-btn.used { opacity: .4; pointer-events: none; }
+
 .typing-indicator {
   display: flex; gap: 4px; align-items: center;
   padding: 14px 18px;
@@ -1053,15 +1078,134 @@ function addMsg(container, role, text) {
   div.className = 'msg ' + role;
   const avatar = role === 'lisa' ? '🤖' : user.name[0].toUpperCase();
   const time = new Date().toLocaleTimeString('de-DE', { hour:'2-digit', minute:'2-digit' });
+
+  // Für Lisa-Nachrichten: Quick-Reply-Buttons extrahieren
+  let quickRepliesHTML = '';
+  if (role === 'lisa') {
+    const replies = extractQuickReplies(text, container);
+    if (replies.length) {
+      quickRepliesHTML = `<div class="quick-replies" id="qr-${Date.now()}">${replies.map(r =>
+        `<button class="qr-btn" onclick="sendQuickReply('${r.value.replace(/'/g,"\\'")}','${container}',this)">${r.label}</button>`
+      ).join('')}</div>`;
+    }
+  }
+
   div.innerHTML = `
     <div class="msg-avatar">${avatar}</div>
     <div>
       <div class="msg-bubble">${formatMsg(text)}</div>
+      ${quickRepliesHTML}
       <div class="msg-time">${time}</div>
     </div>`;
   document.getElementById(container).appendChild(div);
   document.getElementById(container).scrollTop = 99999;
   return div;
+}
+
+function extractQuickReplies(text, container) {
+  const replies = [];
+
+  // Erkennung: GKV / Privat
+  if (/GKV oder Privat/i.test(text)) {
+    replies.push({ label: '🏥 GKV (Kassenpatient)', value: 'GKV – Kassenpatient' });
+    replies.push({ label: '💳 Privatpatient', value: 'Privatpatient' });
+  }
+
+  // Bonus-Heft
+  if (/Bonusheft|Bonus.*Jahr|lückenlos/i.test(text)) {
+    replies.push({ label: '📒 Kein Bonusheft', value: 'Kein Bonusheft vorhanden' });
+    replies.push({ label: '📒 5 Jahre Bonus', value: '5 Jahre lückenlos' });
+    replies.push({ label: '📒 10 Jahre Bonus', value: '10 Jahre lückenlos' });
+  }
+
+  // OK / UK / beide
+  if (/Ober.*Unter|OK.*UK|Kiefer\?/i.test(text)) {
+    replies.push({ label: '⬆️ Oberkiefer', value: 'Oberkiefer' });
+    replies.push({ label: '⬇️ Unterkiefer', value: 'Unterkiefer' });
+    replies.push({ label: '↕️ Beide Kiefer', value: 'Beide Kiefer (OK + UK)' });
+  }
+
+  // Teil / Total Prothese
+  if (/Teil.*Total|Total.*Teil|Teil-.*Totalprothese/i.test(text)) {
+    replies.push({ label: '🦷 Teilprothese', value: 'Teilprothese' });
+    replies.push({ label: '🦷 Totalprothese', value: 'Totalprothese' });
+  }
+
+  // Augmentation ja/nein
+  if (/Augmentation|Knochenaufbau/i.test(text)) {
+    replies.push({ label: '✅ Augmentation nötig', value: 'Ja, Augmentation ist nötig' });
+    replies.push({ label: '❌ Keine Augmentation', value: 'Nein, kein Knochenaufbau nötig' });
+  }
+
+  // Sinuslift ja/nein
+  if (/Sinuslift/i.test(text)) {
+    replies.push({ label: '✅ Sinuslift nötig', value: 'Ja, Sinuslift ist nötig' });
+    replies.push({ label: '❌ Kein Sinuslift', value: 'Nein, kein Sinuslift nötig' });
+  }
+
+  // Stiftaufbau ja/nein
+  if (/Stiftaufbau|Stift/i.test(text)) {
+    replies.push({ label: '✅ Stiftaufbau nötig', value: 'Ja, Stiftaufbau ist nötig' });
+    replies.push({ label: '❌ Kein Stiftaufbau', value: 'Nein, kein Stiftaufbau nötig' });
+  }
+
+  // Prothese älter/jünger als 5 Jahre
+  if (/älter.*jünger|jünger.*älter|5 Jahre.*Prothese|Prothese.*5 Jahre|Gewährleistung/i.test(text)) {
+    replies.push({ label: '✅ Älter als 5 Jahre', value: 'Die Prothese ist älter als 5 Jahre' });
+    replies.push({ label: '⚠️ Jünger als 5 Jahre', value: 'Die Prothese ist jünger als 5 Jahre' });
+  }
+
+  // Material
+  if (/Material|NEM|Keramik|Zirkon|Vollkeramik/i.test(text)) {
+    replies.push({ label: '🔵 Vollkeramik/Zirkon', value: 'Vollkeramik / Zirkon' });
+    replies.push({ label: '⬜ NEM (Metall)', value: 'NEM (Metall-Keramik)' });
+    replies.push({ label: '🥇 Edelmetall', value: 'Edelmetall' });
+  }
+
+  // Mit/ohne Abformung
+  if (/Abformung/i.test(text)) {
+    replies.push({ label: '✅ Mit Abformung', value: 'Mit Abformung' });
+    replies.push({ label: '❌ Ohne Abformung', value: 'Ohne Abformung' });
+  }
+
+  // Randgestaltung
+  if (/Randgestaltung/i.test(text)) {
+    replies.push({ label: '✅ Mit Randgestaltung', value: 'Mit Randgestaltung' });
+    replies.push({ label: '❌ Ohne Randgestaltung', value: 'Ohne Randgestaltung' });
+  }
+
+  // Vitalität
+  if (/vital|Vitalität/i.test(text)) {
+    replies.push({ label: '💚 Vital', value: 'Zahn ist vital' });
+    replies.push({ label: '💀 Devital/wurzelbehandelt', value: 'Zahn ist devital / wurzelbehandelt' });
+  }
+
+  // Fremdlabor ja/nein
+  if (/Fremdlabor|Labor.*vorhanden/i.test(text)) {
+    replies.push({ label: '✅ Fremdlabor vorhanden', value: 'Ja, Fremdlabor ist vorhanden' });
+    replies.push({ label: '❌ Kein Fremdlabor', value: 'Nein, kein Fremdlabor' });
+  }
+
+  // Attachments (Aligner)
+  if (/Attachment/i.test(text)) {
+    replies.push({ label: '✅ Mit Attachments', value: 'Ja, mit Attachments' });
+    replies.push({ label: '❌ Ohne Attachments', value: 'Nein, ohne Attachments' });
+  }
+
+  return replies;
+}
+
+function sendQuickReply(value, container, btn) {
+  // Alle Buttons in dieser Gruppe deaktivieren
+  btn.closest('.quick-replies').querySelectorAll('.qr-btn').forEach(b => b.classList.add('used'));
+  // In das richtige Input schreiben und senden
+  if (container === 'chatMessages') {
+    document.getElementById('chatInput').value = value;
+    sendChat();
+  } else {
+    document.getElementById('kvInput').value = value;
+    sendKv();
+  }
 }
 
 function formatMsg(text) {
